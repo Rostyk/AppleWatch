@@ -1,0 +1,1065 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B028CFF91A24B61900FC1991 /* main-screen-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B028CFF81A24B61900FC1991 /* main-screen-bg.png */; };
+		B042EB901A275E35004A0945 /* digital-7 (mono).ttf in Resources */ = {isa = PBXBuildFile; fileRef = B042EB8F1A275E35004A0945 /* digital-7 (mono).ttf */; };
+		B04579151A263CEA003B9301 /* CountdownsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B04579141A263CEA003B9301 /* CountdownsManager.m */; };
+		B04579181A263DF7003B9301 /* CountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = B04579171A263DF7003B9301 /* CountDown.m */; };
+		B04E1AEC1A2C90C9006FB462 /* PickImageInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04E1AEB1A2C90C9006FB462 /* PickImageInterfaceController.m */; };
+		B04E1AEF1A2C964D006FB462 /* ImageRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04E1AEE1A2C964D006FB462 /* ImageRowController.m */; };
+		B04E1AF21A2C9F49006FB462 /* Gallery.m in Sources */ = {isa = PBXBuildFile; fileRef = B04E1AF11A2C9F49006FB462 /* Gallery.m */; };
+		B04E1B191A2CB217006FB462 /* gal11.png in Resources */ = {isa = PBXBuildFile; fileRef = B04E1B0D1A2CB217006FB462 /* gal11.png */; };
+		B04E1B1A1A2CB217006FB462 /* gal12.png in Resources */ = {isa = PBXBuildFile; fileRef = B04E1B0E1A2CB217006FB462 /* gal12.png */; };
+		B04E1B1B1A2CB217006FB462 /* gal13.png in Resources */ = {isa = PBXBuildFile; fileRef = B04E1B0F1A2CB217006FB462 /* gal13.png */; };
+		B04E1B1C1A2CB217006FB462 /* gal21.png in Resources */ = {isa = PBXBuildFile; fileRef = B04E1B101A2CB217006FB462 /* gal21.png */; };
+		B04E1B1D1A2CB217006FB462 /* gal22.png in Resources */ = {isa = PBXBuildFile; fileRef = B04E1B111A2CB217006FB462 /* gal22.png */; };
+		B04E1B1E1A2CB217006FB462 /* gal23.png in Resources */ = {isa = PBXBuildFile; fileRef = B04E1B121A2CB217006FB462 /* gal23.png */; };
+		B04E1B1F1A2CB217006FB462 /* gal31.png in Resources */ = {isa = PBXBuildFile; fileRef = B04E1B131A2CB217006FB462 /* gal31.png */; };
+		B04E1B201A2CB217006FB462 /* gal32.png in Resources */ = {isa = PBXBuildFile; fileRef = B04E1B141A2CB217006FB462 /* gal32.png */; };
+		B04E1B211A2CB217006FB462 /* gal33.png in Resources */ = {isa = PBXBuildFile; fileRef = B04E1B151A2CB217006FB462 /* gal33.png */; };
+		B04E1B221A2CB217006FB462 /* gal41.png in Resources */ = {isa = PBXBuildFile; fileRef = B04E1B161A2CB217006FB462 /* gal41.png */; };
+		B04E1B231A2CB217006FB462 /* gal42.png in Resources */ = {isa = PBXBuildFile; fileRef = B04E1B171A2CB217006FB462 /* gal42.png */; };
+		B04E1B241A2CB217006FB462 /* gal43.png in Resources */ = {isa = PBXBuildFile; fileRef = B04E1B181A2CB217006FB462 /* gal43.png */; };
+		B04E1B261A2CBB1D006FB462 /* main-screen-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B04E1B251A2CBB1D006FB462 /* main-screen-bg.png */; };
+		B06B4C671A28964400A604B3 /* PickTimeInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = B06B4C661A28964400A604B3 /* PickTimeInterfaceController.m */; };
+		B07B159A1A1F5972001B970E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B07B15991A1F5972001B970E /* main.m */; };
+		B07B159D1A1F5972001B970E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B07B159C1A1F5972001B970E /* AppDelegate.m */; };
+		B07B15A01A1F5972001B970E /* Countdown.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B07B159E1A1F5972001B970E /* Countdown.xcdatamodeld */; };
+		B07B15A31A1F5972001B970E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07B15A21A1F5972001B970E /* ViewController.m */; };
+		B07B15A81A1F5972001B970E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B07B15A71A1F5972001B970E /* Images.xcassets */; };
+		B07B15B71A1F5972001B970E /* CountdownTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B07B15B61A1F5972001B970E /* CountdownTests.m */; };
+		B07B15C71A1F5985001B970E /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B07B15C61A1F5985001B970E /* WatchKit.framework */; };
+		B07B15D71A1F5985001B970E /* Countdown Watch App.app in Resources */ = {isa = PBXBuildFile; fileRef = B07B15D61A1F5985001B970E /* Countdown Watch App.app */; };
+		B07B15DE1A1F5985001B970E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B07B15DD1A1F5985001B970E /* Interface.storyboard */; };
+		B07B15E01A1F5985001B970E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B07B15DF1A1F5985001B970E /* Images.xcassets */; };
+		B07B15E31A1F5985001B970E /* Countdown WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B07B15C41A1F5985001B970E /* Countdown WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B0832DA11A274CDE00D766F1 /* digital-7 (mono).ttf in Resources */ = {isa = PBXBuildFile; fileRef = B0832DA01A274CDE00D766F1 /* digital-7 (mono).ttf */; };
+		B08A05A01A26261700E3D480 /* SubwayTicker.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B08A059F1A26261700E3D480 /* SubwayTicker.ttf */; };
+		B0A3C5311A24CD2400E356D7 /* HomeInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A3C52C1A24CD2400E356D7 /* HomeInterfaceController.m */; };
+		B0A3C5321A24CD2400E356D7 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A3C52E1A24CD2400E356D7 /* NotificationController.m */; };
+		B0A3C5351A24CD4F00E356D7 /* PickDateInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A3C5341A24CD4F00E356D7 /* PickDateInterfaceController.m */; };
+		B0A3C53B1A24D9E100E356D7 /* RowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A3C53A1A24D9E100E356D7 /* RowController.m */; };
+		B0A3C53F1A24DCC500E356D7 /* DateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A3C53E1A24DCC500E356D7 /* DateHelper.m */; };
+		B0AA17531A2CC6A10059ED3A /* ImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AA17521A2CC6A10059ED3A /* ImageButton.m */; };
+		B0BD54D01A2C67990099AF7D /* date-celection-mark-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = B0BD54C31A2C67990099AF7D /* date-celection-mark-normal.png */; };
+		B0BD54D11A2C67990099AF7D /* date-selection-cell.png in Resources */ = {isa = PBXBuildFile; fileRef = B0BD54C41A2C67990099AF7D /* date-selection-cell.png */; };
+		B0BD54D21A2C67990099AF7D /* date-selection-mark-active.png in Resources */ = {isa = PBXBuildFile; fileRef = B0BD54C51A2C67990099AF7D /* date-selection-mark-active.png */; };
+		B0BD54D41A2C67990099AF7D /* main-screen-date-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B0BD54C71A2C67990099AF7D /* main-screen-date-bg.png */; };
+		B0BD54D51A2C67990099AF7D /* main-screen-timer-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B0BD54C81A2C67990099AF7D /* main-screen-timer-bg.png */; };
+		B0BD54D61A2C67990099AF7D /* menu-add.png in Resources */ = {isa = PBXBuildFile; fileRef = B0BD54C91A2C67990099AF7D /* menu-add.png */; };
+		B0BD54D81A2C67990099AF7D /* menu-watch.png in Resources */ = {isa = PBXBuildFile; fileRef = B0BD54CB1A2C67990099AF7D /* menu-watch.png */; };
+		B0BD54D91A2C67990099AF7D /* time-selection-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B0BD54CC1A2C67990099AF7D /* time-selection-button.png */; };
+		B0BD54DA1A2C67990099AF7D /* time-selection-minus.png in Resources */ = {isa = PBXBuildFile; fileRef = B0BD54CD1A2C67990099AF7D /* time-selection-minus.png */; };
+		B0BD54DB1A2C67990099AF7D /* time-selection-plus.png in Resources */ = {isa = PBXBuildFile; fileRef = B0BD54CE1A2C67990099AF7D /* time-selection-plus.png */; };
+		B0BD54DC1A2C67990099AF7D /* time-selection-time-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B0BD54CF1A2C67990099AF7D /* time-selection-time-bg.png */; };
+		B0BD54DF1A2C7ADE0099AF7D /* App.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BD54DE1A2C7ADE0099AF7D /* App.m */; };
+		B0D255251A2DB73D000F59CE /* menu-tutorials.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D255241A2DB73D000F59CE /* menu-tutorials.png */; };
+		B0D2552F1A2DE183000F59CE /* countdowns-list-bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D255261A2DE183000F59CE /* countdowns-list-bg1.png */; };
+		B0D255301A2DE183000F59CE /* countdowns-list-cell-bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D255271A2DE183000F59CE /* countdowns-list-cell-bg2.png */; };
+		B0D255311A2DE183000F59CE /* countdowns-list-cell-bg3.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D255281A2DE183000F59CE /* countdowns-list-cell-bg3.png */; };
+		B0D255321A2DE183000F59CE /* countdowns-list-remove-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D255291A2DE183000F59CE /* countdowns-list-remove-icon.png */; };
+		B0D255331A2DE183000F59CE /* edit-alert-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D2552A1A2DE183000F59CE /* edit-alert-icon.png */; };
+		B0D255341A2DE183000F59CE /* edit-bg-cell.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D2552B1A2DE183000F59CE /* edit-bg-cell.png */; };
+		B0D255351A2DE183000F59CE /* edit-date-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D2552C1A2DE183000F59CE /* edit-date-icon.png */; };
+		B0D255361A2DE183000F59CE /* edit-image-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D2552D1A2DE183000F59CE /* edit-image-icon.png */; };
+		B0D255371A2DE183000F59CE /* edit-watch-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D2552E1A2DE183000F59CE /* edit-watch-icon.png */; };
+		B0D2553B1A2DE1EC000F59CE /* CountdownsListInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D2553A1A2DE1EC000F59CE /* CountdownsListInterfaceController.m */; };
+		B0D2553E1A2DE229000F59CE /* CountdownsRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D2553D1A2DE229000F59CE /* CountdownsRowController.m */; };
+		B0D255421A2E0E1E000F59CE /* EditCountdownInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D255411A2E0E1E000F59CE /* EditCountdownInterfaceController.m */; };
+		B0D255451A2E0ECD000F59CE /* EditCountdownRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D255441A2E0ECD000F59CE /* EditCountdownRowController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B07B15B11A1F5972001B970E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B07B158C1A1F5972001B970E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B07B15931A1F5972001B970E;
+			remoteInfo = Countdown;
+		};
+		B07B15D81A1F5985001B970E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B07B158C1A1F5972001B970E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B07B15D51A1F5985001B970E;
+			remoteInfo = "Countdown Watch App";
+		};
+		B07B15E11A1F5985001B970E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B07B158C1A1F5972001B970E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B07B15C31A1F5985001B970E;
+			remoteInfo = "Countdown WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B07B15EA1A1F5985001B970E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B07B15E31A1F5985001B970E /* Countdown WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B028CFF81A24B61900FC1991 /* main-screen-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "main-screen-bg.png"; sourceTree = "<group>"; };
+		B042EB8F1A275E35004A0945 /* digital-7 (mono).ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7 (mono).ttf"; sourceTree = "<group>"; };
+		B04579131A263CEA003B9301 /* CountdownsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CountdownsManager.h; path = Utilities/CountdownsManager.h; sourceTree = "<group>"; };
+		B04579141A263CEA003B9301 /* CountdownsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CountdownsManager.m; path = Utilities/CountdownsManager.m; sourceTree = "<group>"; };
+		B04579161A263DF7003B9301 /* CountDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountDown.h; sourceTree = "<group>"; };
+		B04579171A263DF7003B9301 /* CountDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountDown.m; sourceTree = "<group>"; };
+		B04E1AEA1A2C90C9006FB462 /* PickImageInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickImageInterfaceController.h; sourceTree = "<group>"; };
+		B04E1AEB1A2C90C9006FB462 /* PickImageInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickImageInterfaceController.m; sourceTree = "<group>"; };
+		B04E1AED1A2C964D006FB462 /* ImageRowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageRowController.h; sourceTree = "<group>"; };
+		B04E1AEE1A2C964D006FB462 /* ImageRowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageRowController.m; sourceTree = "<group>"; };
+		B04E1AF01A2C9F49006FB462 /* Gallery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Gallery.h; path = Utilities/Gallery.h; sourceTree = "<group>"; };
+		B04E1AF11A2C9F49006FB462 /* Gallery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Gallery.m; path = Utilities/Gallery.m; sourceTree = "<group>"; };
+		B04E1B0D1A2CB217006FB462 /* gal11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gal11.png; sourceTree = "<group>"; };
+		B04E1B0E1A2CB217006FB462 /* gal12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gal12.png; sourceTree = "<group>"; };
+		B04E1B0F1A2CB217006FB462 /* gal13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gal13.png; sourceTree = "<group>"; };
+		B04E1B101A2CB217006FB462 /* gal21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gal21.png; sourceTree = "<group>"; };
+		B04E1B111A2CB217006FB462 /* gal22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gal22.png; sourceTree = "<group>"; };
+		B04E1B121A2CB217006FB462 /* gal23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gal23.png; sourceTree = "<group>"; };
+		B04E1B131A2CB217006FB462 /* gal31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gal31.png; sourceTree = "<group>"; };
+		B04E1B141A2CB217006FB462 /* gal32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gal32.png; sourceTree = "<group>"; };
+		B04E1B151A2CB217006FB462 /* gal33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gal33.png; sourceTree = "<group>"; };
+		B04E1B161A2CB217006FB462 /* gal41.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gal41.png; sourceTree = "<group>"; };
+		B04E1B171A2CB217006FB462 /* gal42.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gal42.png; sourceTree = "<group>"; };
+		B04E1B181A2CB217006FB462 /* gal43.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gal43.png; sourceTree = "<group>"; };
+		B04E1B251A2CBB1D006FB462 /* main-screen-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "main-screen-bg.png"; sourceTree = "<group>"; };
+		B06B4C651A28964400A604B3 /* PickTimeInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickTimeInterfaceController.h; sourceTree = "<group>"; };
+		B06B4C661A28964400A604B3 /* PickTimeInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickTimeInterfaceController.m; sourceTree = "<group>"; };
+		B07B15941A1F5972001B970E /* Countdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Countdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B07B15981A1F5972001B970E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B07B15991A1F5972001B970E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B07B159B1A1F5972001B970E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B07B159C1A1F5972001B970E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B07B159F1A1F5972001B970E /* Countdown.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Countdown.xcdatamodel; sourceTree = "<group>"; };
+		B07B15A11A1F5972001B970E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B07B15A21A1F5972001B970E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B07B15A51A1F5972001B970E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B07B15A71A1F5972001B970E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B07B15AA1A1F5972001B970E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B07B15B01A1F5972001B970E /* CountdownTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountdownTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B07B15B51A1F5972001B970E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B07B15B61A1F5972001B970E /* CountdownTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountdownTests.m; sourceTree = "<group>"; };
+		B07B15C41A1F5985001B970E /* Countdown WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Countdown WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B07B15C61A1F5985001B970E /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = System/Library/Frameworks/WatchKit.framework; sourceTree = SDKROOT; };
+		B07B15CA1A1F5985001B970E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B07B15CB1A1F5985001B970E /* PushNotificationPayload.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PushNotificationPayload.json; sourceTree = "<group>"; };
+		B07B15D61A1F5985001B970E /* Countdown Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Countdown Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B07B15DC1A1F5985001B970E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B07B15DD1A1F5985001B970E /* Interface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
+		B07B15DF1A1F5985001B970E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B0832DA01A274CDE00D766F1 /* digital-7 (mono).ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7 (mono).ttf"; sourceTree = "<group>"; };
+		B08A059F1A26261700E3D480 /* SubwayTicker.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SubwayTicker.ttf; path = Resources/SubwayTicker.ttf; sourceTree = "<group>"; };
+		B0A3C52B1A24CD2400E356D7 /* HomeInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeInterfaceController.h; sourceTree = "<group>"; };
+		B0A3C52C1A24CD2400E356D7 /* HomeInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeInterfaceController.m; sourceTree = "<group>"; };
+		B0A3C52D1A24CD2400E356D7 /* NotificationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		B0A3C52E1A24CD2400E356D7 /* NotificationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		B0A3C5331A24CD4F00E356D7 /* PickDateInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickDateInterfaceController.h; sourceTree = "<group>"; };
+		B0A3C5341A24CD4F00E356D7 /* PickDateInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickDateInterfaceController.m; sourceTree = "<group>"; };
+		B0A3C5391A24D9E100E356D7 /* RowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RowController.h; sourceTree = "<group>"; };
+		B0A3C53A1A24D9E100E356D7 /* RowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RowController.m; sourceTree = "<group>"; };
+		B0A3C53D1A24DCC500E356D7 /* DateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DateHelper.h; path = Utilities/DateHelper.h; sourceTree = "<group>"; };
+		B0A3C53E1A24DCC500E356D7 /* DateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DateHelper.m; path = Utilities/DateHelper.m; sourceTree = "<group>"; };
+		B0AA17511A2CC6A10059ED3A /* ImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageButton.h; path = "Countdown WatchKit Extension/View/ImageButton.h"; sourceTree = SOURCE_ROOT; };
+		B0AA17521A2CC6A10059ED3A /* ImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageButton.m; path = "Countdown WatchKit Extension/View/ImageButton.m"; sourceTree = SOURCE_ROOT; };
+		B0BD54C31A2C67990099AF7D /* date-celection-mark-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "date-celection-mark-normal.png"; sourceTree = "<group>"; };
+		B0BD54C41A2C67990099AF7D /* date-selection-cell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "date-selection-cell.png"; sourceTree = "<group>"; };
+		B0BD54C51A2C67990099AF7D /* date-selection-mark-active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "date-selection-mark-active.png"; sourceTree = "<group>"; };
+		B0BD54C71A2C67990099AF7D /* main-screen-date-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "main-screen-date-bg.png"; sourceTree = "<group>"; };
+		B0BD54C81A2C67990099AF7D /* main-screen-timer-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "main-screen-timer-bg.png"; sourceTree = "<group>"; };
+		B0BD54C91A2C67990099AF7D /* menu-add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-add.png"; sourceTree = "<group>"; };
+		B0BD54CB1A2C67990099AF7D /* menu-watch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-watch.png"; sourceTree = "<group>"; };
+		B0BD54CC1A2C67990099AF7D /* time-selection-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "time-selection-button.png"; sourceTree = "<group>"; };
+		B0BD54CD1A2C67990099AF7D /* time-selection-minus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "time-selection-minus.png"; sourceTree = "<group>"; };
+		B0BD54CE1A2C67990099AF7D /* time-selection-plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "time-selection-plus.png"; sourceTree = "<group>"; };
+		B0BD54CF1A2C67990099AF7D /* time-selection-time-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "time-selection-time-bg.png"; sourceTree = "<group>"; };
+		B0BD54DD1A2C7ADE0099AF7D /* App.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = App.h; path = Utilities/App.h; sourceTree = "<group>"; };
+		B0BD54DE1A2C7ADE0099AF7D /* App.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = App.m; path = Utilities/App.m; sourceTree = "<group>"; };
+		B0D255241A2DB73D000F59CE /* menu-tutorials.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-tutorials.png"; sourceTree = "<group>"; };
+		B0D255261A2DE183000F59CE /* countdowns-list-bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "countdowns-list-bg1.png"; sourceTree = "<group>"; };
+		B0D255271A2DE183000F59CE /* countdowns-list-cell-bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "countdowns-list-cell-bg2.png"; sourceTree = "<group>"; };
+		B0D255281A2DE183000F59CE /* countdowns-list-cell-bg3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "countdowns-list-cell-bg3.png"; sourceTree = "<group>"; };
+		B0D255291A2DE183000F59CE /* countdowns-list-remove-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "countdowns-list-remove-icon.png"; sourceTree = "<group>"; };
+		B0D2552A1A2DE183000F59CE /* edit-alert-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "edit-alert-icon.png"; sourceTree = "<group>"; };
+		B0D2552B1A2DE183000F59CE /* edit-bg-cell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "edit-bg-cell.png"; sourceTree = "<group>"; };
+		B0D2552C1A2DE183000F59CE /* edit-date-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "edit-date-icon.png"; sourceTree = "<group>"; };
+		B0D2552D1A2DE183000F59CE /* edit-image-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "edit-image-icon.png"; sourceTree = "<group>"; };
+		B0D2552E1A2DE183000F59CE /* edit-watch-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "edit-watch-icon.png"; sourceTree = "<group>"; };
+		B0D255391A2DE1EC000F59CE /* CountdownsListInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountdownsListInterfaceController.h; sourceTree = "<group>"; };
+		B0D2553A1A2DE1EC000F59CE /* CountdownsListInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountdownsListInterfaceController.m; sourceTree = "<group>"; };
+		B0D2553C1A2DE229000F59CE /* CountdownsRowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountdownsRowController.h; sourceTree = "<group>"; };
+		B0D2553D1A2DE229000F59CE /* CountdownsRowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountdownsRowController.m; sourceTree = "<group>"; };
+		B0D255401A2E0E1E000F59CE /* EditCountdownInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditCountdownInterfaceController.h; sourceTree = "<group>"; };
+		B0D255411A2E0E1E000F59CE /* EditCountdownInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditCountdownInterfaceController.m; sourceTree = "<group>"; };
+		B0D255431A2E0ECD000F59CE /* EditCountdownRowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditCountdownRowController.h; sourceTree = "<group>"; };
+		B0D255441A2E0ECD000F59CE /* EditCountdownRowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditCountdownRowController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B07B15911A1F5972001B970E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B07B15AD1A1F5972001B970E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B07B15C11A1F5985001B970E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B07B15C71A1F5985001B970E /* WatchKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B028CFF51A24AF0F00FC1991 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B04E1B0C1A2CB217006FB462 /* Gallery */,
+				B0D255261A2DE183000F59CE /* countdowns-list-bg1.png */,
+				B0D255271A2DE183000F59CE /* countdowns-list-cell-bg2.png */,
+				B0D255281A2DE183000F59CE /* countdowns-list-cell-bg3.png */,
+				B0D255291A2DE183000F59CE /* countdowns-list-remove-icon.png */,
+				B0D2552A1A2DE183000F59CE /* edit-alert-icon.png */,
+				B0D2552B1A2DE183000F59CE /* edit-bg-cell.png */,
+				B0D2552C1A2DE183000F59CE /* edit-date-icon.png */,
+				B0D2552D1A2DE183000F59CE /* edit-image-icon.png */,
+				B0D2552E1A2DE183000F59CE /* edit-watch-icon.png */,
+				B0BD54C31A2C67990099AF7D /* date-celection-mark-normal.png */,
+				B0BD54C41A2C67990099AF7D /* date-selection-cell.png */,
+				B0BD54C51A2C67990099AF7D /* date-selection-mark-active.png */,
+				B04E1B251A2CBB1D006FB462 /* main-screen-bg.png */,
+				B0BD54C71A2C67990099AF7D /* main-screen-date-bg.png */,
+				B0BD54C81A2C67990099AF7D /* main-screen-timer-bg.png */,
+				B0BD54C91A2C67990099AF7D /* menu-add.png */,
+				B0D255241A2DB73D000F59CE /* menu-tutorials.png */,
+				B0BD54CB1A2C67990099AF7D /* menu-watch.png */,
+				B0BD54CC1A2C67990099AF7D /* time-selection-button.png */,
+				B0BD54CD1A2C67990099AF7D /* time-selection-minus.png */,
+				B0BD54CE1A2C67990099AF7D /* time-selection-plus.png */,
+				B0BD54CF1A2C67990099AF7D /* time-selection-time-bg.png */,
+				B042EB8F1A275E35004A0945 /* digital-7 (mono).ttf */,
+				B028CFF81A24B61900FC1991 /* main-screen-bg.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B04E1AE91A2C9095006FB462 /* PickImage */ = {
+			isa = PBXGroup;
+			children = (
+				B04E1AEA1A2C90C9006FB462 /* PickImageInterfaceController.h */,
+				B04E1AEB1A2C90C9006FB462 /* PickImageInterfaceController.m */,
+				B04E1AED1A2C964D006FB462 /* ImageRowController.h */,
+				B04E1AEE1A2C964D006FB462 /* ImageRowController.m */,
+			);
+			name = PickImage;
+			sourceTree = "<group>";
+		};
+		B04E1B0C1A2CB217006FB462 /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				B04E1B0D1A2CB217006FB462 /* gal11.png */,
+				B04E1B0E1A2CB217006FB462 /* gal12.png */,
+				B04E1B0F1A2CB217006FB462 /* gal13.png */,
+				B04E1B101A2CB217006FB462 /* gal21.png */,
+				B04E1B111A2CB217006FB462 /* gal22.png */,
+				B04E1B121A2CB217006FB462 /* gal23.png */,
+				B04E1B131A2CB217006FB462 /* gal31.png */,
+				B04E1B141A2CB217006FB462 /* gal32.png */,
+				B04E1B151A2CB217006FB462 /* gal33.png */,
+				B04E1B161A2CB217006FB462 /* gal41.png */,
+				B04E1B171A2CB217006FB462 /* gal42.png */,
+				B04E1B181A2CB217006FB462 /* gal43.png */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
+		B06B4C641A28962100A604B3 /* PickTime */ = {
+			isa = PBXGroup;
+			children = (
+				B06B4C651A28964400A604B3 /* PickTimeInterfaceController.h */,
+				B06B4C661A28964400A604B3 /* PickTimeInterfaceController.m */,
+			);
+			name = PickTime;
+			sourceTree = "<group>";
+		};
+		B07B158B1A1F5972001B970E = {
+			isa = PBXGroup;
+			children = (
+				B07B15961A1F5972001B970E /* Countdown */,
+				B07B15B31A1F5972001B970E /* CountdownTests */,
+				B07B15C81A1F5985001B970E /* Countdown WatchKit Extension */,
+				B07B15DA1A1F5985001B970E /* Countdown Watch App */,
+				B07B15C51A1F5985001B970E /* Frameworks */,
+				B07B15951A1F5972001B970E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B07B15951A1F5972001B970E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B07B15941A1F5972001B970E /* Countdown.app */,
+				B07B15B01A1F5972001B970E /* CountdownTests.xctest */,
+				B07B15C41A1F5985001B970E /* Countdown WatchKit Extension.appex */,
+				B07B15D61A1F5985001B970E /* Countdown Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B07B15961A1F5972001B970E /* Countdown */ = {
+			isa = PBXGroup;
+			children = (
+				B07B159B1A1F5972001B970E /* AppDelegate.h */,
+				B07B159C1A1F5972001B970E /* AppDelegate.m */,
+				B07B15A11A1F5972001B970E /* ViewController.h */,
+				B07B15A21A1F5972001B970E /* ViewController.m */,
+				B07B15A41A1F5972001B970E /* Main.storyboard */,
+				B07B15A71A1F5972001B970E /* Images.xcassets */,
+				B07B15A91A1F5972001B970E /* LaunchScreen.xib */,
+				B07B159E1A1F5972001B970E /* Countdown.xcdatamodeld */,
+				B07B15971A1F5972001B970E /* Supporting Files */,
+			);
+			path = Countdown;
+			sourceTree = "<group>";
+		};
+		B07B15971A1F5972001B970E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B07B15981A1F5972001B970E /* Info.plist */,
+				B07B15991A1F5972001B970E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B07B15B31A1F5972001B970E /* CountdownTests */ = {
+			isa = PBXGroup;
+			children = (
+				B07B15B61A1F5972001B970E /* CountdownTests.m */,
+				B07B15B41A1F5972001B970E /* Supporting Files */,
+			);
+			path = CountdownTests;
+			sourceTree = "<group>";
+		};
+		B07B15B41A1F5972001B970E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B07B15B51A1F5972001B970E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B07B15C51A1F5985001B970E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B07B15C61A1F5985001B970E /* WatchKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B07B15C81A1F5985001B970E /* Countdown WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B0AA17541A2CC9820059ED3A /* Additions */,
+				B0A3C5301A24CD2400E356D7 /* View */,
+				B0A3C52F1A24CD2400E356D7 /* Model */,
+				B0A3C52A1A24CD2400E356D7 /* Controller */,
+				B0A3C53C1A24DC7800E356D7 /* Utilities */,
+				B0A3C5221A24BACE00E356D7 /* Resources */,
+				B07B15C91A1F5985001B970E /* Supporting Files */,
+			);
+			path = "Countdown WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		B07B15C91A1F5985001B970E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B07B15CA1A1F5985001B970E /* Info.plist */,
+				B07B15CB1A1F5985001B970E /* PushNotificationPayload.json */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B07B15DA1A1F5985001B970E /* Countdown Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				B028CFF51A24AF0F00FC1991 /* Resources */,
+				B07B15DD1A1F5985001B970E /* Interface.storyboard */,
+				B07B15DF1A1F5985001B970E /* Images.xcassets */,
+				B07B15DB1A1F5985001B970E /* Supporting Files */,
+			);
+			path = "Countdown Watch App";
+			sourceTree = "<group>";
+		};
+		B07B15DB1A1F5985001B970E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B07B15DC1A1F5985001B970E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B0A3C5221A24BACE00E356D7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B0832DA01A274CDE00D766F1 /* digital-7 (mono).ttf */,
+				B08A059F1A26261700E3D480 /* SubwayTicker.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B0A3C52A1A24CD2400E356D7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B0D2553F1A2E0DE2000F59CE /* Edit */,
+				B0D255381A2DE1D4000F59CE /* Countdowns */,
+				B04E1AE91A2C9095006FB462 /* PickImage */,
+				B06B4C641A28962100A604B3 /* PickTime */,
+				B0A3C5371A24D96100E356D7 /* PickDate */,
+				B0A3C5361A24D94C00E356D7 /* Home */,
+				B0A3C52D1A24CD2400E356D7 /* NotificationController.h */,
+				B0A3C52E1A24CD2400E356D7 /* NotificationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B0A3C52F1A24CD2400E356D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B04579161A263DF7003B9301 /* CountDown.h */,
+				B04579171A263DF7003B9301 /* CountDown.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B0A3C5301A24CD2400E356D7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B0AA17511A2CC6A10059ED3A /* ImageButton.h */,
+				B0AA17521A2CC6A10059ED3A /* ImageButton.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B0A3C5361A24D94C00E356D7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B0A3C52B1A24CD2400E356D7 /* HomeInterfaceController.h */,
+				B0A3C52C1A24CD2400E356D7 /* HomeInterfaceController.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		B0A3C5371A24D96100E356D7 /* PickDate */ = {
+			isa = PBXGroup;
+			children = (
+				B0A3C5381A24D9BF00E356D7 /* RowController */,
+				B0A3C5331A24CD4F00E356D7 /* PickDateInterfaceController.h */,
+				B0A3C5341A24CD4F00E356D7 /* PickDateInterfaceController.m */,
+			);
+			name = PickDate;
+			sourceTree = "<group>";
+		};
+		B0A3C5381A24D9BF00E356D7 /* RowController */ = {
+			isa = PBXGroup;
+			children = (
+				B0A3C5391A24D9E100E356D7 /* RowController.h */,
+				B0A3C53A1A24D9E100E356D7 /* RowController.m */,
+			);
+			name = RowController;
+			sourceTree = "<group>";
+		};
+		B0A3C53C1A24DC7800E356D7 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B0A3C53D1A24DCC500E356D7 /* DateHelper.h */,
+				B0A3C53E1A24DCC500E356D7 /* DateHelper.m */,
+				B04579131A263CEA003B9301 /* CountdownsManager.h */,
+				B04579141A263CEA003B9301 /* CountdownsManager.m */,
+				B0BD54DD1A2C7ADE0099AF7D /* App.h */,
+				B0BD54DE1A2C7ADE0099AF7D /* App.m */,
+				B04E1AF01A2C9F49006FB462 /* Gallery.h */,
+				B04E1AF11A2C9F49006FB462 /* Gallery.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		B0AA17541A2CC9820059ED3A /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Additions;
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B0D255381A2DE1D4000F59CE /* Countdowns */ = {
+			isa = PBXGroup;
+			children = (
+				B0D255391A2DE1EC000F59CE /* CountdownsListInterfaceController.h */,
+				B0D2553A1A2DE1EC000F59CE /* CountdownsListInterfaceController.m */,
+				B0D2553C1A2DE229000F59CE /* CountdownsRowController.h */,
+				B0D2553D1A2DE229000F59CE /* CountdownsRowController.m */,
+			);
+			name = Countdowns;
+			sourceTree = "<group>";
+		};
+		B0D2553F1A2E0DE2000F59CE /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				B0D255401A2E0E1E000F59CE /* EditCountdownInterfaceController.h */,
+				B0D255411A2E0E1E000F59CE /* EditCountdownInterfaceController.m */,
+				B0D255431A2E0ECD000F59CE /* EditCountdownRowController.h */,
+				B0D255441A2E0ECD000F59CE /* EditCountdownRowController.m */,
+			);
+			name = Edit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B07B15931A1F5972001B970E /* Countdown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B07B15BA1A1F5972001B970E /* Build configuration list for PBXNativeTarget "Countdown" */;
+			buildPhases = (
+				B07B15901A1F5972001B970E /* Sources */,
+				B07B15911A1F5972001B970E /* Frameworks */,
+				B07B15921A1F5972001B970E /* Resources */,
+				B07B15EA1A1F5985001B970E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B07B15E21A1F5985001B970E /* PBXTargetDependency */,
+			);
+			name = Countdown;
+			productName = Countdown;
+			productReference = B07B15941A1F5972001B970E /* Countdown.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B07B15AF1A1F5972001B970E /* CountdownTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B07B15BD1A1F5972001B970E /* Build configuration list for PBXNativeTarget "CountdownTests" */;
+			buildPhases = (
+				B07B15AC1A1F5972001B970E /* Sources */,
+				B07B15AD1A1F5972001B970E /* Frameworks */,
+				B07B15AE1A1F5972001B970E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B07B15B21A1F5972001B970E /* PBXTargetDependency */,
+			);
+			name = CountdownTests;
+			productName = CountdownTests;
+			productReference = B07B15B01A1F5972001B970E /* CountdownTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B07B15C31A1F5985001B970E /* Countdown WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B07B15E71A1F5985001B970E /* Build configuration list for PBXNativeTarget "Countdown WatchKit Extension" */;
+			buildPhases = (
+				B07B15C01A1F5985001B970E /* Sources */,
+				B07B15C11A1F5985001B970E /* Frameworks */,
+				B07B15C21A1F5985001B970E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B07B15D91A1F5985001B970E /* PBXTargetDependency */,
+			);
+			name = "Countdown WatchKit Extension";
+			productName = "Countdown WatchKit Extension";
+			productReference = B07B15C41A1F5985001B970E /* Countdown WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		B07B15D51A1F5985001B970E /* Countdown Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B07B15E41A1F5985001B970E /* Build configuration list for PBXNativeTarget "Countdown Watch App" */;
+			buildPhases = (
+				B07B15D41A1F5985001B970E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Countdown Watch App";
+			productName = "Countdown Watch App";
+			productReference = B07B15D61A1F5985001B970E /* Countdown Watch App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B07B158C1A1F5972001B970E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = Umbrella;
+				TargetAttributes = {
+					B07B15931A1F5972001B970E = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					B07B15AF1A1F5972001B970E = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = B07B15931A1F5972001B970E;
+					};
+					B07B15C31A1F5985001B970E = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					B07B15D51A1F5985001B970E = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = B07B158F1A1F5972001B970E /* Build configuration list for PBXProject "Countdown" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B07B158B1A1F5972001B970E;
+			productRefGroup = B07B15951A1F5972001B970E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B07B15931A1F5972001B970E /* Countdown */,
+				B07B15AF1A1F5972001B970E /* CountdownTests */,
+				B07B15C31A1F5985001B970E /* Countdown WatchKit Extension */,
+				B07B15D51A1F5985001B970E /* Countdown Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B07B15921A1F5972001B970E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B07B15A81A1F5972001B970E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B07B15AE1A1F5972001B970E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B07B15C21A1F5985001B970E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0832DA11A274CDE00D766F1 /* digital-7 (mono).ttf in Resources */,
+				B08A05A01A26261700E3D480 /* SubwayTicker.ttf in Resources */,
+				B07B15D71A1F5985001B970E /* Countdown Watch App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B07B15D41A1F5985001B970E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B042EB901A275E35004A0945 /* digital-7 (mono).ttf in Resources */,
+				B0D255301A2DE183000F59CE /* countdowns-list-cell-bg2.png in Resources */,
+				B0D255311A2DE183000F59CE /* countdowns-list-cell-bg3.png in Resources */,
+				B0BD54DC1A2C67990099AF7D /* time-selection-time-bg.png in Resources */,
+				B0D255371A2DE183000F59CE /* edit-watch-icon.png in Resources */,
+				B0D255321A2DE183000F59CE /* countdowns-list-remove-icon.png in Resources */,
+				B04E1B231A2CB217006FB462 /* gal42.png in Resources */,
+				B0D255251A2DB73D000F59CE /* menu-tutorials.png in Resources */,
+				B0BD54D61A2C67990099AF7D /* menu-add.png in Resources */,
+				B0D255341A2DE183000F59CE /* edit-bg-cell.png in Resources */,
+				B04E1B201A2CB217006FB462 /* gal32.png in Resources */,
+				B04E1B211A2CB217006FB462 /* gal33.png in Resources */,
+				B0BD54D41A2C67990099AF7D /* main-screen-date-bg.png in Resources */,
+				B04E1B1F1A2CB217006FB462 /* gal31.png in Resources */,
+				B07B15DE1A1F5985001B970E /* Interface.storyboard in Resources */,
+				B0BD54DA1A2C67990099AF7D /* time-selection-minus.png in Resources */,
+				B0BD54D11A2C67990099AF7D /* date-selection-cell.png in Resources */,
+				B04E1B221A2CB217006FB462 /* gal41.png in Resources */,
+				B04E1B261A2CBB1D006FB462 /* main-screen-bg.png in Resources */,
+				B028CFF91A24B61900FC1991 /* main-screen-bg.png in Resources */,
+				B04E1B241A2CB217006FB462 /* gal43.png in Resources */,
+				B0BD54D81A2C67990099AF7D /* menu-watch.png in Resources */,
+				B0BD54D51A2C67990099AF7D /* main-screen-timer-bg.png in Resources */,
+				B0D255331A2DE183000F59CE /* edit-alert-icon.png in Resources */,
+				B04E1B1D1A2CB217006FB462 /* gal22.png in Resources */,
+				B0D255351A2DE183000F59CE /* edit-date-icon.png in Resources */,
+				B04E1B1C1A2CB217006FB462 /* gal21.png in Resources */,
+				B0D2552F1A2DE183000F59CE /* countdowns-list-bg1.png in Resources */,
+				B04E1B191A2CB217006FB462 /* gal11.png in Resources */,
+				B0BD54D21A2C67990099AF7D /* date-selection-mark-active.png in Resources */,
+				B04E1B1E1A2CB217006FB462 /* gal23.png in Resources */,
+				B0BD54D01A2C67990099AF7D /* date-celection-mark-normal.png in Resources */,
+				B0BD54DB1A2C67990099AF7D /* time-selection-plus.png in Resources */,
+				B04E1B1B1A2CB217006FB462 /* gal13.png in Resources */,
+				B0D255361A2DE183000F59CE /* edit-image-icon.png in Resources */,
+				B07B15E01A1F5985001B970E /* Images.xcassets in Resources */,
+				B04E1B1A1A2CB217006FB462 /* gal12.png in Resources */,
+				B0BD54D91A2C67990099AF7D /* time-selection-button.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B07B15901A1F5972001B970E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B07B159D1A1F5972001B970E /* AppDelegate.m in Sources */,
+				B07B15A01A1F5972001B970E /* Countdown.xcdatamodeld in Sources */,
+				B07B15A31A1F5972001B970E /* ViewController.m in Sources */,
+				B07B159A1A1F5972001B970E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B07B15AC1A1F5972001B970E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B07B15B71A1F5972001B970E /* CountdownTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B07B15C01A1F5985001B970E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0A3C5351A24CD4F00E356D7 /* PickDateInterfaceController.m in Sources */,
+				B04579181A263DF7003B9301 /* CountDown.m in Sources */,
+				B0A3C53F1A24DCC500E356D7 /* DateHelper.m in Sources */,
+				B04E1AEF1A2C964D006FB462 /* ImageRowController.m in Sources */,
+				B0BD54DF1A2C7ADE0099AF7D /* App.m in Sources */,
+				B06B4C671A28964400A604B3 /* PickTimeInterfaceController.m in Sources */,
+				B0A3C5321A24CD2400E356D7 /* NotificationController.m in Sources */,
+				B0D2553B1A2DE1EC000F59CE /* CountdownsListInterfaceController.m in Sources */,
+				B04E1AEC1A2C90C9006FB462 /* PickImageInterfaceController.m in Sources */,
+				B0D255451A2E0ECD000F59CE /* EditCountdownRowController.m in Sources */,
+				B0AA17531A2CC6A10059ED3A /* ImageButton.m in Sources */,
+				B04E1AF21A2C9F49006FB462 /* Gallery.m in Sources */,
+				B04579151A263CEA003B9301 /* CountdownsManager.m in Sources */,
+				B0A3C53B1A24D9E100E356D7 /* RowController.m in Sources */,
+				B0D255421A2E0E1E000F59CE /* EditCountdownInterfaceController.m in Sources */,
+				B0A3C5311A24CD2400E356D7 /* HomeInterfaceController.m in Sources */,
+				B0D2553E1A2DE229000F59CE /* CountdownsRowController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B07B15B21A1F5972001B970E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B07B15931A1F5972001B970E /* Countdown */;
+			targetProxy = B07B15B11A1F5972001B970E /* PBXContainerItemProxy */;
+		};
+		B07B15D91A1F5985001B970E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B07B15D51A1F5985001B970E /* Countdown Watch App */;
+			targetProxy = B07B15D81A1F5985001B970E /* PBXContainerItemProxy */;
+		};
+		B07B15E21A1F5985001B970E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B07B15C31A1F5985001B970E /* Countdown WatchKit Extension */;
+			targetProxy = B07B15E11A1F5985001B970E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B07B15A41A1F5972001B970E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B07B15A51A1F5972001B970E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B07B15A91A1F5972001B970E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B07B15AA1A1F5972001B970E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B07B15B81A1F5972001B970E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B07B15B91A1F5972001B970E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B07B15BB1A1F5972001B970E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Countdown/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B07B15BC1A1F5972001B970E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Countdown/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B07B15BE1A1F5972001B970E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CountdownTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Countdown.app/Countdown";
+			};
+			name = Debug;
+		};
+		B07B15BF1A1F5972001B970E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CountdownTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Countdown.app/Countdown";
+			};
+			name = Release;
+		};
+		B07B15E51A1F5985001B970E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = Countdown_WatchKit_Extension;
+				INFOPLIST_FILE = "Countdown Watch App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		B07B15E61A1F5985001B970E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				IBSC_MODULE = Countdown_WatchKit_Extension;
+				INFOPLIST_FILE = "Countdown Watch App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		B07B15E81A1F5985001B970E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Countdown WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B07B15E91A1F5985001B970E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Countdown WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B07B158F1A1F5972001B970E /* Build configuration list for PBXProject "Countdown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B07B15B81A1F5972001B970E /* Debug */,
+				B07B15B91A1F5972001B970E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B07B15BA1A1F5972001B970E /* Build configuration list for PBXNativeTarget "Countdown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B07B15BB1A1F5972001B970E /* Debug */,
+				B07B15BC1A1F5972001B970E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B07B15BD1A1F5972001B970E /* Build configuration list for PBXNativeTarget "CountdownTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B07B15BE1A1F5972001B970E /* Debug */,
+				B07B15BF1A1F5972001B970E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B07B15E41A1F5985001B970E /* Build configuration list for PBXNativeTarget "Countdown Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B07B15E51A1F5985001B970E /* Debug */,
+				B07B15E61A1F5985001B970E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B07B15E71A1F5985001B970E /* Build configuration list for PBXNativeTarget "Countdown WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B07B15E81A1F5985001B970E /* Debug */,
+				B07B15E91A1F5985001B970E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B07B159E1A1F5972001B970E /* Countdown.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B07B159F1A1F5972001B970E /* Countdown.xcdatamodel */,
+			);
+			currentVersion = B07B159F1A1F5972001B970E /* Countdown.xcdatamodel */;
+			path = Countdown.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B07B158C1A1F5972001B970E /* Project object */;
+}
