@@ -12,22 +12,34 @@
 	<dict>
 		<key>08A641A622112A188840E2371B811D06A2CEDDB2</key>
 		<string>github.com:Rostyk/AppleWatchApp.git</string>
+		<key>1B14D11A2C5E8D4C901D59C428F89248900F2F95</key>
+		<string>github.com:Rostyk/AppleWatch.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Countdown/Countdown.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>08A641A622112A188840E2371B811D06A2CEDDB2</key>
+		<string>../../../../AppleWatchApp</string>
+		<key>1B14D11A2C5E8D4C901D59C428F89248900F2F95</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>github.com:Rostyk/AppleWatchApp.git</string>
+	<string>github.com:Rostyk/AppleWatch.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>08A641A622112A188840E2371B811D06A2CEDDB2</string>
+	<string>1B14D11A2C5E8D4C901D59C428F89248900F2F95</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1B14D11A2C5E8D4C901D59C428F89248900F2F95</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AppleWatch</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
