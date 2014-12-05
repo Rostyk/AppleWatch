@@ -11,7 +11,7 @@
 		B042EB901A275E35004A0945 /* digital-7 (mono).ttf in Resources */ = {isa = PBXBuildFile; fileRef = B042EB8F1A275E35004A0945 /* digital-7 (mono).ttf */; };
 		B04579151A263CEA003B9301 /* CountdownsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B04579141A263CEA003B9301 /* CountdownsManager.m */; };
 		B04579181A263DF7003B9301 /* CountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = B04579171A263DF7003B9301 /* CountDown.m */; };
-		B04E1AEC1A2C90C9006FB462 /* PickImageInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04E1AEB1A2C90C9006FB462 /* PickImageInterfaceController.m */; };
+		B04E1AEC1A2C90C9006FB462 /* PickImageTableInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04E1AEB1A2C90C9006FB462 /* PickImageTableInterfaceController.m */; };
 		B04E1AEF1A2C964D006FB462 /* ImageRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04E1AEE1A2C964D006FB462 /* ImageRowController.m */; };
 		B04E1AF21A2C9F49006FB462 /* Gallery.m in Sources */ = {isa = PBXBuildFile; fileRef = B04E1AF11A2C9F49006FB462 /* Gallery.m */; };
 		B04E1B191A2CB217006FB462 /* gal11.png in Resources */ = {isa = PBXBuildFile; fileRef = B04E1B0D1A2CB217006FB462 /* gal11.png */; };
@@ -59,6 +59,11 @@
 		B0BD54DB1A2C67990099AF7D /* time-selection-plus.png in Resources */ = {isa = PBXBuildFile; fileRef = B0BD54CE1A2C67990099AF7D /* time-selection-plus.png */; };
 		B0BD54DC1A2C67990099AF7D /* time-selection-time-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B0BD54CF1A2C67990099AF7D /* time-selection-time-bg.png */; };
 		B0BD54DF1A2C7ADE0099AF7D /* App.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BD54DE1A2C7ADE0099AF7D /* App.m */; };
+		B0C669D11A2F694A00FD24EB /* PickImageInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C669D01A2F694A00FD24EB /* PickImageInterfaceController.m */; };
+		B0C669D51A2F6CDE00FD24EB /* gal51.png in Resources */ = {isa = PBXBuildFile; fileRef = B0C669D21A2F6CDE00FD24EB /* gal51.png */; };
+		B0C669D61A2F6CDE00FD24EB /* gal52.png in Resources */ = {isa = PBXBuildFile; fileRef = B0C669D31A2F6CDE00FD24EB /* gal52.png */; };
+		B0C669D71A2F6CDE00FD24EB /* gal53.png in Resources */ = {isa = PBXBuildFile; fileRef = B0C669D41A2F6CDE00FD24EB /* gal53.png */; };
+		B0C669DA1A3073CE00FD24EB /* WKInterfaceButton+Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C669D91A3073CE00FD24EB /* WKInterfaceButton+Tag.m */; };
 		B0D255251A2DB73D000F59CE /* menu-tutorials.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D255241A2DB73D000F59CE /* menu-tutorials.png */; };
 		B0D2552F1A2DE183000F59CE /* countdowns-list-bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D255261A2DE183000F59CE /* countdowns-list-bg1.png */; };
 		B0D255301A2DE183000F59CE /* countdowns-list-cell-bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D255271A2DE183000F59CE /* countdowns-list-cell-bg2.png */; };
@@ -120,8 +125,8 @@
 		B04579141A263CEA003B9301 /* CountdownsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CountdownsManager.m; path = Utilities/CountdownsManager.m; sourceTree = "<group>"; };
 		B04579161A263DF7003B9301 /* CountDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountDown.h; sourceTree = "<group>"; };
 		B04579171A263DF7003B9301 /* CountDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountDown.m; sourceTree = "<group>"; };
-		B04E1AEA1A2C90C9006FB462 /* PickImageInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickImageInterfaceController.h; sourceTree = "<group>"; };
-		B04E1AEB1A2C90C9006FB462 /* PickImageInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickImageInterfaceController.m; sourceTree = "<group>"; };
+		B04E1AEA1A2C90C9006FB462 /* PickImageTableInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickImageTableInterfaceController.h; sourceTree = "<group>"; };
+		B04E1AEB1A2C90C9006FB462 /* PickImageTableInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickImageTableInterfaceController.m; sourceTree = "<group>"; };
 		B04E1AED1A2C964D006FB462 /* ImageRowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageRowController.h; sourceTree = "<group>"; };
 		B04E1AEE1A2C964D006FB462 /* ImageRowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageRowController.m; sourceTree = "<group>"; };
 		B04E1AF01A2C9F49006FB462 /* Gallery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Gallery.h; path = Utilities/Gallery.h; sourceTree = "<group>"; };
@@ -190,6 +195,13 @@
 		B0BD54CF1A2C67990099AF7D /* time-selection-time-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "time-selection-time-bg.png"; sourceTree = "<group>"; };
 		B0BD54DD1A2C7ADE0099AF7D /* App.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = App.h; path = Utilities/App.h; sourceTree = "<group>"; };
 		B0BD54DE1A2C7ADE0099AF7D /* App.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = App.m; path = Utilities/App.m; sourceTree = "<group>"; };
+		B0C669CF1A2F694A00FD24EB /* PickImageInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickImageInterfaceController.h; sourceTree = "<group>"; };
+		B0C669D01A2F694A00FD24EB /* PickImageInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickImageInterfaceController.m; sourceTree = "<group>"; };
+		B0C669D21A2F6CDE00FD24EB /* gal51.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gal51.png; sourceTree = "<group>"; };
+		B0C669D31A2F6CDE00FD24EB /* gal52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gal52.png; sourceTree = "<group>"; };
+		B0C669D41A2F6CDE00FD24EB /* gal53.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gal53.png; sourceTree = "<group>"; };
+		B0C669D81A3073CE00FD24EB /* WKInterfaceButton+Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "WKInterfaceButton+Tag.h"; path = "Countdown WatchKit Extension/Additions/WKInterfaceButton+Tag.h"; sourceTree = SOURCE_ROOT; };
+		B0C669D91A3073CE00FD24EB /* WKInterfaceButton+Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "WKInterfaceButton+Tag.m"; path = "Countdown WatchKit Extension/Additions/WKInterfaceButton+Tag.m"; sourceTree = SOURCE_ROOT; };
 		B0D255241A2DB73D000F59CE /* menu-tutorials.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-tutorials.png"; sourceTree = "<group>"; };
 		B0D255261A2DE183000F59CE /* countdowns-list-bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "countdowns-list-bg1.png"; sourceTree = "<group>"; };
 		B0D255271A2DE183000F59CE /* countdowns-list-cell-bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "countdowns-list-cell-bg2.png"; sourceTree = "<group>"; };
@@ -271,10 +283,12 @@
 		B04E1AE91A2C9095006FB462 /* PickImage */ = {
 			isa = PBXGroup;
 			children = (
-				B04E1AEA1A2C90C9006FB462 /* PickImageInterfaceController.h */,
-				B04E1AEB1A2C90C9006FB462 /* PickImageInterfaceController.m */,
+				B04E1AEA1A2C90C9006FB462 /* PickImageTableInterfaceController.h */,
+				B04E1AEB1A2C90C9006FB462 /* PickImageTableInterfaceController.m */,
 				B04E1AED1A2C964D006FB462 /* ImageRowController.h */,
 				B04E1AEE1A2C964D006FB462 /* ImageRowController.m */,
+				B0C669CF1A2F694A00FD24EB /* PickImageInterfaceController.h */,
+				B0C669D01A2F694A00FD24EB /* PickImageInterfaceController.m */,
 			);
 			name = PickImage;
 			sourceTree = "<group>";
@@ -294,6 +308,9 @@
 				B04E1B161A2CB217006FB462 /* gal41.png */,
 				B04E1B171A2CB217006FB462 /* gal42.png */,
 				B04E1B181A2CB217006FB462 /* gal43.png */,
+				B0C669D21A2F6CDE00FD24EB /* gal51.png */,
+				B0C669D31A2F6CDE00FD24EB /* gal52.png */,
+				B0C669D41A2F6CDE00FD24EB /* gal53.png */,
 			);
 			path = Gallery;
 			sourceTree = "<group>";
@@ -510,6 +527,8 @@
 		B0AA17541A2CC9820059ED3A /* Additions */ = {
 			isa = PBXGroup;
 			children = (
+				B0C669D81A3073CE00FD24EB /* WKInterfaceButton+Tag.h */,
+				B0C669D91A3073CE00FD24EB /* WKInterfaceButton+Tag.m */,
 			);
 			name = Additions;
 			path = Controller;
@@ -706,13 +725,16 @@
 				B04E1B261A2CBB1D006FB462 /* main-screen-bg.png in Resources */,
 				B028CFF91A24B61900FC1991 /* main-screen-bg.png in Resources */,
 				B04E1B241A2CB217006FB462 /* gal43.png in Resources */,
+				B0C669D71A2F6CDE00FD24EB /* gal53.png in Resources */,
 				B0BD54D81A2C67990099AF7D /* menu-watch.png in Resources */,
 				B0BD54D51A2C67990099AF7D /* main-screen-timer-bg.png in Resources */,
+				B0C669D61A2F6CDE00FD24EB /* gal52.png in Resources */,
 				B0D255331A2DE183000F59CE /* edit-alert-icon.png in Resources */,
 				B04E1B1D1A2CB217006FB462 /* gal22.png in Resources */,
 				B0D255351A2DE183000F59CE /* edit-date-icon.png in Resources */,
 				B04E1B1C1A2CB217006FB462 /* gal21.png in Resources */,
 				B0D2552F1A2DE183000F59CE /* countdowns-list-bg1.png in Resources */,
+				B0C669D51A2F6CDE00FD24EB /* gal51.png in Resources */,
 				B04E1B191A2CB217006FB462 /* gal11.png in Resources */,
 				B0BD54D21A2C67990099AF7D /* date-selection-mark-active.png in Resources */,
 				B04E1B1E1A2CB217006FB462 /* gal23.png in Resources */,
@@ -760,12 +782,14 @@
 				B06B4C671A28964400A604B3 /* PickTimeInterfaceController.m in Sources */,
 				B0A3C5321A24CD2400E356D7 /* NotificationController.m in Sources */,
 				B0D2553B1A2DE1EC000F59CE /* CountdownsListInterfaceController.m in Sources */,
-				B04E1AEC1A2C90C9006FB462 /* PickImageInterfaceController.m in Sources */,
+				B04E1AEC1A2C90C9006FB462 /* PickImageTableInterfaceController.m in Sources */,
+				B0C669DA1A3073CE00FD24EB /* WKInterfaceButton+Tag.m in Sources */,
 				B0D255451A2E0ECD000F59CE /* EditCountdownRowController.m in Sources */,
 				B0AA17531A2CC6A10059ED3A /* ImageButton.m in Sources */,
 				B04E1AF21A2C9F49006FB462 /* Gallery.m in Sources */,
 				B04579151A263CEA003B9301 /* CountdownsManager.m in Sources */,
 				B0A3C53B1A24D9E100E356D7 /* RowController.m in Sources */,
+				B0C669D11A2F694A00FD24EB /* PickImageInterfaceController.m in Sources */,
 				B0D255421A2E0E1E000F59CE /* EditCountdownInterfaceController.m in Sources */,
 				B0A3C5311A24CD2400E356D7 /* HomeInterfaceController.m in Sources */,
 				B0D2553E1A2DE229000F59CE /* CountdownsRowController.m in Sources */,

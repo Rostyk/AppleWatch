@@ -20,7 +20,7 @@
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>08A641A622112A188840E2371B811D06A2CEDDB2</key>
-		<string>../../../../AppleWatchApp</string>
+		<string>../../..App</string>
 		<key>1B14D11A2C5E8D4C901D59C428F89248900F2F95</key>
 		<string>../../..</string>
 	</dict>

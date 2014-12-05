@@ -14,4 +14,5 @@
 + (instancetype)sharedApp;
 @property(nonatomic, assign) WKInterfaceController *controllerToPresentOn;
 @property (nonatomic, strong) Gallery *gallery;
+-(BOOL) isLargerDeviceScreen;
 @end

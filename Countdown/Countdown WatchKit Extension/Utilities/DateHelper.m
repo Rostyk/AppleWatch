@@ -22,7 +22,7 @@
     NSUInteger currentYear = [yearString integerValue];
     NSMutableArray *years = [[NSMutableArray alloc] init];
     for(int i=0; i<NUMBER_OF_YEARS_TO_DISPLAY_IN_PICKER + 1; i++) {
-        [years addObject: [NSString stringWithFormat:@"%u", (currentYear + i)]];
+        [years addObject: [NSString stringWithFormat:@"%lu", (currentYear + i)]];
     }
 
     return years;
@@ -124,8 +124,26 @@
 
 +(NSString*) stringDateForCountdownsListCell: (NSDate*) date {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"yyyy-MMM-dd hh:mm:ss"];
+    [formatter setDateFormat:@"MMM. dd, yyyy"];
     return [formatter stringFromDate: date];
+}
+
++(NSAttributedString*) stringForMainScreenDateLabel: (NSDate*) date {
+
+    NSShadow *shadow = [[NSShadow alloc] init];
+    [shadow setShadowColor : [UIColor blackColor]];
+    [shadow setShadowOffset : CGSizeMake (1.0, 1.0)];
+    [shadow setShadowBlurRadius : 1];
+
+
+
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@" EEE, MMM. d, yyyy"];
+    NSString *dateString = [formatter stringFromDate: date];
+
+    NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString : dateString attributes : @{
+                                                                                                                  NSFontAttributeName : [UIFont fontWithName:@"HelveticaNeue" size: 13],NSShadowAttributeName : shadow }];
+    return attributedString;
 }
 
 @end

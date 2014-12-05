@@ -22,4 +22,5 @@
 +(NSString*) timerDateStringForDate: (NSDate*) targetDate font: (UIFont*)font;
 
 +(NSString*) stringDateForCountdownsListCell: (NSDate*) date;
++(NSAttributedString*) stringForMainScreenDateLabel: (NSDate*) date;
 @end

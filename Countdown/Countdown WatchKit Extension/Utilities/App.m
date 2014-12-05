@@ -9,6 +9,8 @@
 #import "App.h"
 #import "Gallery.h"
 
+#define LARGER_SCREEN_WIDTH                    156
+
 @implementation App
 
 + (instancetype)sharedApp
@@ -29,6 +31,13 @@
         _gallery = [[Gallery alloc] init];
 
     return _gallery;
+}
+
+-(BOOL) isLargerDeviceScreen {
+    if((int)[WKInterfaceDevice currentDevice].screenBounds.size.width == LARGER_SCREEN_WIDTH)
+        return YES;
+
+    return NO;
 }
 
 @end

@@ -9,7 +9,7 @@
 #import "Gallery.h"
 #import <WatchKit/WatchKit.h>
 
-#define NUMBER_OF_ROWS_IN_GALLERY  4
+#define NUMBER_OF_ROWS_IN_GALLERY  5
 #define NUMBER_OF_IMAGES_IN_ROW    3
 
 @interface Gallery()
@@ -44,7 +44,7 @@
     return _arrayOfImageNames;
 }
 
--(NSString*) imageForRow: (int) row {
+-(NSString*) imageForRow: (NSUInteger) row {
     return self.arrayOfImageNames[row];
 }
 

@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface Gallery : NSObject
--(NSString*) imageForRow: (int) row;
+-(NSString*) imageForRow: (NSUInteger) row;
 -(NSUInteger) numberOfRows;
 @end

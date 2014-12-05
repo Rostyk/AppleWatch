@@ -68,7 +68,7 @@ typedef NS_ENUM(NSInteger, DateMode) {
     [self.table setNumberOfRows: days withRowType:@"Row"];
     for (NSInteger i = 0; i < self.table.numberOfRows; i++) {
         RowController* row = [self.table rowControllerAtIndex:i];
-        [row.textLabel setText: [NSString stringWithFormat:@"%d", (i+1)]];
+        [row.textLabel setText: [NSString stringWithFormat:@"%ld", (i+1)]];
     }
 }
 
@@ -91,7 +91,7 @@ typedef NS_ENUM(NSInteger, DateMode) {
         }
 
         case DM_DAY: {
-            self.selectedDay = [NSString stringWithFormat:@"%d", (rowIndex + 1)];
+            self.selectedDay = [NSString stringWithFormat:@"%ld", (rowIndex + 1)];
 
             NSDate *date = [DateHelper dateOfYear: self.selectedYear month:self.selectedMonth day:self.selectedDay hours: @"0" minutes:@"0" seconds:@"0"];
             CountDown *countDown = [[CountDown alloc] initWithDate:date];
@@ -105,7 +105,6 @@ typedef NS_ENUM(NSInteger, DateMode) {
         default:
             break;
     }
-
 }
 
 - (void)willActivate {

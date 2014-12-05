@@ -10,4 +10,14 @@
 
 @implementation ImageButton
 
+NSUInteger _tag;
+
+-(void) setTag:(NSUInteger)tag {
+    _tag = tag;
+}
+
+-(NSUInteger) tag {
+    return _tag;
+}
+
 @end
