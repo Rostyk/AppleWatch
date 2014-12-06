@@ -90,7 +90,7 @@
         <!--PickDateInterfaceController-->
         <scene sceneID="E67-cF-BnH">
             <objects>
-                <controller identifier="PickDateInterfaceController" contentMode="scaleAspectFill" id="yWV-4V-daK" customClass="PickDateInterfaceController">
+                <controller identifier="PickDateInterfaceController" backgroundImage="main-screen-bg.png" contentMode="scaleAspectFill" id="yWV-4V-daK" customClass="PickDateInterfaceController">
                     <items>
                         <group width="1" alignment="left" layout="vertical" hasDetent="YES" id="8AX-XB-Sg3">
                             <items>
