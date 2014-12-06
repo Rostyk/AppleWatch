@@ -9,7 +9,7 @@
 #import "DateHelper.h"
 #import <WatchKit/WatchKit.h>
 
-#define NUMBER_OF_YEARS_TO_DISPLAY_IN_PICKER   10
+#define NUMBER_OF_YEARS_TO_DISPLAY_IN_PICKER   3
 #define LARGEST_NUMBER_OF_DIGITS_IN_PICKER     11
 
 #define LARGER_SCREEN_WIDTH                    156

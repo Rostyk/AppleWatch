@@ -103,7 +103,7 @@
                                                         <items>
                                                             <imageView width="20" height="20" alignment="left" image="date-celection-mark-normal.png" id="era-oU-y0e"/>
                                                             <label height="20" alignment="center" text=" 2015" textAlignment="left" id="Mch-Ay-MM9">
-                                                                <fontDescription key="font" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="22"/>
+                                                                <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
                                                             </label>
                                                         </items>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -340,7 +340,7 @@
                                             <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
                                         </group>
                                     </items>
-                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="29"/>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="32"/>
                                 </group>
                                 <group width="1" alignment="left" id="CqN-8s-TfJ">
                                     <edgeInsets key="margins" left="4" right="4" top="6" bottom="2"/>
