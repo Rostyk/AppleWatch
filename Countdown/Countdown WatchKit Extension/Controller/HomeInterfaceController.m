@@ -12,6 +12,7 @@
 #import "CountdownsManager.h"
 #import "CountDown.h"
 #import "App.h"
+#import <AssetsLibrary/AssetsLibrary.h>
 
 
 @interface HomeInterfaceController()
@@ -47,6 +48,7 @@
 - (void)willActivate {
 
     [self displayProperTimer];
+    [self loadFavouriteImages];
     [App sharedApp].controllerToPresentOn = self;
     CountDown *countDown = [[CountdownsManager sharedManager] newlyAddedCountDown];
     NSDate *date = nil;
@@ -112,6 +114,53 @@
 
 -(IBAction) tutorialItemClicked:(id)sender {
     
+}
+
+#pragma mark favourite images loading
+-(void) loadFavouriteImages {
+
+    ALAssetsLibrary* library = [[ALAssetsLibrary alloc] init];
+    ALAssetsGroupEnumerationResultsBlock groupEnumerAtion = ^(ALAsset *result, NSUInteger index, BOOL *stop){
+        if (result!=NULL) {
+
+            if ([[result valueForProperty:ALAssetPropertyType] isEqualToString:ALAssetTypePhoto])         {
+
+                ALAssetRepresentation *defaultRep = [result defaultRepresentation];
+                UIImage *image = [UIImage imageWithCGImage:[defaultRep fullScreenImage] scale:[defaultRep scale] orientation:0];
+
+                NSLog(@"Asset: %@", [result description]);
+
+
+                    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+                        
+                    });
+
+            }
+            
+        }
+    };
+
+    ALAssetsLibraryGroupsEnumerationResultsBlock
+    libraryGroupsEnumeration = ^(ALAssetsGroup* group, BOOL* stop){
+        //within the group enumeration block.filter to enumerate just photos.
+        [group setAssetsFilter:[ALAssetsFilter allPhotos]];
+        if (group!=nil) {
+            NSString *albumName = [group valueForProperty:ALAssetsGroupPropertyName];
+
+            NSLog(@"Album Name: %@", albumName);
+            [group enumerateAssetsUsingBlock:groupEnumerAtion];
+        }
+    };
+
+
+    NSUInteger groupTypes = ALAssetsGroupAll;
+    [library enumerateGroupsWithTypes: groupTypes
+                           usingBlock:libraryGroupsEnumeration
+                         failureBlock:^(NSError *error) {
+
+                         }];
+
+
 }
 
 @end
