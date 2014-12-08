@@ -28,7 +28,7 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>WKCompanionAppBundleIdentifier</key>
-	<string>com.prosellersworld.Countdown</string>
+	<string>com.prosellersworld.applewatch</string>
 	<key>WKWatchKitApp</key>
 	<true/>
 </dict>
