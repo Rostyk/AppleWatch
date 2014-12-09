@@ -38,7 +38,7 @@
         CountdownsRowController *row = [self.table rowControllerAtIndex: i];
         CountDown *countDown = [[manager allCountdowns] objectAtIndex: i];
         [row.dateLabel setText: [DateHelper stringDateForCountdownsListCell: [countDown date]]];
-        [row.image setImageNamed: countDown.associatedImageName];
+        [row.image setImage: [countDown image]];
     }
 }
 

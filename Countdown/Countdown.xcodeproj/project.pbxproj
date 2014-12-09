@@ -11,6 +11,7 @@
 		B042EB901A275E35004A0945 /* digital-7 (mono).ttf in Resources */ = {isa = PBXBuildFile; fileRef = B042EB8F1A275E35004A0945 /* digital-7 (mono).ttf */; };
 		B04579151A263CEA003B9301 /* CountdownsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B04579141A263CEA003B9301 /* CountdownsManager.m */; };
 		B04579181A263DF7003B9301 /* CountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = B04579171A263DF7003B9301 /* CountDown.m */; };
+		B04942081A35E98100972E54 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B04942071A35E98100972E54 /* Photos.framework */; };
 		B04E1AEC1A2C90C9006FB462 /* PickImageTableInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04E1AEB1A2C90C9006FB462 /* PickImageTableInterfaceController.m */; };
 		B04E1AEF1A2C964D006FB462 /* ImageRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04E1AEE1A2C964D006FB462 /* ImageRowController.m */; };
 		B04E1AF21A2C9F49006FB462 /* Gallery.m in Sources */ = {isa = PBXBuildFile; fileRef = B04E1AF11A2C9F49006FB462 /* Gallery.m */; };
@@ -46,6 +47,11 @@
 		B0A3C53B1A24D9E100E356D7 /* RowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A3C53A1A24D9E100E356D7 /* RowController.m */; };
 		B0A3C53F1A24DCC500E356D7 /* DateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A3C53E1A24DCC500E356D7 /* DateHelper.m */; };
 		B0AA17531A2CC6A10059ED3A /* ImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AA17521A2CC6A10059ED3A /* ImageButton.m */; };
+		B0B9FD0D1A371D01005E77E1 /* image-type-default.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B9FD0B1A371D01005E77E1 /* image-type-default.png */; };
+		B0B9FD0E1A371D01005E77E1 /* image-type-favourites.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B9FD0C1A371D01005E77E1 /* image-type-favourites.png */; };
+		B0B9FD121A371D33005E77E1 /* ImageTypeSelectionInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B9FD111A371D33005E77E1 /* ImageTypeSelectionInterfaceController.m */; };
+		B0B9FD161A374AD7005E77E1 /* LocalPhotosManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B9FD151A374AD7005E77E1 /* LocalPhotosManager.m */; };
+		B0B9FD191A375737005E77E1 /* FavouritePhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B9FD181A375737005E77E1 /* FavouritePhoto.m */; };
 		B0BD54D01A2C67990099AF7D /* date-celection-mark-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = B0BD54C31A2C67990099AF7D /* date-celection-mark-normal.png */; };
 		B0BD54D11A2C67990099AF7D /* date-selection-cell.png in Resources */ = {isa = PBXBuildFile; fileRef = B0BD54C41A2C67990099AF7D /* date-selection-cell.png */; };
 		B0BD54D21A2C67990099AF7D /* date-selection-mark-active.png in Resources */ = {isa = PBXBuildFile; fileRef = B0BD54C51A2C67990099AF7D /* date-selection-mark-active.png */; };
@@ -77,7 +83,6 @@
 		B0D2553E1A2DE229000F59CE /* CountdownsRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D2553D1A2DE229000F59CE /* CountdownsRowController.m */; };
 		B0D255421A2E0E1E000F59CE /* EditCountdownInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D255411A2E0E1E000F59CE /* EditCountdownInterfaceController.m */; };
 		B0D255451A2E0ECD000F59CE /* EditCountdownRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D255441A2E0ECD000F59CE /* EditCountdownRowController.m */; };
-		B0ECC6FE1A35CC8C0039FAEC /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0ECC6FD1A35CC8C0039FAEC /* AssetsLibrary.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +123,7 @@
 		B04579141A263CEA003B9301 /* CountdownsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CountdownsManager.m; path = Utilities/CountdownsManager.m; sourceTree = "<group>"; };
 		B04579161A263DF7003B9301 /* CountDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountDown.h; sourceTree = "<group>"; };
 		B04579171A263DF7003B9301 /* CountDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountDown.m; sourceTree = "<group>"; };
+		B04942071A35E98100972E54 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		B04E1AEA1A2C90C9006FB462 /* PickImageTableInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickImageTableInterfaceController.h; sourceTree = "<group>"; };
 		B04E1AEB1A2C90C9006FB462 /* PickImageTableInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickImageTableInterfaceController.m; sourceTree = "<group>"; };
 		B04E1AED1A2C964D006FB462 /* ImageRowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageRowController.h; sourceTree = "<group>"; };
@@ -172,6 +178,15 @@
 		B0A3C53E1A24DCC500E356D7 /* DateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DateHelper.m; path = Utilities/DateHelper.m; sourceTree = "<group>"; };
 		B0AA17511A2CC6A10059ED3A /* ImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageButton.h; path = "Countdown WatchKit Extension/View/ImageButton.h"; sourceTree = SOURCE_ROOT; };
 		B0AA17521A2CC6A10059ED3A /* ImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageButton.m; path = "Countdown WatchKit Extension/View/ImageButton.m"; sourceTree = SOURCE_ROOT; };
+		B0B9FD0B1A371D01005E77E1 /* image-type-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image-type-default.png"; sourceTree = "<group>"; };
+		B0B9FD0C1A371D01005E77E1 /* image-type-favourites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image-type-favourites.png"; sourceTree = "<group>"; };
+		B0B9FD101A371D33005E77E1 /* ImageTypeSelectionInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTypeSelectionInterfaceController.h; sourceTree = "<group>"; };
+		B0B9FD111A371D33005E77E1 /* ImageTypeSelectionInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTypeSelectionInterfaceController.m; sourceTree = "<group>"; };
+		B0B9FD131A37200C005E77E1 /* GalleryType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryType.h; sourceTree = "<group>"; };
+		B0B9FD141A374AD7005E77E1 /* LocalPhotosManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocalPhotosManager.h; path = Utilities/LocalPhotosManager.h; sourceTree = "<group>"; };
+		B0B9FD151A374AD7005E77E1 /* LocalPhotosManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocalPhotosManager.m; path = Utilities/LocalPhotosManager.m; sourceTree = "<group>"; };
+		B0B9FD171A375737005E77E1 /* FavouritePhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavouritePhoto.h; sourceTree = "<group>"; };
+		B0B9FD181A375737005E77E1 /* FavouritePhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavouritePhoto.m; sourceTree = "<group>"; };
 		B0BD54C31A2C67990099AF7D /* date-celection-mark-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "date-celection-mark-normal.png"; sourceTree = "<group>"; };
 		B0BD54C41A2C67990099AF7D /* date-selection-cell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "date-selection-cell.png"; sourceTree = "<group>"; };
 		B0BD54C51A2C67990099AF7D /* date-selection-mark-active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "date-selection-mark-active.png"; sourceTree = "<group>"; };
@@ -225,7 +240,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0ECC6FE1A35CC8C0039FAEC /* AssetsLibrary.framework in Frameworks */,
+				B04942081A35E98100972E54 /* Photos.framework in Frameworks */,
 				B07B15C71A1F5985001B970E /* WatchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,6 +251,8 @@
 		B028CFF51A24AF0F00FC1991 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B0B9FD0B1A371D01005E77E1 /* image-type-default.png */,
+				B0B9FD0C1A371D01005E77E1 /* image-type-favourites.png */,
 				B04E1B0C1A2CB217006FB462 /* Gallery */,
 				B0D255261A2DE183000F59CE /* countdowns-list-bg1.png */,
 				B0D255271A2DE183000F59CE /* countdowns-list-cell-bg2.png */,
@@ -274,6 +291,7 @@
 				B04E1AEE1A2C964D006FB462 /* ImageRowController.m */,
 				B0C669CF1A2F694A00FD24EB /* PickImageInterfaceController.h */,
 				B0C669D01A2F694A00FD24EB /* PickImageInterfaceController.m */,
+				B0B9FD131A37200C005E77E1 /* GalleryType.h */,
 			);
 			name = PickImage;
 			sourceTree = "<group>";
@@ -358,6 +376,7 @@
 		B07B15C51A1F5985001B970E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B04942071A35E98100972E54 /* Photos.framework */,
 				B0ECC6FD1A35CC8C0039FAEC /* AssetsLibrary.framework */,
 				B07B15C61A1F5985001B970E /* WatchKit.framework */,
 			);
@@ -418,6 +437,7 @@
 		B0A3C52A1A24CD2400E356D7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B0B9FD0F1A371D0F005E77E1 /* ImageTypeSelection */,
 				B0D2553F1A2E0DE2000F59CE /* Edit */,
 				B0D255381A2DE1D4000F59CE /* Countdowns */,
 				B04E1AE91A2C9095006FB462 /* PickImage */,
@@ -435,6 +455,8 @@
 			children = (
 				B04579161A263DF7003B9301 /* CountDown.h */,
 				B04579171A263DF7003B9301 /* CountDown.m */,
+				B0B9FD171A375737005E77E1 /* FavouritePhoto.h */,
+				B0B9FD181A375737005E77E1 /* FavouritePhoto.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -487,6 +509,8 @@
 				B0BD54DE1A2C7ADE0099AF7D /* App.m */,
 				B04E1AF01A2C9F49006FB462 /* Gallery.h */,
 				B04E1AF11A2C9F49006FB462 /* Gallery.m */,
+				B0B9FD141A374AD7005E77E1 /* LocalPhotosManager.h */,
+				B0B9FD151A374AD7005E77E1 /* LocalPhotosManager.m */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -499,6 +523,15 @@
 			);
 			name = Additions;
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		B0B9FD0F1A371D0F005E77E1 /* ImageTypeSelection */ = {
+			isa = PBXGroup;
+			children = (
+				B0B9FD101A371D33005E77E1 /* ImageTypeSelectionInterfaceController.h */,
+				B0B9FD111A371D33005E77E1 /* ImageTypeSelectionInterfaceController.m */,
+			);
+			name = ImageTypeSelection;
 			sourceTree = "<group>";
 		};
 		B0D255381A2DE1D4000F59CE /* Countdowns */ = {
@@ -661,6 +694,7 @@
 				B04E1B221A2CB217006FB462 /* gal41.png in Resources */,
 				B04E1B261A2CBB1D006FB462 /* main-screen-bg.png in Resources */,
 				B028CFF91A24B61900FC1991 /* main-screen-bg.png in Resources */,
+				B0B9FD0E1A371D01005E77E1 /* image-type-favourites.png in Resources */,
 				B04E1B241A2CB217006FB462 /* gal43.png in Resources */,
 				B0C669D71A2F6CDE00FD24EB /* gal53.png in Resources */,
 				B0BD54D81A2C67990099AF7D /* menu-watch.png in Resources */,
@@ -670,6 +704,7 @@
 				B04E1B1D1A2CB217006FB462 /* gal22.png in Resources */,
 				B0D255351A2DE183000F59CE /* edit-date-icon.png in Resources */,
 				B04E1B1C1A2CB217006FB462 /* gal21.png in Resources */,
+				B0B9FD0D1A371D01005E77E1 /* image-type-default.png in Resources */,
 				B0D2552F1A2DE183000F59CE /* countdowns-list-bg1.png in Resources */,
 				B0C669D51A2F6CDE00FD24EB /* gal51.png in Resources */,
 				B04E1B191A2CB217006FB462 /* gal11.png in Resources */,
@@ -705,8 +740,10 @@
 			files = (
 				B0A3C5351A24CD4F00E356D7 /* PickDateInterfaceController.m in Sources */,
 				B04579181A263DF7003B9301 /* CountDown.m in Sources */,
+				B0B9FD121A371D33005E77E1 /* ImageTypeSelectionInterfaceController.m in Sources */,
 				B0A3C53F1A24DCC500E356D7 /* DateHelper.m in Sources */,
 				B04E1AEF1A2C964D006FB462 /* ImageRowController.m in Sources */,
+				B0B9FD161A374AD7005E77E1 /* LocalPhotosManager.m in Sources */,
 				B0BD54DF1A2C7ADE0099AF7D /* App.m in Sources */,
 				B06B4C671A28964400A604B3 /* PickTimeInterfaceController.m in Sources */,
 				B0A3C5321A24CD2400E356D7 /* NotificationController.m in Sources */,
@@ -719,6 +756,7 @@
 				B04579151A263CEA003B9301 /* CountdownsManager.m in Sources */,
 				B0A3C53B1A24D9E100E356D7 /* RowController.m in Sources */,
 				B0C669D11A2F694A00FD24EB /* PickImageInterfaceController.m in Sources */,
+				B0B9FD191A375737005E77E1 /* FavouritePhoto.m in Sources */,
 				B0D255421A2E0E1E000F59CE /* EditCountdownInterfaceController.m in Sources */,
 				B0A3C5311A24CD2400E356D7 /* HomeInterfaceController.m in Sources */,
 				B0D2553E1A2DE229000F59CE /* CountdownsRowController.m in Sources */,

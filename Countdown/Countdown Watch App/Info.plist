@@ -9,7 +9,7 @@
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.prosellersworld.applewatch.watchapp</string>
+	<string>com.prosellersworld.Countdown.watchapp</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -28,7 +28,7 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>WKCompanionAppBundleIdentifier</key>
-	<string>com.prosellersworld.applewatch</string>
+	<string>com.prosellersworld.Countdown</string>
 	<key>WKWatchKitApp</key>
 	<true/>
 </dict>

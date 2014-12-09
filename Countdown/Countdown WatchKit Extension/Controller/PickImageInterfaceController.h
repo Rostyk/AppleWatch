@@ -11,4 +11,5 @@
 @interface PickImageInterfaceController : WKInterfaceController
 @property (weak, nonatomic) IBOutletCollection(WKInterfaceButton) NSArray *coll;
 
+-(void) reloadData;
 @end

@@ -11,6 +11,8 @@
 @interface CountDown : NSObject
 -(NSDate*) date;
 -(id) initWithDate: (NSDate*) date;
-@property (nonatomic, strong) NSString *associatedImageName;
 -(void) setTimeWithHours: (NSUInteger) hours minutes: (NSUInteger) minutes;
+-(void) setAssociatedImageName:(NSString *)associatedImageName;
+
+-(UIImage*) image;
 @end

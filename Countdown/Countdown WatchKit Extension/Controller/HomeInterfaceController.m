@@ -48,7 +48,6 @@
 - (void)willActivate {
 
     [self displayProperTimer];
-    [self loadFavouriteImages];
     [App sharedApp].controllerToPresentOn = self;
     CountDown *countDown = [[CountdownsManager sharedManager] newlyAddedCountDown];
     NSDate *date = nil;
@@ -59,7 +58,7 @@
         [self setBottomDate: date];
     }
     else {
-        NSString *dateStr = @"Tue, 6 Dec 2014 22:53:58 +0000";
+        NSString *dateStr = @"Tue, 10 Dec 2014 22:53:58 +0000";
         NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
         [dateFormat setDateFormat:@"EE, d LLLL yyyy HH:mm:ss Z"];
         date = [dateFormat dateFromString:dateStr];
@@ -114,53 +113,6 @@
 
 -(IBAction) tutorialItemClicked:(id)sender {
     
-}
-
-#pragma mark favourite images loading
--(void) loadFavouriteImages {
-
-    ALAssetsLibrary* library = [[ALAssetsLibrary alloc] init];
-    ALAssetsGroupEnumerationResultsBlock groupEnumerAtion = ^(ALAsset *result, NSUInteger index, BOOL *stop){
-        if (result!=NULL) {
-
-            if ([[result valueForProperty:ALAssetPropertyType] isEqualToString:ALAssetTypePhoto])         {
-
-                ALAssetRepresentation *defaultRep = [result defaultRepresentation];
-                UIImage *image = [UIImage imageWithCGImage:[defaultRep fullScreenImage] scale:[defaultRep scale] orientation:0];
-
-                NSLog(@"Asset: %@", [result description]);
-
-
-                    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-                        
-                    });
-
-            }
-            
-        }
-    };
-
-    ALAssetsLibraryGroupsEnumerationResultsBlock
-    libraryGroupsEnumeration = ^(ALAssetsGroup* group, BOOL* stop){
-        //within the group enumeration block.filter to enumerate just photos.
-        [group setAssetsFilter:[ALAssetsFilter allPhotos]];
-        if (group!=nil) {
-            NSString *albumName = [group valueForProperty:ALAssetsGroupPropertyName];
-
-            NSLog(@"Album Name: %@", albumName);
-            [group enumerateAssetsUsingBlock:groupEnumerAtion];
-        }
-    };
-
-
-    NSUInteger groupTypes = ALAssetsGroupAll;
-    [library enumerateGroupsWithTypes: groupTypes
-                           usingBlock:libraryGroupsEnumeration
-                         failureBlock:^(NSError *error) {
-
-                         }];
-
-
 }
 
 @end

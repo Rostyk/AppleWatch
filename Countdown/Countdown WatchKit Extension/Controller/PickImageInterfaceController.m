@@ -13,9 +13,13 @@
 #import "WKInterfaceButton+Tag.h"
 #import "CountDown.h"
 #import "CountdownsManager.h"
+#import "GalleryType.h"
+#import "LocalPhotosManager.h"
+#import "FavouritePhoto.h"
 
 @interface PickImageInterfaceController()
 
+@property (nonatomic) GalleryType galleryType;
 @property (nonatomic, strong) NSArray *buttons;
 //I know its crazy! Since we have no Outletcolelction in this release of WatchKit, lets just out it this ugly way
 @property (weak, nonatomic) IBOutlet WKInterfaceButton *button1;
@@ -41,11 +45,20 @@
 - (instancetype)initWithContext:(id)context {
     self = [super initWithContext:context];
     if (self){
-        [self configureImageButtons];
+        self.galleryType = [context[@"Type"] intValue];
+        [self fetchImages];
     }
     return self;
 }
 
+#pragma mark fetching images
+-(void) fetchImages {
+    [LocalPhotosManager sharedManager].controller = self;
+    [[LocalPhotosManager sharedManager] fetchFavoritePhotos];
+}
+
+
+#pragma mark configuring items
 - (void) configureImageButtons {
     int i = 0;
     for(WKInterfaceButton *button in self.buttons) {
@@ -55,6 +68,27 @@
         [button setWidth: size];
         [button setHeight: size];
         [button setTag: i];
+        i++;
+    }
+}
+
+-(void) configureFavoriteImageButtons {
+    NSArray *images = [[LocalPhotosManager sharedManager] images];
+    int i = 0;
+    for(WKInterfaceButton *button in self.buttons) {
+        if(images.count > i) {
+            UIImage *bgImage = images[i];
+            [button setBackgroundImage: bgImage];
+            CGFloat size = [[WKInterfaceDevice currentDevice] screenBounds].size.width /3.1;
+            [button setWidth: size];
+            [button setHeight: size];
+            [button setTag: i];
+            [button setHidden: NO];
+        }
+        else {
+            [button setHidden: YES];
+        }
+
         i++;
     }
 }
@@ -95,9 +129,30 @@
 -(IBAction) imageButton15Clicked { [self buttonClicked: self.button15]; }
 
 -(void) buttonClicked: (WKInterfaceButton*) button {
-    NSUInteger tag = [self.buttons indexOfObject: button];
-    CountDown *countDown = [[CountdownsManager sharedManager] newlyAddedCountDown];
-    countDown.associatedImageName = [[App sharedApp].gallery imageForRow: tag];
-    [[App sharedApp].controllerToPresentOn dismissController];
+    if(self.galleryType == GT_DEFAULT) {
+        NSUInteger tag = [self.buttons indexOfObject: button];
+        CountDown *countDown = [[CountdownsManager sharedManager] newlyAddedCountDown];
+        countDown.associatedImageName = [[App sharedApp].gallery imageForRow: tag];
+        [[App sharedApp].controllerToPresentOn dismissController];
+    }
+    if(self.galleryType == GT_FAVORITE) {
+        FavouritePhoto *photo = [[FavouritePhoto alloc] init];
+        NSUInteger tag = button.tag;
+        NSArray *images = [[LocalPhotosManager sharedManager] images];
+        NSArray *assets = [[LocalPhotosManager sharedManager] assets];
+        photo.image = images[tag];
+        //photo.photoID = assets[tag];
+    }
+
+}
+
+-(void) reloadData {
+    [LocalPhotosManager sharedManager].controller = nil;
+    if(self.galleryType == GT_FAVORITE) {
+        [self configureFavoriteImageButtons];
+    }
+    if(self.galleryType == GT_DEFAULT) {
+        [self configureImageButtons];
+    }
 }
 @end

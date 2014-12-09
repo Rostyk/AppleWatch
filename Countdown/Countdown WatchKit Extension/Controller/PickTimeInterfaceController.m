@@ -102,8 +102,7 @@ typedef NS_ENUM(NSInteger, TimeMode) {
 
 #pragma mark presenting image picker
 -(void) presentImagePicker {
-    [self presentControllerWithName:@"PickImageInterfaceController" context: nil];
-
+    [self presentControllerWithName:@"ImageTypeSelectionInterfaceController" context: nil];
 }
 
 #pragma mark upadting time of a countdown 

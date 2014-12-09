@@ -296,6 +296,30 @@
             </objects>
             <point key="canvasLocation" x="736" y="898.25"/>
         </scene>
+        <!--ImageTypeSelectionInterfaceController-->
+        <scene sceneID="Gc4-pF-cfZ">
+            <objects>
+                <controller identifier="ImageTypeSelectionInterfaceController" backgroundImage="main-screen-bg.png" id="9Zj-do-zAR" customClass="ImageTypeSelectionInterfaceController">
+                    <items>
+                        <group width="0.92000000000000004" height="0.55000000000000004" alignment="center" verticalAlignment="center" layout="vertical" hasDetent="YES" id="Eg1-Jn-JoK">
+                            <items>
+                                <button width="1" alignment="left" verticalAlignment="bottom" backgroundImage="image-type-favourites.png" id="9lr-m1-UJX">
+                                    <connections>
+                                        <action selector="favoriteImagesButtonClicked" destination="9Zj-do-zAR" id="uMf-ML-mIz"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" backgroundImage="image-type-default.png" id="8u1-KH-x4G">
+                                    <connections>
+                                        <action selector="defaultImagesButtonClicked" destination="9Zj-do-zAR" id="5kr-QX-Amf"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="940" y="992"/>
+        </scene>
         <!--PickTimeInterfaceController-->
         <scene sceneID="x57-v9-GwZ">
             <objects>
