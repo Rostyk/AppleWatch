@@ -9,8 +9,7 @@
 #import "Gallery.h"
 #import <WatchKit/WatchKit.h>
 
-#define NUMBER_OF_ROWS_IN_GALLERY  5
-#define NUMBER_OF_IMAGES_IN_ROW    3
+#define NUMBER_OF_IMAGES    36
 
 @interface Gallery()
 @property (nonatomic, strong) NSMutableArray *arrayOfImageNames;
@@ -28,13 +27,12 @@
 #pragma mark handling images
 -(void) cacheImages {
     WKInterfaceDevice *device = [WKInterfaceDevice currentDevice];
-    for(int row=0; row < NUMBER_OF_ROWS_IN_GALLERY; row++)
-        for(int item=1; item <= NUMBER_OF_IMAGES_IN_ROW; item++) {
-
-            NSString *imageName = [NSString stringWithFormat:@"gal%i%i", (row+1), item];
+        for (int item = 1; item <= NUMBER_OF_IMAGES; item++) {
+            NSString *imageName = [NSString stringWithFormat:@"gallery%i", item];
             [device addCachedImage: [UIImage imageNamed: imageName] name: imageName];
             [self.arrayOfImageNames addObject: imageName];
         }
+    NSLog(@"self.arrayOfImageNames:\n%@",self.arrayOfImageNames);
 }
 
 -(NSMutableArray*) arrayOfImageNames {
@@ -48,8 +46,5 @@
     return self.arrayOfImageNames[row];
 }
 
--(NSUInteger) numberOfRows {
-    return NUMBER_OF_IMAGES_IN_ROW;
-}
 
 @end

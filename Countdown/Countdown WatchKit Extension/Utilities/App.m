@@ -26,7 +26,7 @@
     return sharedInstance;
 }
 
-- (Gallery*)gallery {
+- (Gallery *)gallery {
     if(!_gallery)
         _gallery = [[Gallery alloc] init];
 

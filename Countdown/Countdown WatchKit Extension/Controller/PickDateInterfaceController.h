@@ -7,7 +7,8 @@
 //
 
 #import <WatchKit/WatchKit.h>
+#import "BaseController.h"
 
-@interface PickDateInterfaceController : WKInterfaceController
+@interface PickDateInterfaceController : BaseController
 
 @end

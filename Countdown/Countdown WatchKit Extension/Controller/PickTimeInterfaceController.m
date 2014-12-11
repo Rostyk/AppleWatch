@@ -10,6 +10,7 @@
 #import "App.h"
 #import "CountdownsManager.h"
 #import "CountDown.h"
+#import "ControllerMode.h"
 
 typedef NS_ENUM(NSInteger, TimeMode) {
     TM_HOURS,
@@ -102,13 +103,19 @@ typedef NS_ENUM(NSInteger, TimeMode) {
 
 #pragma mark presenting image picker
 -(void) presentImagePicker {
-    [self presentControllerWithName:@"ImageTypeSelectionInterfaceController" context: nil];
+    if(self.controllerMode == CM_CREATE) {
+        [self presentControllerWithName:@"ImageTypeSelectionInterfaceController" context: @{@"mode" : @(CM_CREATE)}];
+    }
+    if(self.controllerMode == CM_EDIT) {
+        [[App sharedApp].controllerToPresentOn dismissController];
+    }
+
 }
 
 #pragma mark upadting time of a countdown 
 -(void) setCountdownTime {
     CountdownsManager *manager = [CountdownsManager sharedManager];
-    CountDown *countDown = [manager newlyAddedCountDown];
+    CountDown *countDown = (self.controllerMode == CM_CREATE) ? [manager newlyAddedCountDown] : manager.editedCountdown;
     [countDown setTimeWithHours: self.pickedHours minutes: self.pickedMinutes];
 }
 

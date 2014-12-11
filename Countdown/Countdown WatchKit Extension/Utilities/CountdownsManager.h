@@ -10,6 +10,9 @@
 @class CountDown;
 
 @interface CountdownsManager : NSObject
+
+@property (nonatomic, assign) CountDown *editedCountdown;
+
 + (instancetype)sharedManager;
 -(void) addCountDown: (CountDown*) countDown;
 -(CountDown*) newlyAddedCountDown;

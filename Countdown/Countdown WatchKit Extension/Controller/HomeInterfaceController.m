@@ -13,6 +13,7 @@
 #import "CountDown.h"
 #import "App.h"
 #import <AssetsLibrary/AssetsLibrary.h>
+#import "ControllerMode.h"
 
 
 @interface HomeInterfaceController()
@@ -26,6 +27,7 @@
 @property (nonatomic, weak) WKInterfaceGroup *timerGroup;
 
 @property (nonatomic, weak) IBOutlet WKInterfaceLabel *dateLabel;
+@property (nonatomic, weak) IBOutlet WKInterfaceGroup *bgGroup;
 @property (nonatomic) NSUInteger fontSize;
 -(IBAction) addCountdownItemClicked:(id)sender;
 -(IBAction) viewCountdownsItemClicked:(id)sender;
@@ -48,6 +50,7 @@
 - (void)willActivate {
 
     [self displayProperTimer];
+    [self displayBackground];
     [App sharedApp].controllerToPresentOn = self;
     CountDown *countDown = [[CountdownsManager sharedManager] newlyAddedCountDown];
     NSDate *date = nil;
@@ -58,7 +61,7 @@
         [self setBottomDate: date];
     }
     else {
-        NSString *dateStr = @"Tue, 10 Dec 2014 22:53:58 +0000";
+        NSString *dateStr = @"Tue, 11 Dec 2014 22:53:58 +0000";
         NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
         [dateFormat setDateFormat:@"EE, d LLLL yyyy HH:mm:ss Z"];
         date = [dateFormat dateFromString:dateStr];
@@ -92,8 +95,20 @@
         self.timer = self.smallerTimer;
         self.timerGroup = self.smallerTimerGroup;
         [self.largerTimerGroup setHidden: YES];
-        self.fontSize = 27;
+        self.fontSize = 26;
     }
+}
+
+#pragma mark displaying background
+-(void) displayBackground {
+   CountDown *countDown = [[CountdownsManager sharedManager] newlyAddedCountDown];
+
+    if(countDown) {
+        [countDown getFullscreenImageWithCompletionBlock:^(UIImage *image) {
+            [self.bgGroup setBackgroundImage: image];
+        }];
+    }
+
 }
 
 - (void)didDeactivate {
@@ -108,7 +123,7 @@
 }
 
 -(IBAction) viewCountdownsItemClicked:(id)sender {
-    [self presentControllerWithName: @"CountdownsListInterfaceController" context: nil];
+    [self presentControllerWithName: @"CountdownsListInterfaceController" context: @{@"mode" : @(CM_CREATE)}];
 }
 
 -(IBAction) tutorialItemClicked:(id)sender {

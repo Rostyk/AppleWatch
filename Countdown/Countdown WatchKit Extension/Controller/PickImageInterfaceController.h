@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Umbrella. All rights reserved.
 //
 
-#import <WatchKit/WatchKit.h>
+#import "BaseController.h"
 
-@interface PickImageInterfaceController : WKInterfaceController
+@interface PickImageInterfaceController : BaseController
 @property (weak, nonatomic) IBOutletCollection(WKInterfaceButton) NSArray *coll;
 
 -(void) reloadData;

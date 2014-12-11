@@ -8,6 +8,7 @@
 
 #import "EditCountdownInterfaceController.h"
 #import "EditCountdownRowController.h"
+#import "ControllerMode.h"
 
 typedef NS_ENUM(NSInteger, EditItem) {
     EI_DATE = 0,
@@ -65,6 +66,34 @@ typedef NS_ENUM(NSInteger, EditItem) {
                 break;
         }
     }
+}
+
+- (void)table:(WKInterfaceTable *)table didSelectRowAtIndex:(NSInteger)rowIndex {
+    EditItem item = rowIndex;
+    id context = @{@"mode" : @(CM_EDIT)};
+
+    NSString *controllerID = nil;
+    switch (item) {
+        case EI_DATE: {
+            controllerID = @"PickDateInterfaceController";
+            break;
+        }
+        case EI_TIME: {
+            controllerID = @"PickTimeInterfaceController";
+            break;
+        }
+        case EI_IMAGE: {
+            controllerID = @"PickImageInterfaceController";
+            break;
+        }
+        case EI_ALERT: {
+            break;
+        }
+        default:
+            break;
+    }
+
+    [self presentControllerWithName:controllerID context: context];
 }
 
 - (void)willActivate {

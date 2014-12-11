@@ -7,14 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PickImageInterfaceController.h"
+#import "CountDown.h"
+
+@class PickImageInterfaceController;
 
 @interface LocalPhotosManager : NSObject
 + (instancetype)sharedManager;
--(void) fetchFavoritePhotos;
+- (void) fetchFavoritePhotos;
 
--(NSArray*) images;
--(NSArray*) assets;
+- (NSArray *)images;
+- (NSArray *)assets;
 
+-(void) fetchFavouriteFullscreenImageWithAssetID:(NSString*) assetId andCompletion:(imageFetchingCompletion) completion;
 @property (nonatomic, assign) PickImageInterfaceController *controller;
+
 @end

@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 Umbrella. All rights reserved.
 //
 
-#import <WatchKit/WatchKit.h>
+#import "BaseController.h"
 
-@interface PickTimeInterfaceController : WKInterfaceController
+@interface PickTimeInterfaceController : BaseController
 
 @end

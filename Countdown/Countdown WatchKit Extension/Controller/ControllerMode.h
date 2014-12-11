@@ -1,0 +1,18 @@
+//
+//  ControllerMode.h
+//  Countdown
+//
+//  Created by Steven on 10/12/14.
+//  Copyright (c) 2014 Umbrella. All rights reserved.
+//
+
+#ifndef Countdown_ControllerMode_h
+#define Countdown_ControllerMode_h
+
+typedef NS_ENUM(NSInteger, ControllerMode) {
+    CM_CREATE = 0,
+    CM_EDIT
+};
+
+
+#endif

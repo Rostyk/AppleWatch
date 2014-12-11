@@ -11,6 +11,8 @@
 #import "RowController.h"
 #import "CountDown.h"
 #import "CountdownsManager.h"
+#import "ControllerMode.h"
+#import "App.h"
 
 typedef NS_ENUM(NSInteger, DateMode) {
     DM_YEAR,
@@ -94,11 +96,19 @@ typedef NS_ENUM(NSInteger, DateMode) {
             self.selectedDay = [NSString stringWithFormat:@"%ld", (rowIndex + 1)];
 
             NSDate *date = [DateHelper dateOfYear: self.selectedYear month:self.selectedMonth day:self.selectedDay hours: @"0" minutes:@"0" seconds:@"0"];
-            CountDown *countDown = [[CountDown alloc] initWithDate:date];
-            [[CountdownsManager sharedManager] addCountDown:countDown];
 
-            self.needsDismissing = YES;
-            [self performSelector:@selector(presentTimeController) withObject:nil afterDelay:0.4];
+            if(self.controllerMode == CM_CREATE) {
+                CountDown *countDown = [[CountDown alloc] initWithDate:date];
+                [[CountdownsManager sharedManager] addCountDown:countDown];
+                self.needsDismissing = YES;
+                [self performSelector:@selector(presentTimeController) withObject:nil afterDelay:0.4];
+            }
+            else {
+                [[CountdownsManager sharedManager].editedCountdown setDate: date];
+                [[App sharedApp].controllerToPresentOn dismissController];
+            }
+
+
             break;
         }
 
@@ -116,7 +126,7 @@ typedef NS_ENUM(NSInteger, DateMode) {
 }
 
 - (void)presentTimeController {
-    [self presentControllerWithName:@"PickTimeInterfaceController" context:nil];
+    [self presentControllerWithName:@"PickTimeInterfaceController" context: @{@"mode" : @(CM_CREATE)}];
 }
 
 #pragma mark cache images
@@ -137,15 +147,15 @@ typedef NS_ENUM(NSInteger, DateMode) {
     switch (dateMode) {
         case DM_YEAR:
             [self configureTableForYears];
-            [self setTitle: @"Cancel  (Year)"];
+            [self setTitle: @"Cancel"];
             break;
         case DM_MONTH:
             [self configureTableForMonths];
-            [self setTitle: @"Cancel  (Month)"];
+            [self setTitle: @"Cancel"];
             break;
         case DM_DAY:
             [self configureTableForDays];
-            [self setTitle: @"Cancel  (Day)"];
+            [self setTitle: @"Cancel"];
             break;
 
         default:

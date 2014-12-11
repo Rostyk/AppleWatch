@@ -54,6 +54,11 @@
 #pragma mark image selection
 
 - (void)table:(WKInterfaceTable *)table didSelectRowAtIndex:(NSInteger)rowIndex {
+
+     CountdownsManager *manager = [CountdownsManager sharedManager];
+     CountDown *countDown = [[manager allCountdowns] objectAtIndex: rowIndex];
+    
+    [CountdownsManager sharedManager].editedCountdown = countDown;
     [self presentControllerWithName:@"EditCountdownInterfaceController" context: nil];
     
 }

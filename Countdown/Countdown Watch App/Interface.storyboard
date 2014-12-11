@@ -77,6 +77,7 @@
                         </items>
                     </menu>
                     <connections>
+                        <outlet property="bgGroup" destination="tNW-jD-rfk" id="LCr-An-niq"/>
                         <outlet property="dateLabel" destination="2sV-ox-MTW" id="xHV-AO-nUI"/>
                         <outlet property="largerTimer" destination="3vd-36-0KH" id="wYO-Zy-3WY"/>
                         <outlet property="largerTimerGroup" destination="KdE-TH-2y7" id="Or8-3o-u93"/>
@@ -85,12 +86,12 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="228" y="328"/>
+            <point key="canvasLocation" x="228" y="392"/>
         </scene>
         <!--PickDateInterfaceController-->
         <scene sceneID="E67-cF-BnH">
             <objects>
-                <controller identifier="PickDateInterfaceController" backgroundImage="main-screen-bg.png" contentMode="scaleAspectFill" id="yWV-4V-daK" customClass="PickDateInterfaceController">
+                <controller identifier="PickDateInterfaceController" contentMode="scaleAspectFill" id="yWV-4V-daK" customClass="PickDateInterfaceController">
                     <items>
                         <group width="1" alignment="left" layout="vertical" hasDetent="YES" id="8AX-XB-Sg3">
                             <items>
@@ -124,14 +125,14 @@
                             </items>
                         </group>
                     </items>
-                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.43529411764705883" green="0.32326171874999998" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <edgeInsets key="margins" left="0.0" right="0.0" top="4" bottom="0.0"/>
                     <connections>
                         <outlet property="table" destination="sDE-CW-Q1V" id="V4V-2L-ZPj"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="394" y="328"/>
+            <point key="canvasLocation" x="468" y="386"/>
         </scene>
         <!--PickImageTableInterfaceController-->
         <scene sceneID="aOp-EC-fCg">
@@ -271,6 +272,139 @@
                                         </button>
                                     </items>
                                 </group>
+                                <group width="1" height="0.33000000000000002" alignment="left" id="BY4-Oi-KkM">
+                                    <items>
+                                        <button width="0.33000000000000002" alignment="left" id="2sF-f2-TZA">
+                                            <connections>
+                                                <action selector="imageButton16Clicked" destination="rtm-Qk-Z3O" id="XJH-5d-qzs"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.33000000000000002" alignment="left" id="BTm-eb-Jku">
+                                            <connections>
+                                                <action selector="imageButton17Clicked" destination="rtm-Qk-Z3O" id="b3j-2X-zNb"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.33000000000000002" alignment="left" id="u8E-KG-4Uj">
+                                            <connections>
+                                                <action selector="imageButton18Clicked" destination="rtm-Qk-Z3O" id="hTu-Ir-oIw"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" height="0.33000000000000002" alignment="left" id="1MG-7o-9fO">
+                                    <items>
+                                        <button width="0.33000000000000002" alignment="left" id="SBg-tP-eec">
+                                            <connections>
+                                                <action selector="imageButton19Clicked" destination="rtm-Qk-Z3O" id="jTx-hD-PC7"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.33000000000000002" alignment="left" id="ELl-bb-fYr">
+                                            <connections>
+                                                <action selector="imageButton20Clicked" destination="rtm-Qk-Z3O" id="6t4-fQ-7Sf"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.33000000000000002" alignment="left" id="1NA-fz-iHM">
+                                            <connections>
+                                                <action selector="imageButton21Clicked" destination="rtm-Qk-Z3O" id="6Bk-hV-MZz"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" height="0.33000000000000002" alignment="left" id="vPr-bV-Yvh">
+                                    <items>
+                                        <button width="0.33000000000000002" alignment="left" id="QB2-e8-CmH">
+                                            <connections>
+                                                <action selector="imageButton22Clicked" destination="rtm-Qk-Z3O" id="xFw-1w-O1r"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.33000000000000002" alignment="left" id="SJm-uE-JpJ">
+                                            <connections>
+                                                <action selector="imageButton23Clicked" destination="rtm-Qk-Z3O" id="k5c-Bz-582"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.33000000000000002" alignment="left" id="koX-nL-CGp">
+                                            <connections>
+                                                <action selector="imageButton24Clicked" destination="rtm-Qk-Z3O" id="o6f-30-uoO"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" height="0.33000000000000002" alignment="left" id="kP5-2b-6QJ">
+                                    <items>
+                                        <button width="0.33000000000000002" alignment="left" id="EnU-Zr-Rdr">
+                                            <connections>
+                                                <action selector="imageButton25Clicked" destination="rtm-Qk-Z3O" id="vH2-Uy-oyz"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.33000000000000002" alignment="left" id="eT5-Lb-Qfk">
+                                            <connections>
+                                                <action selector="imageButton26Clicked" destination="rtm-Qk-Z3O" id="akM-F8-alj"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.33000000000000002" alignment="left" id="Mcy-RQ-0Rt">
+                                            <connections>
+                                                <action selector="imageButton27Clicked" destination="rtm-Qk-Z3O" id="XfX-op-DRn"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" height="0.33000000000000002" alignment="left" id="iwA-i5-7we">
+                                    <items>
+                                        <button width="0.33000000000000002" alignment="left" id="10P-sR-EBW">
+                                            <connections>
+                                                <action selector="imageButton28Clicked" destination="rtm-Qk-Z3O" id="K7B-GE-uB9"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.33000000000000002" alignment="left" id="jD9-PF-bpB">
+                                            <connections>
+                                                <action selector="imageButton29Clicked" destination="rtm-Qk-Z3O" id="UQB-zb-Gbe"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.33000000000000002" alignment="left" id="F0Z-bq-EbY">
+                                            <connections>
+                                                <action selector="imageButton30Clicked" destination="rtm-Qk-Z3O" id="hXf-CQ-Bf7"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" height="0.33000000000000002" alignment="left" id="NDx-RV-mEx">
+                                    <items>
+                                        <button width="0.33000000000000002" alignment="left" id="nnX-ZM-cf6">
+                                            <connections>
+                                                <action selector="imageButton31Clicked" destination="rtm-Qk-Z3O" id="Er0-PJ-lDV"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.33000000000000002" alignment="left" id="sLi-hC-kZI">
+                                            <connections>
+                                                <action selector="imageButton32Clicked" destination="rtm-Qk-Z3O" id="UVl-Ux-5fW"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.33000000000000002" alignment="left" id="lXW-Qn-lBL">
+                                            <connections>
+                                                <action selector="imageButton33Clicked" destination="rtm-Qk-Z3O" id="IcD-B5-Z8a"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" height="0.33000000000000002" alignment="left" id="aDW-8V-axG">
+                                    <items>
+                                        <button width="0.33000000000000002" alignment="left" id="GZF-Jw-3Yl">
+                                            <connections>
+                                                <action selector="imageButton34Clicked" destination="rtm-Qk-Z3O" id="GGW-rB-NDa"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.33000000000000002" alignment="left" id="v5S-TL-bK7">
+                                            <connections>
+                                                <action selector="imageButton35Clicked" destination="rtm-Qk-Z3O" id="O0V-oN-SMz"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.33000000000000002" alignment="left" id="nWn-rq-UQp">
+                                            <connections>
+                                                <action selector="imageButton36Clicked" destination="rtm-Qk-Z3O" id="Qcc-ba-H4V"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
                             </items>
                             <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
                         </group>
@@ -283,8 +417,29 @@
                         <outlet property="button13" destination="FbJ-sv-Zbq" id="JuL-kw-flD"/>
                         <outlet property="button14" destination="T6b-F5-zjG" id="5Vn-R1-KaB"/>
                         <outlet property="button15" destination="F8u-Tr-8gc" id="C6I-QC-4lH"/>
+                        <outlet property="button16" destination="2sF-f2-TZA" id="jDk-8y-3nS"/>
+                        <outlet property="button17" destination="BTm-eb-Jku" id="W8G-69-C4r"/>
+                        <outlet property="button18" destination="u8E-KG-4Uj" id="Dl6-8B-CRC"/>
+                        <outlet property="button19" destination="SBg-tP-eec" id="fVI-us-tJZ"/>
                         <outlet property="button2" destination="KQo-ga-ePS" id="Rc0-cT-FyI"/>
+                        <outlet property="button20" destination="ELl-bb-fYr" id="LEN-dT-fjc"/>
+                        <outlet property="button21" destination="1NA-fz-iHM" id="aMT-5e-ttf"/>
+                        <outlet property="button22" destination="QB2-e8-CmH" id="Ddf-ny-mID"/>
+                        <outlet property="button23" destination="SJm-uE-JpJ" id="enn-JR-RYg"/>
+                        <outlet property="button24" destination="koX-nL-CGp" id="SUh-Mx-n1J"/>
+                        <outlet property="button25" destination="EnU-Zr-Rdr" id="hIn-CM-Y7C"/>
+                        <outlet property="button26" destination="eT5-Lb-Qfk" id="cDM-Er-Dx1"/>
+                        <outlet property="button27" destination="Mcy-RQ-0Rt" id="D7m-Ev-bPQ"/>
+                        <outlet property="button28" destination="10P-sR-EBW" id="GUQ-Q3-yY5"/>
+                        <outlet property="button29" destination="jD9-PF-bpB" id="qoF-ro-QHg"/>
                         <outlet property="button3" destination="vdD-43-wVj" id="Mjh-6c-ObR"/>
+                        <outlet property="button30" destination="F0Z-bq-EbY" id="qab-hI-doc"/>
+                        <outlet property="button31" destination="nnX-ZM-cf6" id="fXk-5L-xpc"/>
+                        <outlet property="button32" destination="sLi-hC-kZI" id="GXW-H7-dMw"/>
+                        <outlet property="button33" destination="lXW-Qn-lBL" id="Wyd-JX-Wz8"/>
+                        <outlet property="button34" destination="GZF-Jw-3Yl" id="By2-62-ZP3"/>
+                        <outlet property="button35" destination="v5S-TL-bK7" id="OUE-CM-6Gd"/>
+                        <outlet property="button36" destination="nWn-rq-UQp" id="54I-De-LOJ"/>
                         <outlet property="button4" destination="BLr-bJ-kf5" id="vIk-bq-BR3"/>
                         <outlet property="button5" destination="KWM-Cc-QDZ" id="pVx-8n-0UE"/>
                         <outlet property="button6" destination="nqE-90-vnw" id="vVs-m7-WBp"/>
@@ -294,7 +449,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="736" y="898.25"/>
+            <point key="canvasLocation" x="468" y="909.25"/>
         </scene>
         <!--ImageTypeSelectionInterfaceController-->
         <scene sceneID="Gc4-pF-cfZ">
@@ -318,7 +473,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="940" y="992"/>
+            <point key="canvasLocation" x="654" y="882"/>
         </scene>
         <!--PickTimeInterfaceController-->
         <scene sceneID="x57-v9-GwZ">
@@ -389,7 +544,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="611" y="333"/>
+            <point key="canvasLocation" x="654" y="386"/>
         </scene>
         <!--CountdownsListInterfaceController-->
         <scene sceneID="pw5-jX-smr">
@@ -411,9 +566,9 @@
                                                     </group>
                                                     <group width="0.67000000000000004" height="1" alignment="center" id="cAM-ff-Raw">
                                                         <items>
-                                                            <label alignment="center" verticalAlignment="center" text="Sep. 9, 2016" textAlignment="center" minimumScaleFactor="0.60000000000000009" id="Nii-1l-6hS">
+                                                            <label alignment="center" verticalAlignment="center" text="Sep. 9, 2016" textAlignment="center" id="Nii-1l-6hS">
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                                                <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                                             </label>
                                                         </items>
                                                         <edgeInsets key="margins" left="2" right="0.0" top="0.0" bottom="0.0"/>
@@ -497,7 +652,7 @@
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
+            <point key="canvasLocation" x="228" y="651"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
