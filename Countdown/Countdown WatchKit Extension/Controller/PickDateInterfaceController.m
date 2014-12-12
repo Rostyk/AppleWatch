@@ -108,7 +108,6 @@ typedef NS_ENUM(NSInteger, DateMode) {
                 [[App sharedApp].controllerToPresentOn dismissController];
             }
 
-
             break;
         }
 
