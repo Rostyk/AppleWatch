@@ -11,6 +11,7 @@
 
 #define LARGER_SCREEN_WIDTH                    156
 
+
 @implementation App
 
 + (instancetype)sharedApp
@@ -38,6 +39,14 @@
         return YES;
 
     return NO;
+}
+
+-(HourMode) hourMode {
+    NSTimeZone *currentTimeZone = [NSTimeZone localTimeZone];
+    if([[currentTimeZone name] containsString:@"America"]) {
+        return HM_12;
+    }
+    return HM_12;
 }
 
 @end

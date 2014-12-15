@@ -17,6 +17,13 @@ typedef NS_ENUM(NSInteger, TimeMode) {
     TM_MINUTES,
 };
 
+typedef NS_ENUM(NSInteger, ClockMode) {
+    CM_AM,
+    CM_PM,
+    CM_NONE
+};
+
+
 
 @interface PickTimeInterfaceController()
 -(IBAction) setTimeClicked:(id)sender;
@@ -24,11 +31,14 @@ typedef NS_ENUM(NSInteger, TimeMode) {
 -(IBAction) minusButtonClicked: (id) sender;
 -(IBAction) plusButtonClicked: (id) sender;
 @property (nonatomic, weak) IBOutlet WKInterfaceLabel *timeLabel;
+@property (nonatomic, weak) IBOutlet WKInterfaceLabel *pmLabel;
 @property (nonatomic) TimeMode timeMode;
 @property (nonatomic) int timeComponentCount;
 
+@property (nonatomic) ClockMode clockMode;
 @property (nonatomic) int pickedHours;
 @property (nonatomic) int pickedMinutes;
+@property (nonatomic) int maxHour;
 @end
 
 
@@ -46,6 +56,7 @@ typedef NS_ENUM(NSInteger, TimeMode) {
 }
 
 - (void)willActivate {
+    [self setHourMode];
     [self configureButton];
     [self updateTimeLabel];
 }
@@ -55,9 +66,23 @@ typedef NS_ENUM(NSInteger, TimeMode) {
     NSLog(@"%@ did deactivate", self);
 }
 
--(void) setTimeMode:(TimeMode)timeMode {
+- (void) setTimeMode:(TimeMode)timeMode {
     _timeMode = timeMode;
     [self configureButton];
+}
+
+#pragma mark hour mode
+- (void) setHourMode {
+    if([[App sharedApp] hourMode] == HM_12) {
+        self.clockMode = CM_AM;
+        [self.pmLabel setText:@"AM"];
+        self.maxHour = 12;
+    }
+    if([[App sharedApp] hourMode] == HM_24) {
+        self.clockMode = CM_NONE;
+        self.maxHour = 24;
+        [self.pmLabel setAlpha: 0.0];
+    }
 }
 
 #pragma mark configuring main button
@@ -90,6 +115,11 @@ typedef NS_ENUM(NSInteger, TimeMode) {
         case TM_HOURS:
             self.timeMode = TM_MINUTES;
             self.pickedHours = self.timeComponentCount;
+            //adding 12 hours as we're using only 12hrs shift (expl.: 5pm == 17.00)
+            if(self.clockMode == CM_PM)
+                self.pickedHours += 12;
+            [self resetTimeComponent];
+            [self.pmLabel setAlpha: 0.0];
             break;
         case TM_MINUTES:
             self.pickedMinutes = self.timeComponentCount;
@@ -124,8 +154,10 @@ typedef NS_ENUM(NSInteger, TimeMode) {
     switch (self.timeMode) {
         case TM_HOURS:
             self.timeComponentCount ++;
-            if(self.timeComponentCount > 24)
+            if(self.timeComponentCount > self.maxHour) {
                 self.timeComponentCount = 0;
+                [self trackPmLabel];
+            }
             break;
         case TM_MINUTES:
             self.timeComponentCount ++;
@@ -142,8 +174,10 @@ typedef NS_ENUM(NSInteger, TimeMode) {
     switch (self.timeMode) {
         case TM_HOURS:
             self.timeComponentCount --;
-            if(self.timeComponentCount < 0)
+            if(self.timeComponentCount < 0) {
                 self.timeComponentCount = 0;
+                [self trackPmLabel];
+            }
             break;
         case TM_MINUTES:
             self.timeComponentCount --;
@@ -152,6 +186,23 @@ typedef NS_ENUM(NSInteger, TimeMode) {
             break;
         default:
             break;
+    }
+}
+
+-(void) resetTimeComponent {
+    [self.timeLabel setText:@"00"];
+    self.timeComponentCount = 0;
+}
+
+#pragma mark tracking pm/am
+-(void) trackPmLabel {
+    if(self.clockMode == CM_AM) {
+        self.clockMode = CM_PM;
+        [self.pmLabel setText:@"PM"];
+    }
+    else if(self.clockMode == CM_PM) {
+        self.clockMode = CM_AM;
+        [self.pmLabel setText: @"AM"];
     }
 }
 

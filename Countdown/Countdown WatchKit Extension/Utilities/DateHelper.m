@@ -22,7 +22,7 @@
     NSUInteger currentYear = [yearString integerValue];
     NSMutableArray *years = [[NSMutableArray alloc] init];
     for(int i=0; i<NUMBER_OF_YEARS_TO_DISPLAY_IN_PICKER + 1; i++) {
-        [years addObject: [NSString stringWithFormat:@"%lu", (currentYear + i)]];
+        [years addObject: [NSString stringWithFormat:@"%u", (currentYear + i)]];
     }
 
     return years;

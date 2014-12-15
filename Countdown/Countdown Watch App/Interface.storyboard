@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="14B25" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14A389" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3734"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="digital-7 (mono).ttf">
@@ -31,7 +31,7 @@
                                 </group>
                                 <group height="29" alignment="center" layout="vertical" backgroundImage="main-screen-timer-bg.png" id="KdE-TH-2y7">
                                     <items>
-                                        <timer width="1" height="29" alignment="center" verticalAlignment="center" textAlignment="center" minimumScaleFactor="0.50000000000000011" id="3vd-36-0KH">
+                                        <timer width="1" height="29" alignment="center" verticalAlignment="center" textAlignment="center" minimumScaleFactor="0.50000000000000011" previewedSeconds="80199" id="3vd-36-0KH">
                                             <color key="textColor" red="0.96862745100000003" green="0.086274509799999996" blue="0.33725490200000002" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                             <fontDescription key="font" name="Digital-7Mono" family="Digital-7" pointSize="29"/>
                                             <calendarUnit key="units" day="YES" hour="YES" minute="YES" second="YES"/>
@@ -93,12 +93,12 @@
             <objects>
                 <controller identifier="PickDateInterfaceController" contentMode="scaleAspectFill" id="yWV-4V-daK" customClass="PickDateInterfaceController">
                     <items>
-                        <group width="1" alignment="left" layout="vertical" hasDetent="YES" id="8AX-XB-Sg3">
+                        <group width="0.90000000000000002" alignment="center" layout="vertical" hasDetent="YES" id="8AX-XB-Sg3">
                             <items>
                                 <table alignment="left" layout="vertical" id="sDE-CW-Q1V">
                                     <items>
                                         <tableRow identifier="Row" id="UY5-qB-z7J" customClass="RowController">
-                                            <group key="rootItem" width="0.90000000000000002" height="37" alignment="center" backgroundImage="date-selection-cell.png" id="BR4-4m-uQd">
+                                            <group key="rootItem" width="1" height="37" alignment="left" backgroundImage="date-selection-cell.png" id="BR4-4m-uQd">
                                                 <items>
                                                     <group width="1" alignment="left" verticalAlignment="center" id="pBM-7h-3KO">
                                                         <items>
@@ -125,7 +125,7 @@
                             </items>
                         </group>
                     </items>
-                    <color key="backgroundColor" red="0.43529411764705883" green="0.32326171874999998" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     <edgeInsets key="margins" left="0.0" right="0.0" top="4" bottom="0.0"/>
                     <connections>
                         <outlet property="table" destination="sDE-CW-Q1V" id="V4V-2L-ZPj"/>
@@ -454,7 +454,7 @@
         <!--ImageTypeSelectionInterfaceController-->
         <scene sceneID="Gc4-pF-cfZ">
             <objects>
-                <controller identifier="ImageTypeSelectionInterfaceController" backgroundImage="main-screen-bg.png" id="9Zj-do-zAR" customClass="ImageTypeSelectionInterfaceController">
+                <controller identifier="ImageTypeSelectionInterfaceController" id="9Zj-do-zAR" customClass="ImageTypeSelectionInterfaceController">
                     <items>
                         <group width="0.92000000000000004" height="0.55000000000000004" alignment="center" verticalAlignment="center" layout="vertical" hasDetent="YES" id="Eg1-Jn-JoK">
                             <items>
@@ -480,9 +480,9 @@
             <objects>
                 <controller identifier="PickTimeInterfaceController" animationDuration="1" id="nQp-qI-Tjt" customClass="PickTimeInterfaceController">
                     <items>
-                        <group width="1" height="1" alignment="left" layout="vertical" backgroundImage="main-screen-bg.png" hasDetent="YES" id="1m9-Hv-u0b">
+                        <group width="1" height="1" alignment="left" layout="vertical" hasDetent="YES" id="1m9-Hv-u0b">
                             <items>
-                                <group width="0.90000000000000002" alignment="center" verticalAlignment="center" id="xbU-2g-9Mv">
+                                <group width="0.90000000000000002" alignment="center" verticalAlignment="center" layout="vertical" id="xbU-2g-9Mv">
                                     <items>
                                         <group width="1" height="37" alignment="center" verticalAlignment="center" backgroundImage="time-selection-time-bg.png" id="C1F-Q6-9Lf">
                                             <items>
@@ -518,8 +518,15 @@
                                             </items>
                                             <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
                                         </group>
+                                        <group width="1" alignment="center" verticalAlignment="bottom" id="WRY-KJ-jHs">
+                                            <items>
+                                                <label alignment="center" text="PM" id="76V-w5-pmP">
+                                                    <fontDescription key="font" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                                </label>
+                                            </items>
+                                        </group>
                                     </items>
-                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="32"/>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
                                 </group>
                                 <group width="1" alignment="left" id="CqN-8s-TfJ">
                                     <edgeInsets key="margins" left="4" right="4" top="6" bottom="2"/>
@@ -540,6 +547,7 @@
                     </items>
                     <connections>
                         <outlet property="mainButton" destination="v3F-fu-E1q" id="Wjn-hY-HO4"/>
+                        <outlet property="pmLabel" destination="76V-w5-pmP" id="fxR-lE-ihZ"/>
                         <outlet property="timeLabel" destination="y0a-DT-7fG" id="5Od-ll-Voo"/>
                     </connections>
                 </controller>
@@ -556,7 +564,7 @@
                                 <table alignment="left" layout="vertical" id="CbR-eC-BXc">
                                     <items>
                                         <tableRow identifier="CountdownRow" id="aHF-01-WMw" customClass="CountdownsRowController">
-                                            <group key="rootItem" width="0.90000000000000002" alignment="center" backgroundImage="date-selection-cell.png" id="wMg-JO-4Nf">
+                                            <group key="rootItem" width="1" alignment="left" backgroundImage="date-selection-cell.png" id="wMg-JO-4Nf">
                                                 <items>
                                                     <group width="34" height="34" alignment="left" id="nf5-3t-FBT">
                                                         <items>
@@ -603,7 +611,7 @@
                         <table alignment="left" layout="vertical" id="uIK-JV-Z4P">
                             <items>
                                 <tableRow identifier="EditCountdownRow" id="1Bg-9V-Pzv" customClass="EditCountdownRowController">
-                                    <group key="rootItem" width="0.95999999999999996" height="38" alignment="center" backgroundImage="edit-bg-cell.png" id="AXY-yJ-U9v">
+                                    <group key="rootItem" width="1" height="38" alignment="left" backgroundImage="edit-bg-cell.png" id="AXY-yJ-U9v">
                                         <items>
                                             <group alignment="left" verticalAlignment="center" id="c8o-P9-6pK">
                                                 <items>
