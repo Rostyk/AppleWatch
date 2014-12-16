@@ -61,7 +61,7 @@
         [self setBottomDate: date];
     }
     else {
-        NSString *dateStr = @"Tue, 18ß Dec 2014 22:53:58 +0000";
+        NSString *dateStr = @"Tue, 19 Dec 2014 22:53:58 +0000";
         NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
         [dateFormat setDateFormat:@"EE, d LLLL yyyy HH:mm:ss Z"];
         date = [dateFormat dateFromString:dateStr];
