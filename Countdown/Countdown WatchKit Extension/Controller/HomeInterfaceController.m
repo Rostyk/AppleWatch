@@ -48,7 +48,7 @@
 }
 
 - (void)willActivate {
-
+    
     [self displayProperTimer];
     [self displayBackground];
     [App sharedApp].controllerToPresentOn = self;

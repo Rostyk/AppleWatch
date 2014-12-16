@@ -181,6 +181,9 @@
 		B0D2553E1A2DE229000F59CE /* CountdownsRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D2553D1A2DE229000F59CE /* CountdownsRowController.m */; };
 		B0D255421A2E0E1E000F59CE /* EditCountdownInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D255411A2E0E1E000F59CE /* EditCountdownInterfaceController.m */; };
 		B0D255451A2E0ECD000F59CE /* EditCountdownRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D255441A2E0ECD000F59CE /* EditCountdownRowController.m */; };
+		B0FABF641A40DD56006090AB /* edit-remove-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B0FABF631A40DD56006090AB /* edit-remove-icon.png */; };
+		B0FABF661A40E2BD006090AB /* alert-time-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B0FABF651A40E2BD006090AB /* alert-time-bg.png */; };
+		B0FABF6A1A40E322006090AB /* AlertInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FABF691A40E322006090AB /* AlertInterfaceController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -385,6 +388,10 @@
 		B0D255431A2E0ECD000F59CE /* EditCountdownRowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditCountdownRowController.h; sourceTree = "<group>"; };
 		B0D255441A2E0ECD000F59CE /* EditCountdownRowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditCountdownRowController.m; sourceTree = "<group>"; };
 		B0ECC6FD1A35CC8C0039FAEC /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		B0FABF631A40DD56006090AB /* edit-remove-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "edit-remove-icon.png"; path = "Countdown Watch App/Resources/edit-remove-icon.png"; sourceTree = SOURCE_ROOT; };
+		B0FABF651A40E2BD006090AB /* alert-time-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert-time-bg.png"; sourceTree = "<group>"; };
+		B0FABF681A40E322006090AB /* AlertInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertInterfaceController.h; sourceTree = "<group>"; };
+		B0FABF691A40E322006090AB /* AlertInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertInterfaceController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -413,6 +420,7 @@
 				B04AACE91A39DD80003C5C1A /* GalleryFullscreen */,
 				B04E1B0C1A2CB217006FB462 /* Gallery */,
 				B0B9FD0B1A371D01005E77E1 /* image-type-default.png */,
+				B0FABF651A40E2BD006090AB /* alert-time-bg.png */,
 				B0B9FD0C1A371D01005E77E1 /* image-type-favourites.png */,
 				B0D255261A2DE183000F59CE /* countdowns-list-bg1.png */,
 				B0D255271A2DE183000F59CE /* countdowns-list-cell-bg2.png */,
@@ -422,6 +430,7 @@
 				B0D2552B1A2DE183000F59CE /* edit-bg-cell.png */,
 				B0D2552C1A2DE183000F59CE /* edit-date-icon.png */,
 				B0D2552D1A2DE183000F59CE /* edit-image-icon.png */,
+				B0FABF631A40DD56006090AB /* edit-remove-icon.png */,
 				B0D2552E1A2DE183000F59CE /* edit-watch-icon.png */,
 				B0BD54C31A2C67990099AF7D /* date-celection-mark-normal.png */,
 				B0BD54C41A2C67990099AF7D /* date-selection-cell.png */,
@@ -673,6 +682,7 @@
 			isa = PBXGroup;
 			children = (
 				B08A35BF1A387EF000B96BB7 /* BaseController */,
+				B0FABF671A40E300006090AB /* Alert */,
 				B0B9FD0F1A371D0F005E77E1 /* ImageTypeSelection */,
 				B0D2553F1A2E0DE2000F59CE /* Edit */,
 				B0D255381A2DE1D4000F59CE /* Countdowns */,
@@ -790,6 +800,15 @@
 				B0D255441A2E0ECD000F59CE /* EditCountdownRowController.m */,
 			);
 			name = Edit;
+			sourceTree = "<group>";
+		};
+		B0FABF671A40E300006090AB /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				B0FABF681A40E322006090AB /* AlertInterfaceController.h */,
+				B0FABF691A40E322006090AB /* AlertInterfaceController.m */,
+			);
+			name = Alert;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -993,6 +1012,7 @@
 				B0BD54DC1A2C67990099AF7D /* time-selection-time-bg.png in Resources */,
 				B0D255371A2DE183000F59CE /* edit-watch-icon.png in Resources */,
 				B04AAD191A39DD80003C5C1A /* gallery14_fullscreen.png in Resources */,
+				B0FABF661A40E2BD006090AB /* alert-time-bg.png in Resources */,
 				B04AAD111A39DD80003C5C1A /* gallery10_fullscreen.png in Resources */,
 				B04AAD2B1A39DD80003C5C1A /* gallery22_fullscreen.png in Resources */,
 				B0D255321A2DE183000F59CE /* countdowns-list-remove-icon.png in Resources */,
@@ -1026,6 +1046,7 @@
 				B04AAD311A39DD80003C5C1A /* gallery25_fullscreen.png in Resources */,
 				B04AAD211A39DD80003C5C1A /* gallery18_fullscreen.png in Resources */,
 				B04AAD511A39DD80003C5C1A /* gallery4_fullscreen.png in Resources */,
+				B0FABF641A40DD56006090AB /* edit-remove-icon.png in Resources */,
 				B0D255351A2DE183000F59CE /* edit-date-icon.png in Resources */,
 				B0B9FD0D1A371D01005E77E1 /* image-type-default.png in Resources */,
 				B04AAD591A39DD80003C5C1A /* gallery8_fullscreen.png in Resources */,
@@ -1094,6 +1115,7 @@
 				B0A3C5311A24CD2400E356D7 /* HomeInterfaceController.m in Sources */,
 				B0D2553E1A2DE229000F59CE /* CountdownsRowController.m in Sources */,
 				B08A35C21A387F3000B96BB7 /* BaseController.m in Sources */,
+				B0FABF6A1A40E322006090AB /* AlertInterfaceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
