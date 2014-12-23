@@ -11,7 +11,8 @@
 #import "ControllerMode.h"
 
 typedef NS_ENUM(NSInteger, EditItem) {
-    EI_DATE = 0,
+    EI_REMOVE = 0,
+    EI_DATE,
     EI_TIME,
     EI_IMAGE,
     EI_ALERT
@@ -38,11 +39,19 @@ typedef NS_ENUM(NSInteger, EditItem) {
 - (void)configureImagesTable {
 
     //Images table
-    [self.table setNumberOfRows: 4 withRowType:@"EditCountdownRow"];
-    for (NSInteger i = 0; i < self.table.numberOfRows; i++) {
+    [self.table setNumberOfRows: 5 withRowType:@"EditCountdownRow"];
+
+
+    EditCountdownRowController *deleteRow = [self.table rowControllerAtIndex: 0];
+    [deleteRow.image setImageNamed:@"edit-remove-icon"];
+    [deleteRow.captionLabel setText:@"Remove"];
+
+    for (NSInteger i = 1; i < self.table.numberOfRows; i++) {
         EditCountdownRowController *row = [self.table rowControllerAtIndex: i];
         switch (i) {
             case EI_DATE: {
+                [row.image setImageNamed:@"edit-remove-icon"];
+                [row.captionLabel setText:@"Remove"];
                 [row.image setImageNamed:@"edit-date-icon"];
                 [row.captionLabel setText:@"Date"];
                 break;
@@ -74,6 +83,9 @@ typedef NS_ENUM(NSInteger, EditItem) {
 
     NSString *controllerID = nil;
     switch (item) {
+        case EI_REMOVE: {
+            break;
+        }
         case EI_DATE: {
             controllerID = @"PickDateInterfaceController";
             break;

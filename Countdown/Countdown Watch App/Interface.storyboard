@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14A389" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="14B25" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3734"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="digital-7 (mono).ttf">
@@ -554,6 +554,27 @@
             </objects>
             <point key="canvasLocation" x="654" y="386"/>
         </scene>
+        <!--Interface Controller-->
+        <scene sceneID="D8B-dm-qNA">
+            <objects>
+                <controller id="nXU-Sh-YpH">
+                    <items>
+                        <group width="1" alignment="left" verticalAlignment="center" layout="vertical" hasDetent="YES" id="Aan-Ag-i7K">
+                            <items>
+                                <button width="0.90000000000000002" alignment="center" title="2 days 6 hours" backgroundImage="alert-time-bg.png" id="aiV-Z4-GIG">
+                                    <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                </button>
+                                <switch width="0.70000000000000007" alignment="center" value="YES" title="Alert" id="1Uw-bH-naZ">
+                                    <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                </switch>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="24"/>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="908" y="379"/>
+        </scene>
         <!--CountdownsListInterfaceController-->
         <scene sceneID="pw5-jX-smr">
             <objects>
@@ -608,36 +629,40 @@
             <objects>
                 <controller identifier="EditCountdownInterfaceController" id="K1A-ht-vSy" customClass="EditCountdownInterfaceController">
                     <items>
-                        <table alignment="left" layout="vertical" id="uIK-JV-Z4P">
+                        <group width="1" alignment="left" hasDetent="YES" id="qgT-nS-uEY">
                             <items>
-                                <tableRow identifier="EditCountdownRow" id="1Bg-9V-Pzv" customClass="EditCountdownRowController">
-                                    <group key="rootItem" width="1" height="38" alignment="left" backgroundImage="edit-bg-cell.png" id="AXY-yJ-U9v">
-                                        <items>
-                                            <group alignment="left" verticalAlignment="center" id="c8o-P9-6pK">
+                                <table alignment="left" layout="vertical" id="uIK-JV-Z4P">
+                                    <items>
+                                        <tableRow identifier="EditCountdownRow" id="1Bg-9V-Pzv" customClass="EditCountdownRowController">
+                                            <group key="rootItem" width="1" height="38" alignment="left" backgroundImage="edit-bg-cell.png" id="AXY-yJ-U9v">
                                                 <items>
-                                                    <imageView width="26" height="26" alignment="left" verticalAlignment="center" id="ZbB-dG-99G"/>
-                                                </items>
-                                                <edgeInsets key="margins" left="16" right="6" top="0.0" bottom="0.0"/>
-                                            </group>
-                                            <group width="0.47000000000000008" alignment="center" verticalAlignment="center" id="uNt-Jx-aDh">
-                                                <items>
-                                                    <label alignment="left" verticalAlignment="center" text="Label" id="Gqo-nm-30i">
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
-                                                    </label>
+                                                    <group alignment="left" verticalAlignment="center" id="c8o-P9-6pK">
+                                                        <items>
+                                                            <imageView width="26" height="26" alignment="left" verticalAlignment="center" id="ZbB-dG-99G"/>
+                                                        </items>
+                                                        <edgeInsets key="margins" left="16" right="4" top="0.0" bottom="0.0"/>
+                                                    </group>
+                                                    <group width="0.56999999999999995" alignment="center" verticalAlignment="center" id="uNt-Jx-aDh">
+                                                        <items>
+                                                            <label alignment="left" verticalAlignment="center" text="Label" id="Gqo-nm-30i">
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                                                            </label>
+                                                        </items>
+                                                        <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                                    </group>
                                                 </items>
                                                 <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
                                             </group>
-                                        </items>
-                                        <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
-                                    </group>
-                                    <connections>
-                                        <outlet property="captionLabel" destination="Gqo-nm-30i" id="Jp9-YF-KyF"/>
-                                        <outlet property="image" destination="ZbB-dG-99G" id="NoE-BQ-BRl"/>
-                                    </connections>
-                                </tableRow>
+                                            <connections>
+                                                <outlet property="captionLabel" destination="Gqo-nm-30i" id="Jp9-YF-KyF"/>
+                                                <outlet property="image" destination="ZbB-dG-99G" id="NoE-BQ-BRl"/>
+                                            </connections>
+                                        </tableRow>
+                                    </items>
+                                </table>
                             </items>
-                        </table>
+                        </group>
                     </items>
                     <connections>
                         <outlet property="table" destination="uIK-JV-Z4P" id="0rm-k3-s1h"/>
