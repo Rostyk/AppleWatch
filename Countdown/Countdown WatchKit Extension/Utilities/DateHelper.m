@@ -9,7 +9,7 @@
 #import "DateHelper.h"
 #import <WatchKit/WatchKit.h>
 
-#define NUMBER_OF_YEARS_TO_DISPLAY_IN_PICKER   3
+#define NUMBER_OF_YEARS_TO_DISPLAY_IN_PICKER   16
 #define LARGEST_NUMBER_OF_DIGITS_IN_PICKER     11
 
 #define LARGER_SCREEN_WIDTH                    156
@@ -22,7 +22,7 @@
     NSUInteger currentYear = [yearString integerValue];
     NSMutableArray *years = [[NSMutableArray alloc] init];
     for(int i=0; i<NUMBER_OF_YEARS_TO_DISPLAY_IN_PICKER + 1; i++) {
-        [years addObject: [NSString stringWithFormat:@"%lu", (currentYear + i)]];
+        [years addObject: [NSString stringWithFormat:@"%u", (currentYear + i)]];
     }
 
     return years;
@@ -138,7 +138,7 @@
 
 
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@" EEE, MMM. d, yyyy"];
+    [formatter setDateFormat:@" EEE, MMM. d, yyyy HH:MM"];
     NSString *dateString = [formatter stringFromDate: date];
 
     NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString : dateString attributes : @{
