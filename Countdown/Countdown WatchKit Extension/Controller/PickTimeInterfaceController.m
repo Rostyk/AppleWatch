@@ -132,7 +132,7 @@ typedef NS_ENUM(NSInteger, ClockMode) {
 }
 
 #pragma mark presenting image picker
--(void) presentImagePicker {
+- (void)presentImagePicker {
     if(self.controllerMode == CM_CREATE) {
         [self presentControllerWithName:@"ImageTypeSelectionInterfaceController" context: @{@"mode" : @(CM_CREATE)}];
     }
@@ -143,14 +143,14 @@ typedef NS_ENUM(NSInteger, ClockMode) {
 }
 
 #pragma mark upadting time of a countdown 
--(void) setCountdownTime {
+- (void)setCountdownTime {
     CountdownsManager *manager = [CountdownsManager sharedManager];
     CountDown *countDown = (self.controllerMode == CM_CREATE) ? [manager newlyAddedCountDown] : manager.editedCountdown;
     [countDown setTimeWithHours: self.pickedHours minutes: self.pickedMinutes];
 }
 
 #pragma mark managing time component
--(void) increaseTimeComponent {
+- (void)increaseTimeComponent {
     switch (self.timeMode) {
         case TM_HOURS:
             self.timeComponentCount ++;
@@ -167,10 +167,9 @@ typedef NS_ENUM(NSInteger, ClockMode) {
         default:
             break;
     }
-
 }
 
--(void) decreaseTimeComponent {
+- (void)decreaseTimeComponent {
     switch (self.timeMode) {
         case TM_HOURS:
             self.timeComponentCount --;
@@ -189,13 +188,13 @@ typedef NS_ENUM(NSInteger, ClockMode) {
     }
 }
 
--(void) resetTimeComponent {
+- (void) resetTimeComponent {
     [self.timeLabel setText:@"00"];
     self.timeComponentCount = 0;
 }
 
 #pragma mark tracking pm/am
--(void) trackPmLabel {
+- (void)trackPmLabel {
     if(self.clockMode == CM_AM) {
         self.clockMode = CM_PM;
         [self.pmLabel setText:@"PM"];
