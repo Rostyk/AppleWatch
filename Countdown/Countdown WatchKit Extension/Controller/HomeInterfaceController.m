@@ -61,10 +61,8 @@
         [self setBottomDate: date];
     }
     else {
-        NSString *dateStr = @"Fri, 19 Dec 2014 22:53:58 +0000";
-        NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
-        [dateFormat setDateFormat:@"EE, d LLLL yyyy HH:mm:ss Z"];
-        date = [dateFormat dateFromString:dateStr];
+        date = [[NSDate date] dateByAddingTimeInterval: 60*60*24*5];
+        
         [self setBottomDate: [[NSDate alloc] init]];
         [self.timer setDate: date];
     }
@@ -127,7 +125,7 @@
 }
 
 -(IBAction) tutorialItemClicked:(id)sender {
-    
+    [self presentControllerWithNames:@[@"TutorialsScreen1", @"TutorialsScreen2", @"TutorialsScreen3", @"TutorialsScreen4"] contexts: nil];
 }
 
 @end

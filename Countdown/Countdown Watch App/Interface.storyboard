@@ -17,7 +17,7 @@
             <objects>
                 <controller spacing="38" id="AgC-eL-Hgc" customClass="HomeInterfaceController">
                     <items>
-                        <group width="1" height="1" alignment="left" layout="vertical" backgroundImage="main-screen-bg.png" hasDetent="YES" id="tNW-jD-rfk">
+                        <group width="1" height="1" alignment="left" layout="vertical" backgroundImage="main-screen-bg2.png" hasDetent="YES" id="tNW-jD-rfk">
                             <items>
                                 <group height="27" alignment="center" layout="vertical" backgroundImage="main-screen-timer-bg.png" id="4Ei-dv-vYM">
                                     <items>
@@ -587,9 +587,9 @@
                                         <tableRow identifier="CountdownRow" id="aHF-01-WMw" customClass="CountdownsRowController">
                                             <group key="rootItem" width="1" alignment="left" backgroundImage="date-selection-cell.png" id="wMg-JO-4Nf">
                                                 <items>
-                                                    <group width="34" height="34" alignment="left" id="nf5-3t-FBT">
+                                                    <group width="38" height="34" alignment="left" radius="4" id="nf5-3t-FBT">
                                                         <items>
-                                                            <imageView width="1" height="1" alignment="left" id="u0m-oK-7Wj"/>
+                                                            <group width="1" height="1" alignment="left" radius="6" id="wXJ-e5-MPu"/>
                                                         </items>
                                                         <edgeInsets key="margins" left="3" right="0.0" top="0.0" bottom="0.0"/>
                                                     </group>
@@ -608,7 +608,7 @@
                                             <connections>
                                                 <outlet property="bgGroup" destination="wMg-JO-4Nf" id="e3O-3F-GEh"/>
                                                 <outlet property="dateLabel" destination="Nii-1l-6hS" id="QzT-KE-uIV"/>
-                                                <outlet property="image" destination="u0m-oK-7Wj" id="rXa-sl-WG9"/>
+                                                <outlet property="image" destination="wXJ-e5-MPu" id="DPd-hh-Kcm"/>
                                             </connections>
                                         </tableRow>
                                     </items>
@@ -670,6 +670,50 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="1047" y="643"/>
+        </scene>
+        <!--TutorialsScreen1-->
+        <scene sceneID="EVy-gk-J7F">
+            <objects>
+                <controller identifier="TutorialsScreen1" id="LX5-SE-AcL" customClass="TutorialsScreen1">
+                    <items>
+                        <group width="1" height="1" alignment="left" backgroundImage="tutorial-screen1.png" hasDetent="YES" id="Kev-FW-Xvd"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="728" y="1284"/>
+        </scene>
+        <!--TutorialsScreen2-->
+        <scene sceneID="Nqc-us-eF0">
+            <objects>
+                <controller identifier="TutorialsScreen2" id="7bq-fu-ahv" customClass="TutorialsScreen2">
+                    <items>
+                        <group width="1" height="1" alignment="left" backgroundImage="tutorial-screen2.png" hasDetent="YES" id="GWG-g2-5SZ"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="908" y="1289"/>
+        </scene>
+        <!--TutorialsScreen3-->
+        <scene sceneID="sXw-ea-Hc2">
+            <objects>
+                <controller identifier="TutorialsScreen3" id="e98-o8-5CV" customClass="TutorialsScreen3">
+                    <items>
+                        <group width="1" height="1" alignment="left" backgroundImage="tutorial-screen3.png" hasDetent="YES" id="Pay-je-RB6"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1093" y="1289"/>
+        </scene>
+        <!--TutorialsScreen4-->
+        <scene sceneID="xyb-2R-HOP">
+            <objects>
+                <controller identifier="TutorialsScreen4" id="VPV-zk-dMg" customClass="TutorialsScreen4">
+                    <items>
+                        <group width="1" height="1" alignment="left" backgroundImage="tutorial-screen4.png" hasDetent="YES" id="sYT-1O-VCD"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1283" y="1289"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

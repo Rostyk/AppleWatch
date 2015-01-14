@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91345CE41A65F16C00EB1118 /* tutorial-screen1.png in Resources */ = {isa = PBXBuildFile; fileRef = 91345CE01A65F16C00EB1118 /* tutorial-screen1.png */; };
+		91345CE51A65F16C00EB1118 /* tutorial-screen2.png in Resources */ = {isa = PBXBuildFile; fileRef = 91345CE11A65F16C00EB1118 /* tutorial-screen2.png */; };
+		91345CE61A65F16C00EB1118 /* tutorial-screen3.png in Resources */ = {isa = PBXBuildFile; fileRef = 91345CE21A65F16C00EB1118 /* tutorial-screen3.png */; };
+		91345CE71A65F16C00EB1118 /* tutorial-screen4.png in Resources */ = {isa = PBXBuildFile; fileRef = 91345CE31A65F16C00EB1118 /* tutorial-screen4.png */; };
+		9165349B1A5EFF35008EAADB /* TutorialsScreen1.m in Sources */ = {isa = PBXBuildFile; fileRef = 9165349A1A5EFF35008EAADB /* TutorialsScreen1.m */; };
+		9165349E1A5EFF50008EAADB /* TutorialsScreen2.m in Sources */ = {isa = PBXBuildFile; fileRef = 9165349D1A5EFF50008EAADB /* TutorialsScreen2.m */; };
+		916534A11A5EFF68008EAADB /* TutorialsScreen3.m in Sources */ = {isa = PBXBuildFile; fileRef = 916534A01A5EFF68008EAADB /* TutorialsScreen3.m */; };
+		916534A41A5EFF77008EAADB /* TutorialsScreen4.m in Sources */ = {isa = PBXBuildFile; fileRef = 916534A31A5EFF77008EAADB /* TutorialsScreen4.m */; };
+		916534A61A5F00F3008EAADB /* main-screen-bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 916534A51A5F00F3008EAADB /* main-screen-bg2.png */; };
 		B028CFF91A24B61900FC1991 /* main-screen-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B028CFF81A24B61900FC1991 /* main-screen-bg.png */; };
 		B042EB901A275E35004A0945 /* digital-7 (mono).ttf in Resources */ = {isa = PBXBuildFile; fileRef = B042EB8F1A275E35004A0945 /* digital-7 (mono).ttf */; };
 		B04579151A263CEA003B9301 /* CountdownsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B04579141A263CEA003B9301 /* CountdownsManager.m */; };
@@ -218,6 +227,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		91345CE01A65F16C00EB1118 /* tutorial-screen1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tutorial-screen1.png"; sourceTree = "<group>"; };
+		91345CE11A65F16C00EB1118 /* tutorial-screen2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tutorial-screen2.png"; sourceTree = "<group>"; };
+		91345CE21A65F16C00EB1118 /* tutorial-screen3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tutorial-screen3.png"; sourceTree = "<group>"; };
+		91345CE31A65F16C00EB1118 /* tutorial-screen4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tutorial-screen4.png"; sourceTree = "<group>"; };
+		916534991A5EFF35008EAADB /* TutorialsScreen1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TutorialsScreen1.h; path = Tutorials/TutorialsScreen1.h; sourceTree = "<group>"; };
+		9165349A1A5EFF35008EAADB /* TutorialsScreen1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TutorialsScreen1.m; path = Tutorials/TutorialsScreen1.m; sourceTree = "<group>"; };
+		9165349C1A5EFF50008EAADB /* TutorialsScreen2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TutorialsScreen2.h; path = Tutorials/TutorialsScreen2.h; sourceTree = "<group>"; };
+		9165349D1A5EFF50008EAADB /* TutorialsScreen2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TutorialsScreen2.m; path = Tutorials/TutorialsScreen2.m; sourceTree = "<group>"; };
+		9165349F1A5EFF68008EAADB /* TutorialsScreen3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TutorialsScreen3.h; path = Tutorials/TutorialsScreen3.h; sourceTree = "<group>"; };
+		916534A01A5EFF68008EAADB /* TutorialsScreen3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TutorialsScreen3.m; path = Tutorials/TutorialsScreen3.m; sourceTree = "<group>"; };
+		916534A21A5EFF77008EAADB /* TutorialsScreen4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TutorialsScreen4.h; path = Tutorials/TutorialsScreen4.h; sourceTree = "<group>"; };
+		916534A31A5EFF77008EAADB /* TutorialsScreen4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TutorialsScreen4.m; path = Tutorials/TutorialsScreen4.m; sourceTree = "<group>"; };
+		916534A51A5F00F3008EAADB /* main-screen-bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "main-screen-bg2.png"; sourceTree = "<group>"; };
 		B028CFF81A24B61900FC1991 /* main-screen-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "main-screen-bg.png"; sourceTree = "<group>"; };
 		B042EB8F1A275E35004A0945 /* digital-7 (mono).ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7 (mono).ttf"; sourceTree = "<group>"; };
 		B04579131A263CEA003B9301 /* CountdownsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CountdownsManager.h; path = Utilities/CountdownsManager.h; sourceTree = "<group>"; };
@@ -414,11 +436,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		91345CDF1A65F16C00EB1118 /* tutorials */ = {
+			isa = PBXGroup;
+			children = (
+				91345CE01A65F16C00EB1118 /* tutorial-screen1.png */,
+				91345CE11A65F16C00EB1118 /* tutorial-screen2.png */,
+				91345CE21A65F16C00EB1118 /* tutorial-screen3.png */,
+				91345CE31A65F16C00EB1118 /* tutorial-screen4.png */,
+			);
+			path = tutorials;
+			sourceTree = "<group>";
+		};
+		916534951A5EFEBA008EAADB /* Tutorials */ = {
+			isa = PBXGroup;
+			children = (
+				916534991A5EFF35008EAADB /* TutorialsScreen1.h */,
+				9165349A1A5EFF35008EAADB /* TutorialsScreen1.m */,
+				9165349C1A5EFF50008EAADB /* TutorialsScreen2.h */,
+				9165349D1A5EFF50008EAADB /* TutorialsScreen2.m */,
+				9165349F1A5EFF68008EAADB /* TutorialsScreen3.h */,
+				916534A01A5EFF68008EAADB /* TutorialsScreen3.m */,
+				916534A21A5EFF77008EAADB /* TutorialsScreen4.h */,
+				916534A31A5EFF77008EAADB /* TutorialsScreen4.m */,
+			);
+			name = Tutorials;
+			sourceTree = "<group>";
+		};
 		B028CFF51A24AF0F00FC1991 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B04AACE91A39DD80003C5C1A /* GalleryFullscreen */,
+				91345CDF1A65F16C00EB1118 /* tutorials */,
 				B04E1B0C1A2CB217006FB462 /* Gallery */,
+				B04AACE91A39DD80003C5C1A /* GalleryFullscreen */,
+				916534A51A5F00F3008EAADB /* main-screen-bg2.png */,
 				B0B9FD0B1A371D01005E77E1 /* image-type-default.png */,
 				B0FABF651A40E2BD006090AB /* alert-time-bg.png */,
 				B0B9FD0C1A371D01005E77E1 /* image-type-favourites.png */,
@@ -681,6 +731,7 @@
 		B0A3C52A1A24CD2400E356D7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				916534951A5EFEBA008EAADB /* Tutorials */,
 				B08A35BF1A387EF000B96BB7 /* BaseController */,
 				B0FABF671A40E300006090AB /* Alert */,
 				B0B9FD0F1A371D0F005E77E1 /* ImageTypeSelection */,
@@ -1022,6 +1073,7 @@
 				B04AAD451A39DD80003C5C1A /* gallery34_fullscreen.png in Resources */,
 				B0BD54D41A2C67990099AF7D /* main-screen-date-bg.png in Resources */,
 				B07B15DE1A1F5985001B970E /* Interface.storyboard in Resources */,
+				91345CE61A65F16C00EB1118 /* tutorial-screen3.png in Resources */,
 				B04AAD1B1A39DD80003C5C1A /* gallery15_fullscreen.png in Resources */,
 				B0BD54DA1A2C67990099AF7D /* time-selection-minus.png in Resources */,
 				B04AAD4B1A39DD80003C5C1A /* gallery37_fullscreen.png in Resources */,
@@ -1035,6 +1087,7 @@
 				B04AAD391A39DD80003C5C1A /* gallery29_fullscreen.png in Resources */,
 				B0BD54D81A2C67990099AF7D /* menu-watch.png in Resources */,
 				B04AAD3D1A39DD80003C5C1A /* gallery30_fullscreen.png in Resources */,
+				91345CE51A65F16C00EB1118 /* tutorial-screen2.png in Resources */,
 				B04AAD371A39DD80003C5C1A /* gallery28_fullscreen.png in Resources */,
 				B04AAD4D1A39DD80003C5C1A /* gallery38_fullscreen.png in Resources */,
 				B04AAD551A39DD80003C5C1A /* gallery6_fullscreen.png in Resources */,
@@ -1055,8 +1108,10 @@
 				B0BD54D21A2C67990099AF7D /* date-selection-mark-active.png in Resources */,
 				B04AAD331A39DD80003C5C1A /* gallery26_fullscreen.png in Resources */,
 				B0BD54D01A2C67990099AF7D /* date-celection-mark-normal.png in Resources */,
+				91345CE71A65F16C00EB1118 /* tutorial-screen4.png in Resources */,
 				B04AAD151A39DD80003C5C1A /* gallery12_fullscreen.png in Resources */,
 				B04AAD251A39DD80003C5C1A /* gallery1_fullscreen.png in Resources */,
+				916534A61A5F00F3008EAADB /* main-screen-bg2.png in Resources */,
 				B04AAD1F1A39DD80003C5C1A /* gallery17_fullscreen.png in Resources */,
 				B04AAD1D1A39DD80003C5C1A /* gallery16_fullscreen.png in Resources */,
 				B0BD54DB1A2C67990099AF7D /* time-selection-plus.png in Resources */,
@@ -1065,6 +1120,7 @@
 				B04AAD471A39DD80003C5C1A /* gallery35_fullscreen.png in Resources */,
 				B04AAD3B1A39DD80003C5C1A /* gallery2_fullscreen.png in Resources */,
 				B04AAD351A39DD80003C5C1A /* gallery27_fullscreen.png in Resources */,
+				91345CE41A65F16C00EB1118 /* tutorial-screen1.png in Resources */,
 				B0D255361A2DE183000F59CE /* edit-image-icon.png in Resources */,
 				B04AAD291A39DD80003C5C1A /* gallery21_fullscreen.png in Resources */,
 				B04AAD231A39DD80003C5C1A /* gallery19_fullscreen.png in Resources */,
@@ -1099,6 +1155,7 @@
 				B0A3C53F1A24DCC500E356D7 /* DateHelper.m in Sources */,
 				B04E1AEF1A2C964D006FB462 /* ImageRowController.m in Sources */,
 				B0B9FD161A374AD7005E77E1 /* LocalPhotosManager.m in Sources */,
+				916534A41A5EFF77008EAADB /* TutorialsScreen4.m in Sources */,
 				B0BD54DF1A2C7ADE0099AF7D /* App.m in Sources */,
 				B06B4C671A28964400A604B3 /* PickTimeInterfaceController.m in Sources */,
 				B0A3C5321A24CD2400E356D7 /* NotificationController.m in Sources */,
@@ -1108,13 +1165,16 @@
 				B0AA17531A2CC6A10059ED3A /* ImageButton.m in Sources */,
 				B04E1AF21A2C9F49006FB462 /* Gallery.m in Sources */,
 				B04579151A263CEA003B9301 /* CountdownsManager.m in Sources */,
+				916534A11A5EFF68008EAADB /* TutorialsScreen3.m in Sources */,
 				B0A3C53B1A24D9E100E356D7 /* RowController.m in Sources */,
 				B0C669D11A2F694A00FD24EB /* PickImageInterfaceController.m in Sources */,
 				B0B9FD191A375737005E77E1 /* FavouritePhoto.m in Sources */,
 				B0D255421A2E0E1E000F59CE /* EditCountdownInterfaceController.m in Sources */,
 				B0A3C5311A24CD2400E356D7 /* HomeInterfaceController.m in Sources */,
 				B0D2553E1A2DE229000F59CE /* CountdownsRowController.m in Sources */,
+				9165349B1A5EFF35008EAADB /* TutorialsScreen1.m in Sources */,
 				B08A35C21A387F3000B96BB7 /* BaseController.m in Sources */,
+				9165349E1A5EFF50008EAADB /* TutorialsScreen2.m in Sources */,
 				B0FABF6A1A40E322006090AB /* AlertInterfaceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -30,7 +30,6 @@
 
 #pragma mark configuring table view
 - (void)configureImagesTable {
-
     CountdownsManager *manager = [CountdownsManager sharedManager];
     //Images table
     [self.table setNumberOfRows: [manager allCountdowns].count withRowType:@"CountdownRow"];
@@ -38,7 +37,7 @@
         CountdownsRowController *row = [self.table rowControllerAtIndex: i];
         CountDown *countDown = [[manager allCountdowns] objectAtIndex: i];
         [row.dateLabel setText: [DateHelper stringDateForCountdownsListCell: [countDown date]]];
-        [row.image setImage: [countDown image]];
+        [row.image setBackgroundImage: [countDown image]];
     }
 }
 

@@ -70,7 +70,7 @@ typedef NS_ENUM(NSInteger, DateMode) {
     [self.table setNumberOfRows: days withRowType:@"Row"];
     for (NSInteger i = 0; i < self.table.numberOfRows; i++) {
         RowController* row = [self.table rowControllerAtIndex:i];
-        [row.textLabel setText: [NSString stringWithFormat:@"%d", (i+1)]];
+        [row.textLabel setText: [NSString stringWithFormat:@"%ld", (i+1)]];
     }
 }
 
