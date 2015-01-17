@@ -9,9 +9,10 @@
 #ifndef Countdown_ControllerMode_h
 #define Countdown_ControllerMode_h
 
-typedef NS_ENUM(NSInteger, ControllerMode) {
-    CM_CREATE = 0,
-    CM_EDIT
+typedef NS_ENUM (NSInteger, ControllerMode) {
+	CM_CREATE = 0,
+	CM_EDIT,
+	CM_ALERT
 };
 
 

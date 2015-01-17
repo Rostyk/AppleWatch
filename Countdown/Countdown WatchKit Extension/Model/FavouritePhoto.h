@@ -2,16 +2,17 @@
 //  FavouritePhoto.h
 //  Countdown
 //
-//  Created by Steven on 09/12/14.
-//  Copyright (c) 2014 Umbrella. All rights reserved.
+//  Created by Ross on 1/17/15.
+//  Copyright (c) 2015 Umbrella. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
 
-@interface FavouritePhoto : NSObject
 
-//local identifier of the PHAsset object
-@property (nonatomic, strong) NSString *photoID;
-@property (nonatomic, strong) UIImage *image;
+@interface FavouritePhoto : NSManagedObject
+
+@property (nonatomic, retain) NSString * photoID;
+@property (nonatomic, retain) id image;
+
 @end

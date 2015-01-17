@@ -10,6 +10,6 @@
 #import <WatchKit/WatchKit.h>
 
 @interface EditCountdownRowController : NSObject
-@property (weak, nonatomic) IBOutlet WKInterfaceLabel* captionLabel;
-@property (weak, nonatomic) IBOutlet WKInterfaceImage* image;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *captionLabel;
+@property (weak, nonatomic) IBOutlet WKInterfaceImage *image;
 @end

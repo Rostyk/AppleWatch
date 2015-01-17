@@ -10,55 +10,62 @@
 #import "CountdownsRowController.h"
 #import "CountdownsManager.h"
 #import "DateHelper.h"
+#import "DataProvider.h"
 #import "CountDown.h"
 
 
-@interface CountdownsListInterfaceController()
+@interface CountdownsListInterfaceController ()
 @property (nonatomic, weak) IBOutlet WKInterfaceTable *table;
 @end
 
 @implementation CountdownsListInterfaceController
 
 #pragma mark lifecycle
-- (instancetype)initWithContext:(id)context {
-    self = [super initWithContext:context];
-    if (self){
-        [self configureImagesTable];
-    }
-    return self;
+- (instancetype)initWithContext:(id)context
+{
+	self = [super init];
+	if (self)
+	{
+		[self configureImagesTable];
+	}
+	return self;
 }
 
 #pragma mark configuring table view
-- (void)configureImagesTable {
-    CountdownsManager *manager = [CountdownsManager sharedManager];
-    //Images table
-    [self.table setNumberOfRows: [manager allCountdowns].count withRowType:@"CountdownRow"];
-    for (NSInteger i = 0; i < self.table.numberOfRows; i++) {
-        CountdownsRowController *row = [self.table rowControllerAtIndex: i];
-        CountDown *countDown = [[manager allCountdowns] objectAtIndex: i];
-        [row.dateLabel setText: [DateHelper stringDateForCountdownsListCell: [countDown date]]];
-        [row.image setBackgroundImage: [countDown image]];
-    }
+- (void)configureImagesTable
+{
+	DataProvider *provider = [DataProvider sharedProvider];
+
+	// Images table
+	[self.table setNumberOfRows:[provider countDoowns].count withRowType:@"CountdownRow"];
+	for (NSInteger i = 0; i < self.table.numberOfRows; i++)
+	{
+		CountdownsRowController *row = [self.table rowControllerAtIndex:i];
+		Countdown *countdown = [[provider countDoowns] objectAtIndex:i];
+		[row.dateLabel setText:[DateHelper stringDateForCountdownsListCell:[countdown date]]];
+		[row.image setBackgroundImage:[countdown image]];
+	}
 }
 
-- (void)willActivate {
-
+- (void)willActivate
+{
 }
 
-- (void)didDeactivate {
-    // This method is called when watch view controller is no longer visible
-    NSLog(@"%@ did deactivate", self);
+- (void)didDeactivate
+{
+	// This method is called when watch view controller is no longer visible
+	NSLog(@"%@ did deactivate", self);
 }
 
 #pragma mark image selection
 
-- (void)table:(WKInterfaceTable *)table didSelectRowAtIndex:(NSInteger)rowIndex {
+- (void)table:(WKInterfaceTable *)table didSelectRowAtIndex:(NSInteger)rowIndex
+{
+	DataProvider *provider = [DataProvider sharedProvider];
+	Countdown *countDown = [[provider countDoowns] objectAtIndex:rowIndex];
 
-     CountdownsManager *manager = [CountdownsManager sharedManager];
-     CountDown *countDown = [[manager allCountdowns] objectAtIndex: rowIndex];
-    
-    [CountdownsManager sharedManager].editedCountdown = countDown;
-    [self presentControllerWithName:@"EditCountdownInterfaceController" context: nil];
-    
+	[CountdownsManager sharedManager].editedCountdown = countDown;
+	[self presentControllerWithName:@"EditCountdownInterfaceController" context:nil];
 }
+
 @end

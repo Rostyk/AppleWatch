@@ -10,15 +10,21 @@
 
 @implementation BaseController
 
-- (instancetype)initWithContext:(id)context {
-    self = [super initWithContext:context];
-    if (self){
-        if(context[@"mode"])
-            self.controllerMode = [context[@"mode"] integerValue];
-        else
-            self.controllerMode = CM_CREATE;
-    }
-    return self;
+- (instancetype)initWithContext:(id)context
+{
+	self = [super init];
+	if (self)
+	{
+		if (context[@"mode"])
+		{
+			self.controllerMode = [context[@"mode"] integerValue];
+		}
+		else
+		{
+			self.controllerMode = CM_CREATE;
+		}
+	}
+	return self;
 }
 
 @end

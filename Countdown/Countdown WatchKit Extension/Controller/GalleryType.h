@@ -9,9 +9,9 @@
 #ifndef Countdown_GalleryType_h
 #define Countdown_GalleryType_h
 
-typedef NS_ENUM(NSInteger, GalleryType) {
-    GT_DEFAULT = 0,
-    GT_FAVORITE
+typedef NS_ENUM (NSInteger, GalleryType) {
+	GT_DEFAULT = 0,
+	GT_FAVORITE
 };
 
 #endif

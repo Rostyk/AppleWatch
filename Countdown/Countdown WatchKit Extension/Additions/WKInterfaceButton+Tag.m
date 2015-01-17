@@ -8,14 +8,17 @@
 
 #import "WKInterfaceButton+Tag.h"
 
-@implementation WKInterfaceButton(Tag)
+@implementation WKInterfaceButton (Tag)
 
 NSUInteger _tag;
--(void) setTag:(NSUInteger)tag {
-    _tag = tag;
+- (void)setTag:(NSUInteger)tag
+{
+	_tag = tag;
 }
 
--(NSUInteger) tag {
-    return _tag;
+- (NSUInteger)tag
+{
+	return _tag;
 }
+
 @end

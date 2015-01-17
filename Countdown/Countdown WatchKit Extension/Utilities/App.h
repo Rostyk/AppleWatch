@@ -9,9 +9,9 @@
 #import <Foundation/Foundation.h>
 #import <WatchKit/WatchKit.h>
 
-typedef NS_ENUM(NSInteger, HourMode) {
-    HM_24,
-    HM_12,
+typedef NS_ENUM (NSInteger, HourMode) {
+	HM_24,
+	HM_12,
 };
 
 @class Gallery;
@@ -20,6 +20,6 @@ typedef NS_ENUM(NSInteger, HourMode) {
 + (instancetype)sharedApp;
 @property(nonatomic, assign) WKInterfaceController *controllerToPresentOn;
 @property (nonatomic, strong) Gallery *gallery;
--(BOOL) isLargerDeviceScreen;
--(HourMode) hourMode;
+- (BOOL)isLargerDeviceScreen;
+- (HourMode)hourMode;
 @end

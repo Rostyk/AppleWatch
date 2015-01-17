@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <WatchKit/WatchKit.h>
 
-@interface WKInterfaceButton(Tag)
+@interface WKInterfaceButton (Tag)
 @property (nonatomic) NSUInteger tag;
 @end

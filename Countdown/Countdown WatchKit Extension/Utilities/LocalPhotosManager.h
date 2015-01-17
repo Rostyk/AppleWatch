@@ -13,12 +13,12 @@
 
 @interface LocalPhotosManager : NSObject
 + (instancetype)sharedManager;
-- (void) fetchFavoritePhotos;
+- (void)fetchFavoritePhotos;
 
 - (NSArray *)images;
 - (NSArray *)assets;
 
--(void) fetchFavouriteFullscreenImageWithAssetID:(NSString*) assetId andCompletion:(imageFetchingCompletion) completion;
+- (void)fetchFavouriteFullscreenImageWithAssetID:(NSString *)assetId andCompletion:(imageFetchingCompletion)completion;
 @property (nonatomic, assign) PickImageInterfaceController *controller;
 
 @end

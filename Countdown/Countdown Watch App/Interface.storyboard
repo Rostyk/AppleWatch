@@ -597,7 +597,7 @@
                                                         <items>
                                                             <label alignment="center" verticalAlignment="center" text="Sep. 9, 2016" textAlignment="center" id="Nii-1l-6hS">
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                                <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                             </label>
                                                         </items>
                                                         <edgeInsets key="margins" left="2" right="0.0" top="0.0" bottom="0.0"/>

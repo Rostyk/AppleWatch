@@ -12,4 +12,5 @@
 
 @interface BaseController : WKInterfaceController
 @property (nonatomic) ControllerMode controllerMode;
+- (instancetype)initWithContext:(NSDictionary *)context;
 @end

@@ -7,43 +7,22 @@
 //
 
 #import "CountdownsManager.h"
-
-@interface CountdownsManager()
-@property (nonatomic, strong) NSMutableArray *countdowns;
-@end
+#import "Countdown.h"
+#import "DataProvider.h"
 
 @implementation CountdownsManager
 
 + (instancetype)sharedManager
 {
-    static dispatch_once_t once;
-    static id sharedInstance;
+	static dispatch_once_t once;
+	static id sharedInstance;
 
-    dispatch_once(&once, ^
-                  {
-                      sharedInstance = [self new];
-                  });
-    
-    return sharedInstance;
-}
+	dispatch_once(&once, ^
+	{
+		sharedInstance = [self new];
+	});
 
--(NSMutableArray*) countdowns {
-    if(!_countdowns) {
-        _countdowns = [[NSMutableArray alloc] init];
-    }
-    return _countdowns;
-}
-
--(void) addCountDown: (CountDown*) countDown {
-    [self.countdowns addObject: countDown];
-}
-
--(CountDown*) newlyAddedCountDown {
-    return [self.countdowns lastObject];
-}
-
--(NSArray*) allCountdowns {
-    return self.countdowns;
+	return sharedInstance;
 }
 
 @end

@@ -9,7 +9,7 @@
 #import "BaseController.h"
 
 @interface PickImageInterfaceController : BaseController
-@property (weak, nonatomic) IBOutletCollection(WKInterfaceButton) NSArray *coll;
+@property (weak, nonatomic)IBOutletCollection(WKInterfaceButton) NSArray * coll;
 
--(void) reloadData;
+- (void)reloadData;
 @end

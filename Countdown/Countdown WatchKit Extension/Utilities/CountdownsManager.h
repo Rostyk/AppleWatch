@@ -7,14 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-@class CountDown;
+#import <CoreData/CoreData.h>
+#import "Countdown.h"
 
 @interface CountdownsManager : NSObject
 
-@property (nonatomic, assign) CountDown *editedCountdown;
+@property (nonatomic, strong) Countdown *editedCountdown;
+@property (nonatomic, strong) Countdown *newlyAddedCountDown;
 
 + (instancetype)sharedManager;
--(void) addCountDown: (CountDown*) countDown;
--(CountDown*) newlyAddedCountDown;
--(NSArray*) allCountdowns;
 @end

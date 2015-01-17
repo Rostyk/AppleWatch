@@ -8,7 +8,7 @@
 
 #import "AlertInterfaceController.h"
 
-@interface AlertInterfaceController()
+@interface AlertInterfaceController ()
 @property (nonatomic, weak) IBOutlet WKInterfaceButton *alertTimeButton;
 @property (nonatomic, weak) IBOutlet WKInterfaceSwitch *alertSwitch;
 @end

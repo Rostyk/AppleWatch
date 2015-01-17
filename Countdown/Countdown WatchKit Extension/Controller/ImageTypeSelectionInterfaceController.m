@@ -11,14 +11,14 @@
 
 @implementation ImageTypeSelectionInterfaceController
 
--(IBAction) defaultImagesButtonClicked {
-    [self presentControllerWithName:@"PickImageInterfaceController" context: @{@"Type" : @(GT_DEFAULT)}];
-
+- (IBAction)defaultImagesButtonClicked
+{
+	[self presentControllerWithName:@"PickImageInterfaceController" context:@{ @"Type" : @(GT_DEFAULT) }];
 }
 
--(IBAction) favoriteImagesButtonClicked {
-     [self presentControllerWithName:@"PickImageInterfaceController" context: @{@"Type" : @(GT_FAVORITE)}];
-
+- (IBAction)favoriteImagesButtonClicked
+{
+	[self presentControllerWithName:@"PickImageInterfaceController" context:@{ @"Type" : @(GT_FAVORITE) }];
 }
 
 @end

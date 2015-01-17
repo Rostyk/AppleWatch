@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import <WatchKit/WatchKit.h>
-//@class ImageButton;
+// @class ImageButton;
 
 @interface ImageRowController : NSObject
-@property (nonatomic, weak) IBOutlet WKInterfaceImage* image;
+@property (nonatomic, weak) IBOutlet WKInterfaceImage *image;
 @end

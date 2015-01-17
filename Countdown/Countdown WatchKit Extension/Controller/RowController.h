@@ -10,6 +10,6 @@
 #import <Foundation/Foundation.h>
 
 @interface RowController : NSObject
-@property (weak, nonatomic) IBOutlet WKInterfaceLabel* textLabel;
-@property (weak, nonatomic) IBOutlet WKInterfaceImage* image;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *textLabel;
+@property (weak, nonatomic) IBOutlet WKInterfaceImage *image;
 @end

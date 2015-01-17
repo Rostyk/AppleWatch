@@ -9,44 +9,53 @@
 #import "App.h"
 #import "Gallery.h"
 
-#define LARGER_SCREEN_WIDTH                    156
+#define LARGER_SCREEN_WIDTH 156
 
 
 @implementation App
 
 + (instancetype)sharedApp
 {
-    static dispatch_once_t once;
-    static id sharedInstance;
+	static dispatch_once_t once;
+	static id sharedInstance;
 
-    dispatch_once(&once, ^
-                  {
-                      sharedInstance = [self new];
-                  });
+	dispatch_once(&once, ^
+	{
+		sharedInstance = [self new];
+	});
 
-    return sharedInstance;
+	return sharedInstance;
 }
 
-- (Gallery *)gallery {
-    if(!_gallery)
-        _gallery = [[Gallery alloc] init];
+- (Gallery *)gallery
+{
+	if (!_gallery)
+	{
+		_gallery = [[Gallery alloc] init];
+	}
 
-    return _gallery;
+	return _gallery;
 }
 
--(BOOL) isLargerDeviceScreen {
-    if((int)[WKInterfaceDevice currentDevice].screenBounds.size.width == LARGER_SCREEN_WIDTH)
-        return YES;
+- (BOOL)isLargerDeviceScreen
+{
+	if ((int)[WKInterfaceDevice currentDevice].screenBounds.size.width == LARGER_SCREEN_WIDTH)
+	{
+		return YES;
+	}
 
-    return NO;
+	return NO;
 }
 
--(HourMode) hourMode {
-    NSTimeZone *currentTimeZone = [NSTimeZone localTimeZone];
-    if([[currentTimeZone name] containsString:@"America"]) {
-        return HM_12;
-    }
-    return HM_12;
+- (HourMode)hourMode
+{
+	NSTimeZone *currentTimeZone = [NSTimeZone localTimeZone];
+
+	if ([[currentTimeZone name] containsString:@"America"])
+	{
+		return HM_12;
+	}
+	return HM_12;
 }
 
 @end

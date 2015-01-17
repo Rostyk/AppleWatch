@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
    LastUpgradeVersion = "0620"
-   version = "1.3">
+   version = "1.8">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
@@ -76,18 +76,6 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <RemoteRunnable
-         runnableDebuggingMode = "2"
-         BundleIdentifier = "com.apple.springboard"
-         RemotePath = "/Countdown">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B07B15D51A1F5985001B970E"
-            BuildableName = "Countdown Watch App.app"
-            BlueprintName = "Countdown Watch App"
-            ReferencedContainer = "container:Countdown.xcodeproj">
-         </BuildableReference>
-      </RemoteRunnable>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
@@ -99,13 +87,6 @@
       </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
-   </LaunchAction>
-   <ProfileAction
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      savedToolIdentifier = ""
-      useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Release"
-      debugDocumentVersioning = "YES">
       <RemoteRunnable
          runnableDebuggingMode = "2"
          BundleIdentifier = "com.apple.springboard"
@@ -118,6 +99,13 @@
             ReferencedContainer = "container:Countdown.xcodeproj">
          </BuildableReference>
       </RemoteRunnable>
+   </LaunchAction>
+   <ProfileAction
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Release"
+      debugDocumentVersioning = "YES">
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
@@ -127,6 +115,18 @@
             ReferencedContainer = "container:Countdown.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.springboard"
+         RemotePath = "/Countdown">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "B07B15D51A1F5985001B970E"
+            BuildableName = "Countdown Watch App.app"
+            BlueprintName = "Countdown Watch App"
+            ReferencedContainer = "container:Countdown.xcodeproj">
+         </BuildableReference>
+      </RemoteRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

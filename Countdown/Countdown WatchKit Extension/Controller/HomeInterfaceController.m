@@ -14,9 +14,10 @@
 #import "App.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 #import "ControllerMode.h"
+#import "DataProvider.h"
 
 
-@interface HomeInterfaceController()
+@interface HomeInterfaceController ()
 @property (nonatomic, weak) IBOutlet WKInterfaceTimer *smallerTimer;
 @property (nonatomic, weak) IBOutlet WKInterfaceGroup *smallerTimerGroup;
 
@@ -29,9 +30,9 @@
 @property (nonatomic, weak) IBOutlet WKInterfaceLabel *dateLabel;
 @property (nonatomic, weak) IBOutlet WKInterfaceGroup *bgGroup;
 @property (nonatomic) NSUInteger fontSize;
--(IBAction) addCountdownItemClicked:(id)sender;
--(IBAction) viewCountdownsItemClicked:(id)sender;
--(IBAction) tutorialItemClicked:(id)sender;
+- (IBAction)addCountdownItemClicked:(id)sender;
+- (IBAction)viewCountdownsItemClicked:(id)sender;
+- (IBAction)tutorialItemClicked:(id)sender;
 @end
 
 
@@ -39,93 +40,117 @@
 
 
 #pragma mark lifecycle
-- (instancetype)initWithContext:(id)context {
-    self = [super initWithContext:context];
-    if (self){
-        NSLog(@"%@ initWithContext", self);
-    }
-    return self;
+- (instancetype)initWithContext:(id)context
+{
+	self = [super init];
+	if (self)
+	{
+		NSLog(@"%@ initWithContext", self);
+	}
+	return self;
 }
 
-- (void)willActivate {
+- (void)willActivate
+{
+	[self displayProperTimer];
+	[App sharedApp].controllerToPresentOn = self;
+	Countdown *countDown = [[CountdownsManager sharedManager] newlyAddedCountDown];
     
-    [self displayProperTimer];
-    [self displayBackground];
-    [App sharedApp].controllerToPresentOn = self;
-    CountDown *countDown = [[CountdownsManager sharedManager] newlyAddedCountDown];
-    NSDate *date = nil;
-
-    if(countDown) {
-        date = [countDown date];
-        [self.timer setDate: [countDown date]];
-        [self setBottomDate: date];
-    }
-    else {
-        date = [[NSDate date] dateByAddingTimeInterval: 60*60*24*5];
+    if(countDown == nil) {
+        // lets check if there're any countdowns added. If there're - display the closest
+        NSArray *array = [[DataProvider sharedProvider] countDoowns];
         
-        [self setBottomDate: [[NSDate alloc] init]];
-        [self.timer setDate: date];
+        if(array.count > 0) {
+            NSSortDescriptor *descriptor=[[NSSortDescriptor alloc] initWithKey:@"date" ascending:NO];
+            NSArray *descriptors=[NSArray arrayWithObject: descriptor];
+            NSArray *sortdArray =[array sortedArrayUsingDescriptors:descriptors];
+            countDown = [sortdArray lastObject];
+        }
     }
+    [self displayBackgroundForCountdown:countDown];
+	NSDate *date = nil;
 
-    UIFont *font = [UIFont fontWithName:@"HelveticaNeue" size: self.fontSize];
-    CGSize size = [DateHelper timerDateStringSizeForDate:date font:font];
-    
-    [self.timer setWidth: size.width];
-    //[self.timer setHeight: size.height];
-    [self.timer start];
+	if (countDown)
+	{
+		date = [countDown date];
+		[self.timer setDate:[countDown date]];
+		[self setBottomDate:date];
+	}
+	else
+	{
+		date = [[NSDate date] dateByAddingTimeInterval:60 * 60 * 24 * 5];
+
+		[self setBottomDate:[[NSDate alloc] init]];
+		[self.timer setDate:date];
+	}
+
+	UIFont *font = [UIFont fontWithName:@"HelveticaNeue" size:self.fontSize];
+	CGSize size = [DateHelper timerDateStringSizeForDate:date font:font];
+
+	[self.timer setWidth:size.width];
+	// [self.timer setHeight: size.height];
+	[self.timer start];
 }
 
 #pragma mark setting date (bottom of the screeb)
--(void) setBottomDate: (NSDate *)date{
-    NSAttributedString *dateString = [DateHelper stringForMainScreenDateLabel: date];
-    [self.dateLabel setAttributedText: dateString];
+- (void)setBottomDate:(NSDate *)date
+{
+	NSAttributedString *dateString = [DateHelper stringForMainScreenDateLabel:date];
+
+	[self.dateLabel setAttributedText:dateString];
 }
 
 #pragma mark showing / hiding timer according to screen resolution
--(void) displayProperTimer {
-    if([[App sharedApp] isLargerDeviceScreen]) {
-        self.timer = self.largerTimer;
-        self.timerGroup = self.largerTimerGroup;
-        [self.smallerTimerGroup setHidden: YES];
-        self.fontSize = 29;
-    }
-    else {
-        self.timer = self.smallerTimer;
-        self.timerGroup = self.smallerTimerGroup;
-        [self.largerTimerGroup setHidden: YES];
-        self.fontSize = 26;
-    }
+- (void)displayProperTimer
+{
+	if ([[App sharedApp] isLargerDeviceScreen])
+	{
+		self.timer = self.largerTimer;
+		self.timerGroup = self.largerTimerGroup;
+		[self.smallerTimerGroup setHidden:YES];
+		self.fontSize = 29;
+	}
+	else
+	{
+		self.timer = self.smallerTimer;
+		self.timerGroup = self.smallerTimerGroup;
+		[self.largerTimerGroup setHidden:YES];
+		self.fontSize = 26;
+	}
 }
 
 #pragma mark displaying background
--(void) displayBackground {
-   CountDown *countDown = [[CountdownsManager sharedManager] newlyAddedCountDown];
-
-    if(countDown) {
-        [countDown getFullscreenImageWithCompletionBlock:^(UIImage *image) {
-            [self.bgGroup setBackgroundImage: image];
-        }];
-    }
-
+- (void)displayBackgroundForCountdown:(Countdown *)countDown
+{
+	if (countDown)
+	{
+		[countDown getFullscreenImageWithCompletionBlock:^(UIImage *image) {
+			 [self.bgGroup setBackgroundImage:image];
+		 }];
+	}
 }
 
-- (void)didDeactivate {
-    // This method is called when watch view controller is no longer visible
-    NSLog(@"%@ did deactivate", self);
+- (void)didDeactivate
+{
+	// This method is called when watch view controller is no longer visible
+	NSLog(@"%@ did deactivate", self);
 }
 
 #pragma mark context menu
-- (IBAction)addCountdownItemClicked:(id)sender {
-    //[self pushControllerWithName: @"PickYearInterfaceController" context: @{@"from" : @"HomeController"} ];
-    [self presentControllerWithName: @"PickDateInterfaceController" context: nil];
+- (IBAction)addCountdownItemClicked:(id)sender
+{
+	// [self pushControllerWithName: @"PickYearInterfaceController" context: @{@"from" : @"HomeController"} ];
+	[self presentControllerWithName:@"PickDateInterfaceController" context:nil];
 }
 
--(IBAction) viewCountdownsItemClicked:(id)sender {
-    [self presentControllerWithName: @"CountdownsListInterfaceController" context: @{@"mode" : @(CM_CREATE)}];
+- (IBAction)viewCountdownsItemClicked:(id)sender
+{
+	[self presentControllerWithName:@"CountdownsListInterfaceController" context:@{ @"mode" : @(CM_CREATE) }];
 }
 
--(IBAction) tutorialItemClicked:(id)sender {
-    [self presentControllerWithNames:@[@"TutorialsScreen1", @"TutorialsScreen2", @"TutorialsScreen3", @"TutorialsScreen4"] contexts: nil];
+- (IBAction)tutorialItemClicked:(id)sender
+{
+	[self presentControllerWithNames:@[@"TutorialsScreen1", @"TutorialsScreen2", @"TutorialsScreen3", @"TutorialsScreen4"] contexts:nil];
 }
 
 @end

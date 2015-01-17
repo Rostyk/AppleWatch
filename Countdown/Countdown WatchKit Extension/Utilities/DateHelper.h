@@ -10,17 +10,17 @@
 #import <UIKit/UIKit.h>
 @interface DateHelper : NSObject
 
-//date picker
-+ (NSArray*) yearsForDatePicker;
-+ (NSArray*) monthsForDatePicker;
-+ (NSDate*) dateOfYear: (NSString*) year month: (NSString*)month day: (NSString*)day hours: (NSString*) hours minutes: (NSString*) minutes seconds: (NSString*) seconds;
+// date picker
++ (NSArray *)yearsForDatePicker;
++ (NSArray *)monthsForDatePicker;
++ (NSDate *)dateOfYear:(NSString *)year month:(NSString *)month day:(NSString *)day hours:(NSString *)hours minutes:(NSString *)minutes seconds:(NSString *)seconds;
 
-//general
-+(NSUInteger) daysForYear: (NSString*) year month: (NSString*) month;
-+(NSUInteger) daysForCurrentDate;
-+(CGSize) timerDateStringSizeForDate: (NSDate*) targetDate font: (UIFont*)font;
-+(NSString*) timerDateStringForDate: (NSDate*) targetDate font: (UIFont*)font;
+// general
++ (NSUInteger)daysForYear:(NSString *)year month:(NSString *)month;
++ (NSUInteger)daysForCurrentDate;
++ (CGSize)timerDateStringSizeForDate:(NSDate *)targetDate font:(UIFont *)font;
++ (NSString *)timerDateStringForDate:(NSDate *)targetDate font:(UIFont *)font;
 
-+(NSString*) stringDateForCountdownsListCell: (NSDate*) date;
-+(NSAttributedString*) stringForMainScreenDateLabel: (NSDate*) date;
++ (NSString *)stringDateForCountdownsListCell:(NSDate *)date;
++ (NSAttributedString *)stringForMainScreenDateLabel:(NSDate *)date;
 @end

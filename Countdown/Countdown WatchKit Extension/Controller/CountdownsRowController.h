@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <WatchKit/WatchKit.h>
 @interface CountdownsRowController : NSObject
-@property (weak, nonatomic) IBOutlet WKInterfaceLabel* dateLabel;
-@property (weak, nonatomic) IBOutlet WKInterfaceGroup* image;
-@property (weak, nonatomic) IBOutlet WKInterfaceGroup* bgGroup;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *dateLabel;
+@property (weak, nonatomic) IBOutlet WKInterfaceGroup *image;
+@property (weak, nonatomic) IBOutlet WKInterfaceGroup *bgGroup;
 @end
