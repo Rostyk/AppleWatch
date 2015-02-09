@@ -79,7 +79,7 @@
 	NSDateComponents *components = [[NSCalendar currentCalendar] components:flags fromDate:now toDate:targetDate options:0];
 
 
-	NSString *daysString = ([components day] > 0) ? ([NSString stringWithFormat : @"%ldd ", (long)[components day]]) : @"";
+	NSString *daysString = ([components day] > 0) ? ([NSString stringWithFormat : @"%ldD ", (long)[components day]]) : @"0D";
 
 	// in case its more than 999 days it ill display 1, 000d
 	if ([daysString length] > 5)
