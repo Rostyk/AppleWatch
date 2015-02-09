@@ -17,22 +17,22 @@
             <objects>
                 <controller spacing="38" id="AgC-eL-Hgc" customClass="HomeInterfaceController">
                     <items>
-                        <group width="1" height="1" alignment="left" layout="vertical" backgroundImage="main-screen-bg2.png" hasDetent="YES" id="tNW-jD-rfk">
+                        <group width="1" height="1" alignment="left" backgroundImage="main-screen-bg2.png" layout="vertical" id="tNW-jD-rfk">
                             <items>
-                                <group height="27" alignment="center" layout="vertical" backgroundImage="main-screen-timer-bg.png" id="4Ei-dv-vYM">
+                                <group height="27" alignment="center" backgroundImage="main-screen-timer-bg.png" layout="vertical" id="4Ei-dv-vYM">
                                     <items>
                                         <timer width="1" height="27" alignment="center" verticalAlignment="center" textAlignment="center" minimumScaleFactor="0.5" previewedSeconds="989" id="TOX-oB-eJB">
-                                            <color key="textColor" red="0.88627457620000005" green="0.85490202900000001" blue="0.0078431377190000002" alpha="1" colorSpace="deviceRGB"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <fontDescription key="font" name="Digital-7Mono" family="Digital-7" pointSize="27"/>
                                             <calendarUnit key="units" day="YES" hour="YES" minute="YES" second="YES"/>
                                         </timer>
                                     </items>
                                     <edgeInsets key="margins" left="2" right="2" top="0.0" bottom="8"/>
                                 </group>
-                                <group height="29" alignment="center" layout="vertical" backgroundImage="main-screen-timer-bg.png" id="KdE-TH-2y7">
+                                <group height="29" alignment="center" backgroundImage="main-screen-timer-bg.png" layout="vertical" id="KdE-TH-2y7">
                                     <items>
                                         <timer width="1" height="29" alignment="center" verticalAlignment="center" textAlignment="center" minimumScaleFactor="0.50000000000000011" previewedSeconds="80199" id="3vd-36-0KH">
-                                            <color key="textColor" red="0.96862745100000003" green="0.086274509799999996" blue="0.33725490200000002" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <fontDescription key="font" name="Digital-7Mono" family="Digital-7" pointSize="29"/>
                                             <calendarUnit key="units" day="YES" hour="YES" minute="YES" second="YES"/>
                                         </timer>
@@ -93,9 +93,9 @@
             <objects>
                 <controller identifier="PickDateInterfaceController" contentMode="scaleAspectFill" id="yWV-4V-daK" customClass="PickDateInterfaceController">
                     <items>
-                        <group width="0.90000000000000002" alignment="center" layout="vertical" hasDetent="YES" id="8AX-XB-Sg3">
+                        <group width="0.90000000000000002" alignment="center" layout="vertical" id="8AX-XB-Sg3">
                             <items>
-                                <table alignment="left" layout="vertical" id="sDE-CW-Q1V">
+                                <table alignment="left" id="sDE-CW-Q1V">
                                     <items>
                                         <tableRow identifier="Row" id="UY5-qB-z7J" customClass="RowController">
                                             <group key="rootItem" width="1" height="37" alignment="left" backgroundImage="date-selection-cell.png" id="BR4-4m-uQd">
@@ -139,7 +139,7 @@
             <objects>
                 <controller identifier="PickImageTableInterfaceController" id="hIp-P6-AsN" customClass="PickImageTableInterfaceController">
                     <items>
-                        <table alignment="left" layout="vertical" id="0sI-dI-Roz">
+                        <table alignment="left" id="0sI-dI-Roz">
                             <items>
                                 <tableRow identifier="ImageRow" id="kY3-bJ-RLO" customClass="ImageRowController">
                                     <group key="rootItem" width="1" alignment="left" id="s7d-eW-XeJ">
@@ -171,7 +171,7 @@
             <objects>
                 <controller identifier="PickImageInterfaceController" id="rtm-Qk-Z3O" customClass="PickImageInterfaceController">
                     <items>
-                        <group width="1" alignment="left" layout="vertical" hasDetent="YES" id="msm-4r-3U7">
+                        <group width="1" alignment="left" layout="vertical" id="msm-4r-3U7">
                             <items>
                                 <group width="1" height="0.33000000000000002" alignment="left" id="3wx-y7-cst">
                                     <items>
@@ -456,7 +456,7 @@
             <objects>
                 <controller identifier="ImageTypeSelectionInterfaceController" id="9Zj-do-zAR" customClass="ImageTypeSelectionInterfaceController">
                     <items>
-                        <group width="0.92000000000000004" height="0.55000000000000004" alignment="center" verticalAlignment="center" layout="vertical" hasDetent="YES" id="Eg1-Jn-JoK">
+                        <group width="0.92000000000000004" height="0.55000000000000004" alignment="center" verticalAlignment="center" layout="vertical" id="Eg1-Jn-JoK">
                             <items>
                                 <button width="1" alignment="left" verticalAlignment="bottom" backgroundImage="image-type-favourites.png" id="9lr-m1-UJX">
                                     <connections>
@@ -480,7 +480,7 @@
             <objects>
                 <controller identifier="PickTimeInterfaceController" animationDuration="1" id="nQp-qI-Tjt" customClass="PickTimeInterfaceController">
                     <items>
-                        <group width="1" height="1" alignment="left" layout="vertical" hasDetent="YES" id="1m9-Hv-u0b">
+                        <group width="1" height="1" alignment="left" layout="vertical" id="1m9-Hv-u0b">
                             <items>
                                 <group width="0.90000000000000002" alignment="center" verticalAlignment="center" layout="vertical" id="xbU-2g-9Mv">
                                     <items>
@@ -559,7 +559,7 @@
             <objects>
                 <controller id="nXU-Sh-YpH">
                     <items>
-                        <group width="1" alignment="left" verticalAlignment="center" layout="vertical" hasDetent="YES" id="Aan-Ag-i7K">
+                        <group width="1" alignment="left" verticalAlignment="center" layout="vertical" id="Aan-Ag-i7K">
                             <items>
                                 <button width="0.90000000000000002" alignment="center" title="2 days 6 hours" backgroundImage="alert-time-bg.png" id="aiV-Z4-GIG">
                                     <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
@@ -580,9 +580,9 @@
             <objects>
                 <controller identifier="CountdownsListInterfaceController" id="LUo-DI-SeU" customClass="CountdownsListInterfaceController">
                     <items>
-                        <group width="1" alignment="left" hasDetent="YES" id="Ekb-zx-NwC">
+                        <group width="1" alignment="left" id="Ekb-zx-NwC">
                             <items>
-                                <table alignment="left" layout="vertical" id="CbR-eC-BXc">
+                                <table alignment="left" id="CbR-eC-BXc">
                                     <items>
                                         <tableRow identifier="CountdownRow" id="aHF-01-WMw" customClass="CountdownsRowController">
                                             <group key="rootItem" width="1" alignment="left" backgroundImage="date-selection-cell.png" id="wMg-JO-4Nf">
@@ -629,9 +629,9 @@
             <objects>
                 <controller identifier="EditCountdownInterfaceController" id="K1A-ht-vSy" customClass="EditCountdownInterfaceController">
                     <items>
-                        <group width="1" alignment="left" hasDetent="YES" id="qgT-nS-uEY">
+                        <group width="1" alignment="left" id="qgT-nS-uEY">
                             <items>
-                                <table alignment="left" layout="vertical" id="uIK-JV-Z4P">
+                                <table alignment="left" id="uIK-JV-Z4P">
                                     <items>
                                         <tableRow identifier="EditCountdownRow" id="1Bg-9V-Pzv" customClass="EditCountdownRowController">
                                             <group key="rootItem" width="1" height="38" alignment="left" backgroundImage="edit-bg-cell.png" id="AXY-yJ-U9v">
@@ -676,7 +676,7 @@
             <objects>
                 <controller identifier="TutorialsScreen1" id="LX5-SE-AcL" customClass="TutorialsScreen1">
                     <items>
-                        <group width="1" height="1" alignment="left" backgroundImage="tutorial-screen1.png" hasDetent="YES" id="Kev-FW-Xvd"/>
+                        <group width="1" height="1" alignment="left" backgroundImage="tutorial-screen1.png" id="Kev-FW-Xvd"/>
                     </items>
                 </controller>
             </objects>
@@ -687,7 +687,7 @@
             <objects>
                 <controller identifier="TutorialsScreen2" id="7bq-fu-ahv" customClass="TutorialsScreen2">
                     <items>
-                        <group width="1" height="1" alignment="left" backgroundImage="tutorial-screen2.png" hasDetent="YES" id="GWG-g2-5SZ"/>
+                        <group width="1" height="1" alignment="left" backgroundImage="tutorial-screen2.png" id="GWG-g2-5SZ"/>
                     </items>
                 </controller>
             </objects>
@@ -698,7 +698,7 @@
             <objects>
                 <controller identifier="TutorialsScreen3" id="e98-o8-5CV" customClass="TutorialsScreen3">
                     <items>
-                        <group width="1" height="1" alignment="left" backgroundImage="tutorial-screen3.png" hasDetent="YES" id="Pay-je-RB6"/>
+                        <group width="1" height="1" alignment="left" backgroundImage="tutorial-screen3.png" id="Pay-je-RB6"/>
                     </items>
                 </controller>
             </objects>
@@ -709,7 +709,7 @@
             <objects>
                 <controller identifier="TutorialsScreen4" id="VPV-zk-dMg" customClass="TutorialsScreen4">
                     <items>
-                        <group width="1" height="1" alignment="left" backgroundImage="tutorial-screen4.png" hasDetent="YES" id="sYT-1O-VCD"/>
+                        <group width="1" height="1" alignment="left" backgroundImage="tutorial-screen4.png" id="sYT-1O-VCD"/>
                     </items>
                 </controller>
             </objects>

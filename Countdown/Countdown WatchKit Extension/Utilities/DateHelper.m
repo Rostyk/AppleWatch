@@ -152,7 +152,7 @@
 
 
 	NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-	[formatter setDateFormat:@" EEE, MMM. d, yyyy HH:mm"];
+	[formatter setDateFormat:@"MMM. dd, yyyy HH:mm"];
 	NSString *dateString = [formatter stringFromDate:date];
 
 	NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:dateString attributes:@{
