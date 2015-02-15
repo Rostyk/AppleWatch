@@ -7,7 +7,7 @@
 //
 
 #import "OptionsInterfaceController.h"
-
+#import "App.h"
 
 @interface OptionsInterfaceController()
 
@@ -16,8 +16,12 @@
 
 @implementation OptionsInterfaceController
 
-- (IBAction)button:(id)sender {
-    
+- (IBAction)selectButtonClicked:(id)sender {
+    [[App sharedApp].controllerToPresentOn dismissController];
+}
+
+- (IBAction)editButtonClicked:(id)sender {
+   [self presentControllerWithName:@"EditCountdownInterfaceController" context:nil];
 }
 
 @end

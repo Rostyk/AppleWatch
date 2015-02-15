@@ -624,15 +624,18 @@
             </objects>
             <point key="canvasLocation" x="861" y="643"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Options Interface Controller-->
         <scene sceneID="UgW-Ze-5qu">
             <objects>
-                <controller id="8F2-7l-ldr">
+                <controller id="8F2-7l-ldr" customClass="OptionsInterfaceController">
                     <items>
                         <group width="1" height="0.5" alignment="left" id="J1k-AQ-Nyl">
                             <items>
                                 <button width="0.90000000000000002" alignment="center" verticalAlignment="center" title="Select" backgroundImage="alert-time-bg.png" id="Pf2-3p-Zbw">
                                     <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                    <connections>
+                                        <action selector="selectButtonClicked:" destination="8F2-7l-ldr" id="KKn-gb-FZd"/>
+                                    </connections>
                                 </button>
                             </items>
                         </group>
@@ -640,6 +643,9 @@
                             <items>
                                 <button width="0.90000000000000002" alignment="center" verticalAlignment="center" title="Edit" backgroundImage="alert-time-bg.png" id="27p-cp-gz4">
                                     <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                    <connections>
+                                        <action selector="editButtonClicked:" destination="8F2-7l-ldr" id="eUX-8H-iW2"/>
+                                    </connections>
                                 </button>
                             </items>
                             <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
@@ -648,13 +654,6 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="1048" y="644"/>
-        </scene>
-        <!--Interface Controller-->
-        <scene sceneID="oha-kd-Bqr">
-            <objects>
-                <controller id="A9g-p0-i8D"/>
-            </objects>
-            <point key="canvasLocation" x="1153" y="422"/>
         </scene>
         <!--EditCountdownInterfaceController-->
         <scene sceneID="6q5-md-rnN">
