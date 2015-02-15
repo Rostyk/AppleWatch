@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14A389" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7515.2" systemVersion="14A389" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7512"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="digital-7 (mono).ttf">
@@ -565,7 +565,7 @@
                                     <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                 </button>
                                 <switch width="0.70000000000000007" alignment="center" value="YES" title="Alert" id="1Uw-bH-naZ">
-                                    <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                    <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                 </switch>
                             </items>
                             <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="24"/>
@@ -624,6 +624,38 @@
             </objects>
             <point key="canvasLocation" x="861" y="643"/>
         </scene>
+        <!--Interface Controller-->
+        <scene sceneID="UgW-Ze-5qu">
+            <objects>
+                <controller id="8F2-7l-ldr">
+                    <items>
+                        <group width="1" height="0.5" alignment="left" id="J1k-AQ-Nyl">
+                            <items>
+                                <button width="0.90000000000000002" alignment="center" verticalAlignment="center" title="Select" backgroundImage="alert-time-bg.png" id="Pf2-3p-Zbw">
+                                    <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.30000000000000004" alignment="left" id="7D1-fx-Ig7">
+                            <items>
+                                <button width="0.90000000000000002" alignment="center" verticalAlignment="center" title="Edit" backgroundImage="alert-time-bg.png" id="27p-cp-gz4">
+                                    <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                </button>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1048" y="644"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="oha-kd-Bqr">
+            <objects>
+                <controller id="A9g-p0-i8D"/>
+            </objects>
+            <point key="canvasLocation" x="1153" y="422"/>
+        </scene>
         <!--EditCountdownInterfaceController-->
         <scene sceneID="6q5-md-rnN">
             <objects>
@@ -669,7 +701,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="1047" y="643"/>
+            <point key="canvasLocation" x="1228" y="643"/>
         </scene>
         <!--TutorialsScreen1-->
         <scene sceneID="EVy-gk-J7F">

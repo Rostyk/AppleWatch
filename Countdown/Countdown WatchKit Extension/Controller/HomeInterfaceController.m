@@ -52,7 +52,7 @@
 
 - (void)willActivate
 {
-	[self displayProperTimer];
+    [self displayProperTimer];
 	[App sharedApp].controllerToPresentOn = self;
 	Countdown *countDown = [[CountdownsManager sharedManager] newlyAddedCountDown];
     

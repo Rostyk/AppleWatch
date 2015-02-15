@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		911967321A8BE923005FA7D5 /* OptionsInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911967301A8BE88E005FA7D5 /* OptionsInterfaceController.m */; };
 		91345CE41A65F16C00EB1118 /* tutorial-screen1.png in Resources */ = {isa = PBXBuildFile; fileRef = 91345CE01A65F16C00EB1118 /* tutorial-screen1.png */; };
 		91345CE51A65F16C00EB1118 /* tutorial-screen2.png in Resources */ = {isa = PBXBuildFile; fileRef = 91345CE11A65F16C00EB1118 /* tutorial-screen2.png */; };
 		91345CE61A65F16C00EB1118 /* tutorial-screen3.png in Resources */ = {isa = PBXBuildFile; fileRef = 91345CE21A65F16C00EB1118 /* tutorial-screen3.png */; };
 		91345CE71A65F16C00EB1118 /* tutorial-screen4.png in Resources */ = {isa = PBXBuildFile; fileRef = 91345CE31A65F16C00EB1118 /* tutorial-screen4.png */; };
+		913A58241A8BF79B00446E15 /* InterfaceController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 913A58231A8BF79B00446E15 /* InterfaceController2.m */; };
 		91490E571A6AE2BC00008DF6 /* DataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 91490E511A6AD6AA00008DF6 /* DataProvider.m */; };
 		91490E581A6AE45000008DF6 /* FavouritePhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 91490E4E1A6AD5BD00008DF6 /* FavouritePhoto.m */; };
 		91490E591A6AE45900008DF6 /* Countdown.m in Sources */ = {isa = PBXBuildFile; fileRef = 91490E551A6AE10C00008DF6 /* Countdown.m */; };
@@ -229,10 +231,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9119672F1A8BE88E005FA7D5 /* OptionsInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OptionsInterfaceController.h; path = "Countdown Watchkit Extension/Controller/OptionsInterfaceController.h"; sourceTree = SOURCE_ROOT; };
+		911967301A8BE88E005FA7D5 /* OptionsInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OptionsInterfaceController.m; path = "Countdown Watchkit Extension/Controller/OptionsInterfaceController.m"; sourceTree = SOURCE_ROOT; };
 		91345CE01A65F16C00EB1118 /* tutorial-screen1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tutorial-screen1.png"; sourceTree = "<group>"; };
 		91345CE11A65F16C00EB1118 /* tutorial-screen2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tutorial-screen2.png"; sourceTree = "<group>"; };
 		91345CE21A65F16C00EB1118 /* tutorial-screen3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tutorial-screen3.png"; sourceTree = "<group>"; };
 		91345CE31A65F16C00EB1118 /* tutorial-screen4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tutorial-screen4.png"; sourceTree = "<group>"; };
+		913A58221A8BF79B00446E15 /* InterfaceController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InterfaceController2.h; path = "Countdown Watchkit Extension/Controller/InterfaceController2.h"; sourceTree = SOURCE_ROOT; };
+		913A58231A8BF79B00446E15 /* InterfaceController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InterfaceController2.m; path = "Countdown Watchkit Extension/Controller/InterfaceController2.m"; sourceTree = SOURCE_ROOT; };
 		91490E4D1A6AD5BD00008DF6 /* FavouritePhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FavouritePhoto.h; path = "Countdown Watchkit Extension/Model/FavouritePhoto.h"; sourceTree = SOURCE_ROOT; };
 		91490E4E1A6AD5BD00008DF6 /* FavouritePhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FavouritePhoto.m; path = "Countdown Watchkit Extension/Model/FavouritePhoto.m"; sourceTree = SOURCE_ROOT; };
 		91490E501A6AD6AA00008DF6 /* DataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataProvider.h; path = "Countdown Watchkit Extension/Utilities/DataProvider.h"; sourceTree = SOURCE_ROOT; };
@@ -440,6 +446,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9119672B1A8BE2AE005FA7D5 /* CountdownOptions */ = {
+			isa = PBXGroup;
+			children = (
+				9119672F1A8BE88E005FA7D5 /* OptionsInterfaceController.h */,
+				911967301A8BE88E005FA7D5 /* OptionsInterfaceController.m */,
+				913A58221A8BF79B00446E15 /* InterfaceController2.h */,
+				913A58231A8BF79B00446E15 /* InterfaceController2.m */,
+			);
+			name = CountdownOptions;
+			sourceTree = "<group>";
+		};
 		91345CDF1A65F16C00EB1118 /* tutorials */ = {
 			isa = PBXGroup;
 			children = (
@@ -735,6 +752,7 @@
 		B0A3C52A1A24CD2400E356D7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				9119672B1A8BE2AE005FA7D5 /* CountdownOptions */,
 				916534951A5EFEBA008EAADB /* Tutorials */,
 				B08A35BF1A387EF000B96BB7 /* BaseController */,
 				B0FABF671A40E300006090AB /* Alert */,
@@ -1161,6 +1179,8 @@
 				B0A3C53F1A24DCC500E356D7 /* DateHelper.m in Sources */,
 				91490E581A6AE45000008DF6 /* FavouritePhoto.m in Sources */,
 				914F95321A6AEB5200EABC88 /* Countdown.xcdatamodeld in Sources */,
+				911967321A8BE923005FA7D5 /* OptionsInterfaceController.m in Sources */,
+				913A58241A8BF79B00446E15 /* InterfaceController2.m in Sources */,
 				B04E1AEF1A2C964D006FB462 /* ImageRowController.m in Sources */,
 				B0B9FD161A374AD7005E77E1 /* LocalPhotosManager.m in Sources */,
 				916534A41A5EFF77008EAADB /* TutorialsScreen4.m in Sources */,
