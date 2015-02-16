@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7515.2" systemVersion="14A389" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14A389" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7512"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="digital-7 (mono).ttf">
@@ -624,10 +624,10 @@
             </objects>
             <point key="canvasLocation" x="861" y="643"/>
         </scene>
-        <!--Options Interface Controller-->
+        <!--OptionsInterfaceController-->
         <scene sceneID="UgW-Ze-5qu">
             <objects>
-                <controller id="8F2-7l-ldr" customClass="OptionsInterfaceController">
+                <controller identifier="OptionsInterfaceController" id="8F2-7l-ldr" customClass="OptionsInterfaceController">
                     <items>
                         <group width="1" height="0.5" alignment="left" id="J1k-AQ-Nyl">
                             <items>

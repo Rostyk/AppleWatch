@@ -16,6 +16,8 @@
 #import "ControllerMode.h"
 #import "DataProvider.h"
 
+#define HOURS_IMIT_FOR_RED_COUNTDOWN               24
+
 
 @interface HomeInterfaceController ()
 @property (nonatomic, weak) IBOutlet WKInterfaceTimer *smallerTimer;
@@ -58,12 +60,16 @@
     
     if(countDown == nil) {
         // lets check if there're any countdowns added. If there're - display the closest
-        NSArray *array = [[DataProvider sharedProvider] countDoowns];
+        NSArray *array = [[DataProvider sharedProvider] countDowns];
         
         if(array.count > 0) {
             NSSortDescriptor *descriptor=[[NSSortDescriptor alloc] initWithKey:@"date" ascending:NO];
             NSArray *descriptors=[NSArray arrayWithObject: descriptor];
             NSArray *sortdArray =[array sortedArrayUsingDescriptors:descriptors];
+            
+            if([App sharedApp].selectedIndex != -1) {
+                countDown = array[[App sharedApp].selectedIndex];
+            }
             countDown = [sortdArray lastObject];
         }
     }
@@ -97,6 +103,15 @@
 {
 	NSAttributedString *dateString = [DateHelper stringForMainScreenDateLabel:date];
 
+    
+    NSTimeInterval distanceBetweenDates = [date timeIntervalSinceDate:[[NSDate alloc] init]];
+    double secondsInAnHour = 3600;
+    NSUInteger hoursBetweenDates = distanceBetweenDates / secondsInAnHour;
+    
+    if(fabs(hoursBetweenDates) < HOURS_IMIT_FOR_RED_COUNTDOWN) {
+        [self.smallerTimer setTextColor:[UIColor redColor]];
+        [self.largerTimer setTextColor:[UIColor redColor]];
+    }
 	[self.dateLabel setAttributedText:dateString];
 }
 
@@ -154,6 +169,3 @@
 }
 
 @end
-
-
-

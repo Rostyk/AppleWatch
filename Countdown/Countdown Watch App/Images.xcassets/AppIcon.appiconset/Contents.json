@@ -1,9 +1,10 @@
 {
   "images" : [
     {
-      "size" : "24x24",
+      "size" : "22x22",
       "idiom" : "watch",
       "scale" : "2x",
+      "filename" : "apple-watch-notification-icon-small.png",
       "role" : "notificationCenter",
       "subtype" : "38mm"
     },
@@ -11,6 +12,7 @@
       "size" : "27.5x27.5",
       "idiom" : "watch",
       "scale" : "2x",
+      "filename" : "apple-watch-notification-icon-large.png",
       "role" : "notificationCenter",
       "subtype" : "42mm"
     },
@@ -21,7 +23,7 @@
       "scale" : "2x"
     },
     {
-      "size" : "29x29",
+      "size" : "29.3x29.3",
       "idiom" : "watch",
       "role" : "companionSettings",
       "scale" : "3x"
@@ -30,6 +32,7 @@
       "size" : "40x40",
       "idiom" : "watch",
       "scale" : "2x",
+      "filename" : "apple-watch-home-icon-small.png",
       "role" : "appLauncher",
       "subtype" : "38mm"
     },
@@ -37,6 +40,7 @@
       "size" : "44x44",
       "idiom" : "watch",
       "scale" : "2x",
+      "filename" : "apple-watch-home-icon-large.png",
       "role" : "appLauncher",
       "subtype" : "42mm"
     },
@@ -53,6 +57,20 @@
       "scale" : "2x",
       "role" : "quickLook",
       "subtype" : "42mm"
+    },
+    {
+      "size" : "29x29",
+      "idiom" : "watch",
+      "unassigned" : true,
+      "role" : "companionSettings",
+      "scale" : "3x"
+    },
+    {
+      "scale" : "2x",
+      "idiom" : "watch",
+      "unassigned" : true,
+      "role" : "notificationCenter",
+      "subtype" : "38mm"
     },
     {
       "scale" : "2x",

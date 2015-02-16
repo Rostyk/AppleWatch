@@ -40,6 +40,10 @@
     return countDown;
 }
 
+- (void)removeCountDown:(Countdown *)countDown {
+    [self.managedObjectContext deleteObject:countDown];
+    [self save];
+}
 - (FavouritePhoto *)favouritePhoto {
     
     FavouritePhoto *favouritePhoto = [[FavouritePhoto alloc] initWithEntity:[NSEntityDescription entityForName:@"FavouritePhoto" inManagedObjectContext:self.managedObjectContext] insertIntoManagedObjectContext:self.managedObjectContext];
@@ -47,7 +51,7 @@
     return favouritePhoto;
 }
 
-- (NSArray *)countDoowns {
+- (NSArray *)countDowns {
     
     NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Countdown"  inManagedObjectContext: self.managedObjectContext];
     NSFetchRequest *fetch = [[NSFetchRequest alloc] init];

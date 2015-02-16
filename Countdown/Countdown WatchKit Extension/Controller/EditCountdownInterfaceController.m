@@ -9,6 +9,9 @@
 #import "EditCountdownInterfaceController.h"
 #import "EditCountdownRowController.h"
 #import "ControllerMode.h"
+#import "App.h"
+#import "DataProvider.h"
+#import "CountdownsManager.h"
 
 typedef NS_ENUM (NSInteger, EditItem)
 {
@@ -92,6 +95,9 @@ typedef NS_ENUM (NSInteger, EditItem)
 	switch (item)
 	{
 		case EI_REMOVE : {
+            DataProvider *provider = [DataProvider sharedProvider];
+            [provider removeCountDown:[CountdownsManager sharedManager].editedCountdown];
+            
 			break;
 		}
 		case EI_DATE : {
@@ -113,8 +119,12 @@ typedef NS_ENUM (NSInteger, EditItem)
 		default :
 			break;
 	}
-
-	[self presentControllerWithName:controllerID context:context];
+    if(controllerID) {
+	   [self presentControllerWithName:controllerID context:context];
+    }
+    else {
+        [[App sharedApp].controllerToPresentOn dismissController];
+    }
 }
 
 - (void)willActivate

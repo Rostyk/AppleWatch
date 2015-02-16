@@ -20,6 +20,8 @@ typedef NS_ENUM (NSInteger, HourMode) {
 + (instancetype)sharedApp;
 @property(nonatomic, assign) WKInterfaceController *controllerToPresentOn;
 @property (nonatomic, strong) Gallery *gallery;
+@property (nonatomic) NSUInteger selectedIndex;
+
 - (BOOL)isLargerDeviceScreen;
 - (HourMode)hourMode;
 @end

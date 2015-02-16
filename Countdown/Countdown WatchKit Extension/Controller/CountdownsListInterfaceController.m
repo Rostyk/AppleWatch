@@ -12,7 +12,7 @@
 #import "DateHelper.h"
 #import "DataProvider.h"
 #import "CountDown.h"
-
+#import "App.h"
 
 @interface CountdownsListInterfaceController ()
 @property (nonatomic, weak) IBOutlet WKInterfaceTable *table;
@@ -37,11 +37,11 @@
 	DataProvider *provider = [DataProvider sharedProvider];
 
 	// Images table
-	[self.table setNumberOfRows:[provider countDoowns].count withRowType:@"CountdownRow"];
+	[self.table setNumberOfRows:[provider countDowns].count withRowType:@"CountdownRow"];
 	for (NSInteger i = 0; i < self.table.numberOfRows; i++)
 	{
 		CountdownsRowController *row = [self.table rowControllerAtIndex:i];
-		Countdown *countdown = [[provider countDoowns] objectAtIndex:i];
+		Countdown *countdown = [[provider countDowns] objectAtIndex:i];
 		[row.dateLabel setText:[DateHelper stringDateForCountdownsListCell:[countdown date]]];
 		[row.image setBackgroundImage:[countdown image]];
 	}
@@ -62,10 +62,12 @@
 - (void)table:(WKInterfaceTable *)table didSelectRowAtIndex:(NSInteger)rowIndex
 {
 	DataProvider *provider = [DataProvider sharedProvider];
-	Countdown *countDown = [[provider countDoowns] objectAtIndex:rowIndex];
+	Countdown *countDown = [[provider countDowns] objectAtIndex:rowIndex];
 
+    [App sharedApp].selectedIndex = rowIndex;
+    
 	[CountdownsManager sharedManager].editedCountdown = countDown;
-	[self presentControllerWithName:@"EditCountdownInterfaceController" context:nil];
+	[self presentControllerWithName:@"OptionsInterfaceController" context:nil];
 }
 
 @end

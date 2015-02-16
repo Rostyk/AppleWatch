@@ -23,6 +23,7 @@
 - (Countdown *)newCountdown;
 - (FavouritePhoto *)favouritePhoto;
 
-- (NSArray *)countDoowns;
+- (NSArray *)countDowns;
+- (void)removeCountDown:(Countdown *)countDown;
 - (void)save;
 @end

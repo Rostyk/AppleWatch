@@ -17,11 +17,12 @@
 + (instancetype)sharedApp
 {
 	static dispatch_once_t once;
-	static id sharedInstance;
+	static App *sharedInstance;
 
 	dispatch_once(&once, ^
 	{
 		sharedInstance = [self new];
+        sharedInstance.selectedIndex = -1;
 	});
 
 	return sharedInstance;

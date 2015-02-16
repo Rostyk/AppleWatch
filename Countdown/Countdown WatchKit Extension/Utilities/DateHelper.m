@@ -9,7 +9,7 @@
 #import "DateHelper.h"
 #import <WatchKit/WatchKit.h>
 
-#define NUMBER_OF_YEARS_TO_DISPLAY_IN_PICKER 16
+#define NUMBER_OF_YEARS_TO_DISPLAY_IN_PICKER 27
 #define LARGEST_NUMBER_OF_DIGITS_IN_PICKER   11
 
 #define LARGER_SCREEN_WIDTH                  156
@@ -58,7 +58,7 @@
 								  inUnit:NSCalendarUnitMonth
 								 forDate:date];
 
-	return (days.length + 1);
+	return days.length;
 }
 
 + (NSUInteger)daysForCurrentDate
@@ -152,7 +152,7 @@
 
 
 	NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-	[formatter setDateFormat:@"MMM. dd, yyyy HH:mm"];
+	[formatter setDateFormat:@"MMM. dd, yyyy, HH:mm"];
 	NSString *dateString = [formatter stringFromDate:date];
 
 	NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:dateString attributes:@{
