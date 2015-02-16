@@ -70,7 +70,9 @@
             if([App sharedApp].selectedIndex != -1) {
                 countDown = array[[App sharedApp].selectedIndex];
             }
-            countDown = [sortdArray lastObject];
+            else {
+               countDown = [sortdArray lastObject];
+            }
         }
     }
     [self displayBackgroundForCountdown:countDown];
