@@ -113,7 +113,7 @@ typedef NS_ENUM (NSInteger, EditItem)
 			break;
 		}
 		case EI_ALERT : {
-			controllerID = @"";
+			controllerID = @"AlertInterfaceController";
 			break;
 		}
 		default :

@@ -554,10 +554,10 @@
             </objects>
             <point key="canvasLocation" x="654" y="386"/>
         </scene>
-        <!--Interface Controller-->
+        <!--AlertInterfaceController-->
         <scene sceneID="D8B-dm-qNA">
             <objects>
-                <controller id="nXU-Sh-YpH">
+                <controller identifier="AlertInterfaceController" id="nXU-Sh-YpH" customClass="AlertInterfaceController">
                     <items>
                         <group width="1" alignment="left" verticalAlignment="center" layout="vertical" id="Aan-Ag-i7K">
                             <items>
@@ -571,6 +571,10 @@
                             <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="24"/>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="alertSwitch" destination="1Uw-bH-naZ" id="YPr-d5-Zya"/>
+                        <outlet property="alertTimeButton" destination="aiV-Z4-GIG" id="twi-9T-qSC"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="908" y="379"/>
