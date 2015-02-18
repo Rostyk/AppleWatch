@@ -22,6 +22,8 @@
 		916534A11A5EFF68008EAADB /* TutorialsScreen3.m in Sources */ = {isa = PBXBuildFile; fileRef = 916534A01A5EFF68008EAADB /* TutorialsScreen3.m */; };
 		916534A41A5EFF77008EAADB /* TutorialsScreen4.m in Sources */ = {isa = PBXBuildFile; fileRef = 916534A31A5EFF77008EAADB /* TutorialsScreen4.m */; };
 		916534A61A5F00F3008EAADB /* main-screen-bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 916534A51A5F00F3008EAADB /* main-screen-bg2.png */; };
+		91924BF31A949A8A00631515 /* NotificationInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91924BF21A949A8A00631515 /* NotificationInterfaceController.m */; };
+		91E5531C1A949B1E0047FA4D /* TimeNotificationInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E5531B1A949B1E0047FA4D /* TimeNotificationInterfaceController.m */; };
 		91F34C191A92AB6900C23C9B /* Icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = 91F34C171A92AB6900C23C9B /* Icon120.png */; };
 		91F34C1A1A92AB6900C23C9B /* Icon180.png in Resources */ = {isa = PBXBuildFile; fileRef = 91F34C181A92AB6900C23C9B /* Icon180.png */; };
 		91F34C201A92ABAC00C23C9B /* apple-watch-home-icon-large.png in Resources */ = {isa = PBXBuildFile; fileRef = 91F34C1C1A92ABAC00C23C9B /* apple-watch-home-icon-large.png */; };
@@ -259,6 +261,10 @@
 		916534A21A5EFF77008EAADB /* TutorialsScreen4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TutorialsScreen4.h; path = Tutorials/TutorialsScreen4.h; sourceTree = "<group>"; };
 		916534A31A5EFF77008EAADB /* TutorialsScreen4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TutorialsScreen4.m; path = Tutorials/TutorialsScreen4.m; sourceTree = "<group>"; };
 		916534A51A5F00F3008EAADB /* main-screen-bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "main-screen-bg2.png"; sourceTree = "<group>"; };
+		91924BF11A949A8A00631515 /* NotificationInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NotificationInterfaceController.h; path = "Countdown Watchkit Extension/Controller/NotificationInterfaceController.h"; sourceTree = SOURCE_ROOT; };
+		91924BF21A949A8A00631515 /* NotificationInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NotificationInterfaceController.m; path = "Countdown Watchkit Extension/Controller/NotificationInterfaceController.m"; sourceTree = SOURCE_ROOT; };
+		91E5531A1A949B1E0047FA4D /* TimeNotificationInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimeNotificationInterfaceController.h; path = "Countdown Watchkit Extension/Controller/TimeNotificationInterfaceController.h"; sourceTree = SOURCE_ROOT; };
+		91E5531B1A949B1E0047FA4D /* TimeNotificationInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimeNotificationInterfaceController.m; path = "Countdown Watchkit Extension/Controller/TimeNotificationInterfaceController.m"; sourceTree = SOURCE_ROOT; };
 		91F34C171A92AB6900C23C9B /* Icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon120.png; sourceTree = "<group>"; };
 		91F34C181A92AB6900C23C9B /* Icon180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon180.png; sourceTree = "<group>"; };
 		91F34C1C1A92ABAC00C23C9B /* apple-watch-home-icon-large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-watch-home-icon-large.png"; sourceTree = "<group>"; };
@@ -745,6 +751,8 @@
 			children = (
 				B028CFF51A24AF0F00FC1991 /* Resources */,
 				B07B15DD1A1F5985001B970E /* Interface.storyboard */,
+				91E5531A1A949B1E0047FA4D /* TimeNotificationInterfaceController.h */,
+				91E5531B1A949B1E0047FA4D /* TimeNotificationInterfaceController.m */,
 				B07B15DF1A1F5985001B970E /* Images.xcassets */,
 				B07B15DB1A1F5985001B970E /* Supporting Files */,
 			);
@@ -911,6 +919,8 @@
 			children = (
 				914C45B81A93365D00BA1D0E /* AlertInterfaceController.h */,
 				914C45B91A93365D00BA1D0E /* AlertInterfaceController.m */,
+				91924BF11A949A8A00631515 /* NotificationInterfaceController.h */,
+				91924BF21A949A8A00631515 /* NotificationInterfaceController.m */,
 			);
 			name = Alert;
 			sourceTree = "<group>";
@@ -1198,6 +1208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B07B159D1A1F5972001B970E /* AppDelegate.m in Sources */,
+				91E5531C1A949B1E0047FA4D /* TimeNotificationInterfaceController.m in Sources */,
 				B07B15A01A1F5972001B970E /* Countdown.xcdatamodeld in Sources */,
 				B07B15A31A1F5972001B970E /* ViewController.m in Sources */,
 				B07B159A1A1F5972001B970E /* main.m in Sources */,
@@ -1218,6 +1229,7 @@
 				B04E1AEF1A2C964D006FB462 /* ImageRowController.m in Sources */,
 				B0B9FD161A374AD7005E77E1 /* LocalPhotosManager.m in Sources */,
 				916534A41A5EFF77008EAADB /* TutorialsScreen4.m in Sources */,
+				91924BF31A949A8A00631515 /* NotificationInterfaceController.m in Sources */,
 				B0BD54DF1A2C7ADE0099AF7D /* App.m in Sources */,
 				B06B4C671A28964400A604B3 /* PickTimeInterfaceController.m in Sources */,
 				B0A3C5321A24CD2400E356D7 /* NotificationController.m in Sources */,
