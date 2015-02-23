@@ -15,5 +15,9 @@ typedef NS_ENUM (NSInteger, ControllerMode) {
 	CM_ALERT
 };
 
-
+typedef NS_ENUM (NSInteger, ScreenMode)
+{
+    SM_PLAIN = 0,
+    SM_ALERT,
+};
 #endif

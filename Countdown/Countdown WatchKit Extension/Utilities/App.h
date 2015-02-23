@@ -19,6 +19,7 @@ typedef NS_ENUM (NSInteger, HourMode) {
 @interface App : NSObject
 + (instancetype)sharedApp;
 @property(nonatomic, assign) WKInterfaceController *controllerToPresentOn;
+@property(nonatomic, assign) WKInterfaceController *editController;
 @property (nonatomic, strong) Gallery *gallery;
 @property (nonatomic) NSUInteger selectedIndex;
 

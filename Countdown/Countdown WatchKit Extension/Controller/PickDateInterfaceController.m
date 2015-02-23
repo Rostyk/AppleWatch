@@ -25,6 +25,7 @@ typedef NS_ENUM (NSInteger, DateMode)
 @interface PickDateInterfaceController ()
 @property (nonatomic, weak) IBOutlet WKInterfaceTable *table;
 @property (nonatomic) DateMode dateMode;
+@property (nonatomic) ScreenMode screenMode;
 @property (nonatomic) BOOL needsDismissing;
 
 @property (nonatomic, strong) NSString *selectedYear;
@@ -41,7 +42,13 @@ typedef NS_ENUM (NSInteger, DateMode)
 	self = [super initWithContext:context];
 	if (self)
 	{
-		self.dateMode = DM_YEAR;
+        self.screenMode = [context[@"screenMode"] integerValue];
+        if(self.screenMode == SM_PLAIN) {
+            self.dateMode = DM_YEAR;
+        }
+        else {
+            self.dateMode = DM_DAY;
+        }
 		[self cacheImages];
 	}
 	return self;
@@ -78,11 +85,23 @@ typedef NS_ENUM (NSInteger, DateMode)
 {
 	NSUInteger days = [DateHelper daysForYear:self.selectedYear month:self.selectedMonth];
 
+    if(self.screenMode == SM_ALERT)
+        days = 30;
+    
 	[self.table setNumberOfRows:days withRowType:@"Row"];
-	for (NSInteger i = 0; i < self.table.numberOfRows; i++)
+	for (NSInteger i = 0; i < days; i++)
 	{
 		RowController *row = [self.table rowControllerAtIndex:i];
-		[row.textLabel setText:[NSString stringWithFormat:@"%ld", (i + 1)]];
+        if(self.screenMode == SM_ALERT) {
+            if(i == 0) {
+                [row.textLabel setText:@"Same day"];
+            }
+            else {
+                [row.textLabel setText:[NSString stringWithFormat:@"%ld %@", i, i == 1 ? @"day" : @"days"]];
+            }
+        }
+        else
+		   [row.textLabel setText:[NSString stringWithFormat:@"%ld", (i + 1)]];
 	}
 }
 
@@ -108,7 +127,13 @@ typedef NS_ENUM (NSInteger, DateMode)
 		}
 
 		case DM_DAY : {
-			self.selectedDay = [NSString stringWithFormat:@"%ld", (rowIndex + 1)];
+            if(self.screenMode == SM_ALERT) {
+                self.selectedDay = [NSString stringWithFormat:@"%ld", (rowIndex + 0)];
+            }
+            else {
+                self.selectedDay = [NSString stringWithFormat:@"%ld", (rowIndex + 1)];
+            }
+			
 
 			NSDate *date = [DateHelper dateOfYear:self.selectedYear month:self.selectedMonth day:self.selectedDay hours:@"0" minutes:@"0" seconds:@"0"];
 
@@ -117,13 +142,21 @@ typedef NS_ENUM (NSInteger, DateMode)
 				Countdown *countDown = [[DataProvider sharedProvider] newCountdown];
                 countDown.date = date;
 				self.needsDismissing = YES;
-				[self performSelector:@selector(presentTimeController) withObject:nil afterDelay:0.4];
+                [self performSelector:@selector(presentTimeController:) withObject:@{ @"mode" : @(CM_CREATE) } afterDelay:0.4];
 			}
 			else
 			{
-				[[CountdownsManager sharedManager].editedCountdown setDate:date];
-				[[App sharedApp].controllerToPresentOn dismissController];
-                [[DataProvider sharedProvider] save];
+                if(self.screenMode == SM_PLAIN) {
+                    [[CountdownsManager sharedManager].editedCountdown setDate:date];
+                    [[App sharedApp].controllerToPresentOn dismissController];
+                    [[DataProvider sharedProvider] save];
+                }
+                else {
+                    [self setCountdownDate];
+                    
+                    [self performSelector:@selector(presentTimeController:) withObject:@{ @"mode" : @(CM_CREATE), @"screenMode" : @(SM_ALERT)} afterDelay:0.4];
+                }
+				
 			}
 
 			break;
@@ -132,6 +165,22 @@ typedef NS_ENUM (NSInteger, DateMode)
 		default :
 			break;
 	}
+}
+
+
+#pragma mak countdown date
+
+- (void)setCountdownDate {
+    NSDate *countdownAlertDate = [[CountdownsManager sharedManager].editedCountdown date];
+    
+    //Shift countdowndate date and set it as alert date
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    NSDateComponents *components = [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay|NSCalendarUnitHour|NSCalendarUnitMinute fromDate:countdownAlertDate];
+    [components setDay:components.day - [self.selectedDay integerValue]];
+    NSDate *alertDate = [calendar dateFromComponents:components];
+    countdownAlertDate = alertDate;
+    [[CountdownsManager sharedManager].editedCountdown setAlertDate:countdownAlertDate];
+    [[DataProvider sharedProvider] save];
 }
 
 - (void)willActivate
@@ -143,9 +192,9 @@ typedef NS_ENUM (NSInteger, DateMode)
 	// This method is called when watch view controller is no longer visible
 }
 
-- (void)presentTimeController
+- (void)presentTimeController:(id)context
 {
-	[self presentControllerWithName:@"PickTimeInterfaceController" context:@{ @"mode" : @(CM_CREATE) }];
+	[self presentControllerWithName:@"PickTimeInterfaceController" context:context];
 }
 
 #pragma mark cache images

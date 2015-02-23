@@ -114,13 +114,14 @@ typedef NS_ENUM (NSInteger, EditItem)
 		}
 		case EI_ALERT : {
 			controllerID = @"AlertInterfaceController";
+            context = @{ @"mode" : @(CM_EDIT) , @"screenMode": @(SM_ALERT)};
 			break;
 		}
 		default :
 			break;
 	}
     if(controllerID) {
-	   [self presentControllerWithName:controllerID context:context];
+	    [self presentControllerWithName:controllerID context:context];
     }
     else {
         [[App sharedApp].controllerToPresentOn dismissController];
@@ -129,6 +130,7 @@ typedef NS_ENUM (NSInteger, EditItem)
 
 - (void)willActivate
 {
+    [App sharedApp].editController = self;
 }
 
 - (void)didDeactivate

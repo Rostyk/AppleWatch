@@ -7,7 +7,7 @@
 //
 
 #import "AlertInterfaceController.h"
-
+#import "ControllerMode.h"
 
 @interface AlertInterfaceController()
 @property (nonatomic, weak) IBOutlet WKInterfaceButton *alertTimeButton;
@@ -31,6 +31,12 @@
 - (void)didDeactivate {
     // This method is called when watch view controller is no longer visible
     [super didDeactivate];
+}
+
+#pragma mark set alert date
+- (IBAction)alertButtonClicked {
+    id context = @{ @"mode" : @(CM_EDIT) , @"screenMode": @(SM_ALERT) };
+    [self presentControllerWithName:@"PickDateInterfaceController" context:context];
 }
 
 @end

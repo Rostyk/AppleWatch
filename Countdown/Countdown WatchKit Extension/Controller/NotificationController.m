@@ -10,6 +10,7 @@
 
 
 @interface NotificationController ()
+@property (nonatomic, weak) IBOutlet WKInterfaceLabel *alertLabel;
 @end
 
 
@@ -33,33 +34,26 @@
 	NSLog(@"%@ will activate", self);
 }
 
-- (void)didDeactivate
-{
-	// This method is called when watch view controller is no longer visible
-	NSLog(@"%@ did deactivate", self);
+
+#pragma mark show countdown
+
+- (IBAction)showCountdown:(id)sender {
+    
 }
 
-/*
- * - (void)didReceiveLocalNotification:(UILocalNotification *)localNotification withCompletion:(void (^)(WKUserNotificationInterfaceType))completionHandler {
- *  // This method is called when a local notification needs to be presented.
- *  // Implement it if you use a dynamic notification interface.
- *  // Populate your dynamic notification inteface as quickly as possible.
- *  //
- *  // After populating your dynamic notification interface call the completion block.
- *  completionHandler(WKUserNotificationInterfaceTypeCustom);
- * }
- */
 
-/*
- * - (void)didReceiveRemoteNotification:(NSDictionary *)remoteNotification withCompletion:(void (^)(WKUserNotificationInterfaceType))completionHandler {
- *  // This method is called when a remote notification needs to be presented.
- *  // Implement it if you use a dynamic notification interface.
- *  // Populate your dynamic notification inteface as quickly as possible.
- *  //
- *  // After populating your dynamic notification interface call the completion block.
- *  completionHandler(WKUserNotificationInterfaceTypeCustom);
- * }
- */
+- (void)didReceiveLocalNotification:(UILocalNotification *)localNotification withCompletion:(void (^)(WKUserNotificationInterfaceType))completionHandler {
+ 
+    completionHandler(WKUserNotificationInterfaceTypeCustom);
+}
+
+
+
+- (void)didReceiveRemoteNotification:(NSDictionary *)remoteNotification withCompletion:(void (^)(WKUserNotificationInterfaceType))completionHandler {
+
+    completionHandler(WKUserNotificationInterfaceTypeCustom);
+}
+
 
 @end
 

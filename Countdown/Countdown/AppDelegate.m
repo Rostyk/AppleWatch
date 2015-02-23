@@ -17,8 +17,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-	NSLog(@"Launching the app");
-	// Override point for customization after application launch.
+    UILocalNotification *notification = [[UILocalNotification alloc]init];
+    notification.repeatInterval = NSCalendarUnitMinute;
+    [notification setAlertBody:@"Hello world"];
+    [notification setFireDate:[NSDate dateWithTimeIntervalSinceNow:4]];
+    [notification setTimeZone:[NSTimeZone  defaultTimeZone]];
+    [application setScheduledLocalNotifications:[NSArray arrayWithObject:notification]];
+    
+
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"ROFL"
+                                                    message:@"Dee dee doo doo."
+                                                   delegate:self
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
+    
 	return YES;
 }
 

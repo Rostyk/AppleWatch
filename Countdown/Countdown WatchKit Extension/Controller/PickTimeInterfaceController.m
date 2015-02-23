@@ -35,7 +35,9 @@ typedef NS_ENUM (NSInteger, ClockMode)
 - (IBAction)plusButtonClicked:(id)sender;
 @property (nonatomic, weak) IBOutlet WKInterfaceLabel *timeLabel;
 @property (nonatomic, weak) IBOutlet WKInterfaceLabel *pmLabel;
+@property (nonatomic, weak) IBOutlet WKInterfaceLabel *alertLabel;
 @property (nonatomic) TimeMode timeMode;
+@property (nonatomic) ScreenMode screenMode;
 @property (nonatomic) int timeComponentCount;
 
 @property (nonatomic) ClockMode clockMode;
@@ -55,6 +57,14 @@ typedef NS_ENUM (NSInteger, ClockMode)
 	if (self)
 	{
 		self.timeMode = TM_HOURS;
+        self.screenMode = [context[@"screenMode"] integerValue];
+        if(self.screenMode == SM_ALERT) {
+            self.maxHour = 24;
+            [self.pmLabel setAlpha:0.0];
+        }
+        else {
+           [self.alertLabel setAlpha:0.0];
+        }
 		self.timeComponentCount = 0;
 	}
 	return self;
@@ -136,7 +146,10 @@ typedef NS_ENUM (NSInteger, ClockMode)
 			// adding 12 hours as we're using only 12hrs shift (expl.: 5pm == 17.00)
 			if (self.clockMode == CM_PM)
 			{
-				self.pickedHours += 12;
+                if(self.screenMode == SM_PLAIN) {
+                   self.pickedHours += 12; 
+                }
+				
 			}
 			[self resetTimeComponent];
 			[self.pmLabel setAlpha:0.0];
@@ -144,7 +157,10 @@ typedef NS_ENUM (NSInteger, ClockMode)
 		case TM_MINUTES :
 			self.pickedMinutes = self.timeComponentCount;
 			[self setCountdownTime];
-			[self presentImagePicker];
+            if(self.screenMode != SM_ALERT)
+			   [self presentImagePicker];
+            else
+                [[App sharedApp].editController dismissController];
 			break;
 		default :
 			break;
@@ -184,9 +200,34 @@ typedef NS_ENUM (NSInteger, ClockMode)
 		default :
 			break;
 	}
-	[countDown setTimeWithHours:self.pickedHours minutes:self.pickedMinutes];
+    
+    if(self.screenMode == SM_ALERT) {
+        [self setAlertTime];
+    }
+    else {
+        [countDown setTimeWithHours:self.pickedHours minutes:self.pickedMinutes];
+    }
+	
     if(self.controllerMode == CM_EDIT)
         [[DataProvider sharedProvider] save];
+}
+
+#pragma mark alert date
+
+- (void)setAlertTime {
+    NSDate *countdownAlertDate = [[CountdownsManager sharedManager].editedCountdown date];
+    
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    NSDateComponents *components = [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay|NSCalendarUnitHour|NSCalendarUnitMinute fromDate:countdownAlertDate];
+    
+    //Shift countdowndate date and set it as alert date
+    NSDate *alertDate = [calendar dateBySettingHour:components.hour - self.pickedHours minute:components.minute - self.pickedMinutes second:0 ofDate:countdownAlertDate options:0];
+    
+    countdownAlertDate = alertDate;
+    [[CountdownsManager sharedManager].editedCountdown setAlertDate:countdownAlertDate];
+    
+    [[App sharedApp].editController dismissController];
+    [[DataProvider sharedProvider] save];
 }
 
 #pragma mark managing time component

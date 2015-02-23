@@ -6,15 +6,15 @@
 //  Copyright (c) 2015 Umbrella. All rights reserved.
 //
 
-#import "NotificationInterfaceController.h"
+#import "AlertNotificationInterfaceController.h"
 
 
-@interface NotificationInterfaceController()
+@interface AlertNotificationInterfaceController()
 
 @end
 
 
-@implementation NotificationInterfaceController
+@implementation AlertNotificationInterfaceController
 
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
@@ -31,6 +31,13 @@
     // This method is called when watch view controller is no longer visible
     [super didDeactivate];
 }
+
+
+ - (void)didReceiveLocalNotification:(UILocalNotification *)localNotification withCompletion:(void (^)(WKUserNotificationInterfaceType))completionHandler {
+ 
+      completionHandler(WKUserNotificationInterfaceTypeCustom);
+ }
+
 
 @end
 

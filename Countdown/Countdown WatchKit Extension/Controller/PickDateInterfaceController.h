@@ -10,5 +10,4 @@
 #import "BaseController.h"
 
 @interface PickDateInterfaceController : BaseController
-
 @end
