@@ -8,6 +8,8 @@
 
 #import "AlertInterfaceController.h"
 #import "ControllerMode.h"
+#import "CountdownsManager.h"
+#import "DateHelper.h"
 
 @interface AlertInterfaceController()
 @property (nonatomic, weak) IBOutlet WKInterfaceButton *alertTimeButton;
@@ -24,7 +26,7 @@
 }
 
 - (void)willActivate {
-    // This method is called when watch view controller is about to be visible to user
+    [self checkAlertDate];
     [super willActivate];
 }
 
@@ -33,7 +35,41 @@
     [super didDeactivate];
 }
 
-#pragma mark set alert date
+#pragma mark handle alert date
+
+- (void) checkAlertDate {
+    Countdown *countdown = [CountdownsManager sharedManager].editedCountdown;
+    NSDate *alertDate = countdown.alertDate;
+    NSDate *startDate = countdown.date;
+    NSUInteger seconds = [DateHelper secondsBetweendates:alertDate date:startDate];
+    
+    NSUInteger minutes = seconds / 60;
+    NSUInteger hours = minutes / 60;
+    NSUInteger days = minutes / 60;
+    
+    NSString *title = @"";
+    if(alertDate == nil) {
+        title = @"Never";
+    }
+    else {
+        if(days > 0) {
+            NSString *suffix = (days == 1) ? @"day" : @"days";
+            title = [NSString stringWithFormat:@"%lu %@", (unsigned long)days, suffix];
+        }
+        else if (hours > 0 && minutes > 0) {
+            NSString *suffix = (hours == 1) ? @"hour" : @"hours";
+            title = [NSString stringWithFormat:@"%lu %@ %lu min", (unsigned long)hours, suffix, minutes];
+        }
+        
+        else if (minutes > 0) {
+            NSString *suffix = (hours == 1) ? @"minute" : @"minutes";
+            title = [NSString stringWithFormat:@"%lu %@", (unsigned long)minutes, suffix];
+        }
+    }
+    
+    [self.alertTimeButton setTitle:title];
+}
+
 - (IBAction)alertButtonClicked {
     id context = @{ @"mode" : @(CM_EDIT) , @"screenMode": @(SM_ALERT) };
     [self presentControllerWithName:@"PickDateInterfaceController" context:context];

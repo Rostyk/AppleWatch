@@ -83,17 +83,22 @@ typedef NS_ENUM (NSInteger, DateMode)
 
 - (void)configureTableForDays
 {
-	NSUInteger days = [DateHelper daysForYear:self.selectedYear month:self.selectedMonth];
+    NSUInteger days = 0;
 
     if(self.screenMode == SM_ALERT)
         days = 30;
+    else
+        days = [DateHelper daysForYear:self.selectedYear month:self.selectedMonth];
     
 	[self.table setNumberOfRows:days withRowType:@"Row"];
 	for (NSInteger i = 0; i < days; i++)
 	{
 		RowController *row = [self.table rowControllerAtIndex:i];
         if(self.screenMode == SM_ALERT) {
-            if(i == 0) {
+            if(i == 0){
+                [row.textLabel setText:@"Never"];
+            }
+            else if(i == 1) {
                 [row.textLabel setText:@"Same day"];
             }
             else {
@@ -128,7 +133,7 @@ typedef NS_ENUM (NSInteger, DateMode)
 
 		case DM_DAY : {
             if(self.screenMode == SM_ALERT) {
-                self.selectedDay = [NSString stringWithFormat:@"%ld", (rowIndex + 0)];
+                self.selectedDay = [NSString stringWithFormat:@"%ld", (rowIndex - 1)];
             }
             else {
                 self.selectedDay = [NSString stringWithFormat:@"%ld", (rowIndex + 1)];
@@ -152,7 +157,12 @@ typedef NS_ENUM (NSInteger, DateMode)
                     [[DataProvider sharedProvider] save];
                 }
                 else {
-                    [self setCountdownDate];
+                    if([self.selectedDay integerValue] == -1) {
+                        [self setCountdownAlertDate:YES];
+                        [self dismissController];
+                        return;
+                    }
+                    [self setCountdownAlertDate:NO];
                     
                     [self performSelector:@selector(presentTimeController:) withObject:@{ @"mode" : @(CM_CREATE), @"screenMode" : @(SM_ALERT)} afterDelay:0.4];
                 }
@@ -170,16 +180,22 @@ typedef NS_ENUM (NSInteger, DateMode)
 
 #pragma mak countdown date
 
-- (void)setCountdownDate {
+- (void)setCountdownAlertDate:(BOOL)removeAlertDate {
     NSDate *countdownAlertDate = [[CountdownsManager sharedManager].editedCountdown date];
     
-    //Shift countdowndate date and set it as alert date
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
-    NSDateComponents *components = [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay|NSCalendarUnitHour|NSCalendarUnitMinute fromDate:countdownAlertDate];
-    [components setDay:components.day - [self.selectedDay integerValue]];
-    NSDate *alertDate = [calendar dateFromComponents:components];
-    countdownAlertDate = alertDate;
-    [[CountdownsManager sharedManager].editedCountdown setAlertDate:countdownAlertDate];
+    if(removeAlertDate) {
+        [[CountdownsManager sharedManager].editedCountdown setAlertDate:nil];
+    }
+    else {
+        //Shift countdowndate date and set it as alert date
+        NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+        NSDateComponents *components = [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay|NSCalendarUnitHour|NSCalendarUnitMinute fromDate:countdownAlertDate];
+        [components setDay:components.day - [self.selectedDay integerValue]];
+        NSDate *alertDate = [calendar dateFromComponents:components];
+        countdownAlertDate = alertDate;
+        [[CountdownsManager sharedManager].editedCountdown setAlertDate:countdownAlertDate];
+    }
+    
     [[DataProvider sharedProvider] save];
 }
 

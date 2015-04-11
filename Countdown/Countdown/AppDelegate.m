@@ -24,13 +24,6 @@
     [notification setTimeZone:[NSTimeZone  defaultTimeZone]];
     [application setScheduledLocalNotifications:[NSArray arrayWithObject:notification]];
     
-
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"ROFL"
-                                                    message:@"Dee dee doo doo."
-                                                   delegate:self
-                                          cancelButtonTitle:@"OK"
-                                          otherButtonTitles:nil];
-    [alert show];
     
 	return YES;
 }

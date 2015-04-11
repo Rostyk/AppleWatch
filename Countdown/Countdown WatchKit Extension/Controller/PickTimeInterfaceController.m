@@ -226,7 +226,7 @@ typedef NS_ENUM (NSInteger, ClockMode)
     countdownAlertDate = alertDate;
     [[CountdownsManager sharedManager].editedCountdown setAlertDate:countdownAlertDate];
     
-    [[App sharedApp].editController dismissController];
+    [self dismissController];
     [[DataProvider sharedProvider] save];
 }
 

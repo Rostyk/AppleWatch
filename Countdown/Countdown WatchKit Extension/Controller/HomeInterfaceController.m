@@ -81,14 +81,14 @@
 	if (countDown)
 	{
 		date = [countDown date];
-		[self.timer setDate:[countDown date]];
+		[self.timer setDate:date];
 		[self setBottomDate:date];
 	}
 	else
 	{
 		date = [[NSDate date] dateByAddingTimeInterval:60 * 60 * 24 * 5];
 
-		[self setBottomDate:[[NSDate alloc] init]];
+		[self setBottomDate:date];
 		[self.timer setDate:date];
 	}
 
@@ -106,9 +106,9 @@
 	NSAttributedString *dateString = [DateHelper stringForMainScreenDateLabel:date];
 
     
-    NSTimeInterval distanceBetweenDates = [date timeIntervalSinceDate:[[NSDate alloc] init]];
+    NSUInteger seconds = [DateHelper secondsBetweendates:date date:[[NSDate alloc] init]];
     double secondsInAnHour = 3600;
-    NSUInteger hoursBetweenDates = distanceBetweenDates / secondsInAnHour;
+    NSUInteger hoursBetweenDates = seconds / secondsInAnHour;
     
     if(fabs(hoursBetweenDates) < HOURS_IMIT_FOR_RED_COUNTDOWN) {
         [self.smallerTimer setTextColor:[UIColor redColor]];

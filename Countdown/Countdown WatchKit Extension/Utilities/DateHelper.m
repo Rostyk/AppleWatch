@@ -161,4 +161,12 @@
 	return attributedString;
 }
 
++ (NSUInteger)secondsBetweendates:(NSDate *)date1 date:(NSDate *)date2
+{
+    NSTimeInterval distanceBetweenDates = [date1 timeIntervalSinceDate:date2];
+    NSInteger secondsBetweenDates = abs(distanceBetweenDates);
+    
+    return secondsBetweenDates;
+}
+
 @end
