@@ -20,10 +20,12 @@
 
 + (instancetype)sharedProvider;
 
+- (void)creatingOfCountdownComplete;
 - (Countdown *)newCountdown;
 - (FavouritePhoto *)favouritePhoto;
 
 - (NSArray *)countDowns;
+- (Countdown *)latestCountdown;
 - (void)removeCountDown:(Countdown *)countDown;
 - (void)save;
 @end

@@ -484,7 +484,7 @@
                             <items>
                                 <group width="0.90000000000000002" alignment="center" verticalAlignment="center" layout="vertical" id="xbU-2g-9Mv">
                                     <items>
-                                        <label width="1" alignment="left" text="Time to alert beforehand" textAlignment="center" id="06Z-Jk-6N2">
+                                        <label width="1" alignment="left" text="Remind before" textAlignment="center" id="06Z-Jk-6N2">
                                             <fontDescription key="font" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="10"/>
                                         </label>
                                         <group width="1" height="37" alignment="center" verticalAlignment="center" backgroundImage="time-selection-time-bg.png" id="C1F-Q6-9Lf">
@@ -549,6 +549,7 @@
                         </group>
                     </items>
                     <connections>
+                        <outlet property="alertLabel" destination="06Z-Jk-6N2" id="IF6-H4-3Pa"/>
                         <outlet property="mainButton" destination="v3F-fu-E1q" id="Wjn-hY-HO4"/>
                         <outlet property="pmLabel" destination="76V-w5-pmP" id="fxR-lE-ihZ"/>
                         <outlet property="timeLabel" destination="y0a-DT-7fG" id="5Od-ll-Voo"/>
@@ -564,7 +565,7 @@
                     <items>
                         <group width="1" alignment="left" verticalAlignment="center" layout="vertical" id="Aan-Ag-i7K">
                             <items>
-                                <button width="0.90000000000000002" alignment="center" title="Never" backgroundImage="alert-time-bg.png" id="aiV-Z4-GIG">
+                                <button width="0.90000000000000002" alignment="center" title="Set Reminder" backgroundImage="alert-time-bg.png" id="aiV-Z4-GIG">
                                     <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                     <connections>
                                         <action selector="alertButtonClicked" destination="nXU-Sh-YpH" id="J02-aZ-Pz7"/>

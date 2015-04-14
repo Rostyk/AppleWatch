@@ -41,15 +41,27 @@
     Countdown *countdown = [CountdownsManager sharedManager].editedCountdown;
     NSDate *alertDate = countdown.alertDate;
     NSDate *startDate = countdown.date;
-    NSUInteger seconds = [DateHelper secondsBetweendates:alertDate date:startDate];
     
-    NSUInteger minutes = seconds / 60;
-    NSUInteger hours = minutes / 60;
-    NSUInteger days = minutes / 60;
+    
+    // Get the system calendar
+    NSCalendar *sysCalendar = [NSCalendar currentCalendar];
+    
+    // Create the NSDates
+    NSDate *date1 = alertDate;
+    NSDate *date2 = startDate;
+    
+    // Get conversion to months, days, hours, minutes
+    unsigned int unitFlags = NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitDay | NSCalendarUnitMonth;
+    
+    NSDateComponents *conversionInfo = [sysCalendar components:unitFlags fromDate:date1  toDate:date2  options:0];
+    
+    NSUInteger minutes = [conversionInfo minute];
+    NSUInteger hours = [conversionInfo hour];
+    NSUInteger days = [conversionInfo day];
     
     NSString *title = @"";
     if(alertDate == nil) {
-        title = @"Never";
+        title = @"Set Reminder";
     }
     else {
         if(days > 0) {
@@ -60,7 +72,10 @@
             NSString *suffix = (hours == 1) ? @"hour" : @"hours";
             title = [NSString stringWithFormat:@"%lu %@ %lu min", (unsigned long)hours, suffix, minutes];
         }
-        
+        else if(hours > 0) {
+            NSString *suffix = (hours == 1) ? @"hour" : @"hours";
+            title = [NSString stringWithFormat:@"%lu %@", (unsigned long)hours, suffix];
+        }
         else if (minutes > 0) {
             NSString *suffix = (hours == 1) ? @"minute" : @"minutes";
             title = [NSString stringWithFormat:@"%lu %@", (unsigned long)minutes, suffix];

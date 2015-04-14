@@ -4,22 +4,6 @@
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Countdown WatchKit Extension/Controller/PickImageInterfaceController.m"
-            timestampString = "443217187.068009"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "341"
-            endingLineNumber = "341"
-            landmarkName = "-buttonClicked:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
          <BreakpointContent
             shouldBeEnabled = "Yes"
@@ -51,22 +35,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Countdown WatchKit Extension/Controller/PickTimeInterfaceController.m"
-            timestampString = "446419250.88215"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "224"
-            endingLineNumber = "224"
-            landmarkName = "-setAlertTime"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "Countdown WatchKit Extension/Controller/NotificationController.m"
             timestampString = "446420767.404924"
             startingColumnNumber = "9223372036854775807"
@@ -83,28 +51,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Countdown WatchKit Extension/Controller/HomeInterfaceController.m"
-            timestampString = "450385642.480959"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
-            landmarkName = "-setBottomDate:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "Countdown WatchKit Extension/Controller/PickTimeInterfaceController.m"
-            timestampString = "450385915.056094"
+            timestampString = "450744701.14334"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "229"
-            endingLineNumber = "229"
+            startingLineNumber = "233"
+            endingLineNumber = "233"
             landmarkName = "-setAlertTime"
             landmarkType = "5">
          </BreakpointContent>
@@ -179,13 +131,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Countdown WatchKit Extension/Utilities/DateHelper.m"
-            timestampString = "450388558.660194"
+            filePath = "Countdown Watchkit Extension/Controller/AlertInterfaceController.m"
+            timestampString = "450389971.212327"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "+daysForYear:month:"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "-checkAlertDate"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -195,13 +147,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Countdown Watchkit Extension/Model/Countdown.m"
-            timestampString = "450388565.570233"
+            filePath = "Countdown WatchKit Extension/Controller/PickDateInterfaceController.m"
+            timestampString = "450741614.993158"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "-setTimeWithHours:minutes:"
+            startingLineNumber = "184"
+            endingLineNumber = "184"
+            landmarkName = "-setCountdownAlertDate:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -212,11 +164,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Countdown Watchkit Extension/Controller/AlertInterfaceController.m"
-            timestampString = "450389971.212327"
+            timestampString = "450744151.256923"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "-checkAlertDate"
             landmarkType = "5">
          </BreakpointContent>

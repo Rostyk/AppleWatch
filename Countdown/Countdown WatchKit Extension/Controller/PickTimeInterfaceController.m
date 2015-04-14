@@ -215,13 +215,17 @@ typedef NS_ENUM (NSInteger, ClockMode)
 #pragma mark alert date
 
 - (void)setAlertTime {
-    NSDate *countdownAlertDate = [[CountdownsManager sharedManager].editedCountdown date];
+    NSDate *countdownAlertDate = [[CountdownsManager sharedManager].editedCountdown alertDate];
     
     NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
-    NSDateComponents *components = [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay|NSCalendarUnitHour|NSCalendarUnitMinute fromDate:countdownAlertDate];
     
     //Shift countdowndate date and set it as alert date
-    NSDate *alertDate = [calendar dateBySettingHour:components.hour - self.pickedHours minute:components.minute - self.pickedMinutes second:0 ofDate:countdownAlertDate options:0];
+    
+    NSDateComponents *offsetComponents = [[NSDateComponents alloc] init];
+    [offsetComponents setHour: -self.pickedHours];
+    [offsetComponents setMinute: -self.pickedMinutes];
+    
+    NSDate *alertDate = [calendar dateByAddingComponents:offsetComponents toDate:countdownAlertDate options:0];
     
     countdownAlertDate = alertDate;
     [[CountdownsManager sharedManager].editedCountdown setAlertDate:countdownAlertDate];

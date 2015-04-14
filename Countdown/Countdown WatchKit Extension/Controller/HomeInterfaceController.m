@@ -55,23 +55,23 @@
 - (void)willActivate
 {
     [self displayProperTimer];
+    [[DataProvider sharedProvider] creatingOfCountdownComplete];
 	[App sharedApp].controllerToPresentOn = self;
 	Countdown *countDown = [[CountdownsManager sharedManager] newlyAddedCountDown];
-    
+    if(!countDown) {
+        countDown = [[DataProvider sharedProvider] latestCountdown];
+    }
+        
     if(countDown == nil) {
         // lets check if there're any countdowns added. If there're - display the closest
         NSArray *array = [[DataProvider sharedProvider] countDowns];
         
         if(array.count > 0) {
-            NSSortDescriptor *descriptor=[[NSSortDescriptor alloc] initWithKey:@"date" ascending:NO];
-            NSArray *descriptors=[NSArray arrayWithObject: descriptor];
-            NSArray *sortdArray =[array sortedArrayUsingDescriptors:descriptors];
-            
             if([App sharedApp].selectedIndex != -1) {
                 countDown = array[[App sharedApp].selectedIndex];
             }
             else {
-               countDown = [sortdArray lastObject];
+               countDown = [array firstObject];
             }
         }
     }
@@ -83,6 +83,7 @@
 		date = [countDown date];
 		[self.timer setDate:date];
 		[self setBottomDate:date];
+        [CountdownsManager sharedManager].editedCountdown = nil;
 	}
 	else
 	{
@@ -113,6 +114,10 @@
     if(fabs(hoursBetweenDates) < HOURS_IMIT_FOR_RED_COUNTDOWN) {
         [self.smallerTimer setTextColor:[UIColor redColor]];
         [self.largerTimer setTextColor:[UIColor redColor]];
+    }
+    else {
+        [self.smallerTimer setTextColor:[UIColor whiteColor]];
+        [self.largerTimer setTextColor:[UIColor whiteColor]];
     }
 	[self.dateLabel setAttributedText:dateString];
 }

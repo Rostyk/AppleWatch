@@ -102,7 +102,7 @@ typedef NS_ENUM (NSInteger, DateMode)
                 [row.textLabel setText:@"Same day"];
             }
             else {
-                [row.textLabel setText:[NSString stringWithFormat:@"%ld %@", i, i == 1 ? @"day" : @"days"]];
+                [row.textLabel setText:[NSString stringWithFormat:@"%ld %@", i - 1, (i - 1) == 1 ? @"day" : @"days"]];
             }
         }
         else
@@ -189,9 +189,12 @@ typedef NS_ENUM (NSInteger, DateMode)
     else {
         //Shift countdowndate date and set it as alert date
         NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
-        NSDateComponents *components = [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay|NSCalendarUnitHour|NSCalendarUnitMinute fromDate:countdownAlertDate];
-        [components setDay:components.day - [self.selectedDay integerValue]];
-        NSDate *alertDate = [calendar dateFromComponents:components];
+        
+        NSDateComponents *offsetComponents = [[NSDateComponents alloc] init];
+        [offsetComponents setDay: - [self.selectedDay integerValue]];
+        
+        NSDate *alertDate = [calendar dateByAddingComponents:offsetComponents toDate:countdownAlertDate options:0];
+
         countdownAlertDate = alertDate;
         [[CountdownsManager sharedManager].editedCountdown setAlertDate:countdownAlertDate];
     }

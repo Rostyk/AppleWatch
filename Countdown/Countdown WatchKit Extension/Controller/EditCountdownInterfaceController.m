@@ -76,7 +76,7 @@ typedef NS_ENUM (NSInteger, EditItem)
 			}
 			case EI_ALERT : {
 				[row.image setImageNamed:@"edit-alert-icon"];
-				[row.captionLabel setText:@"Alert"];
+				[row.captionLabel setText:@"Reminder"];
 				break;
 			}
 			default :

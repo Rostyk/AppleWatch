@@ -8,6 +8,7 @@
 
 #import "OptionsInterfaceController.h"
 #import "App.h"
+#import "CountdownsManager.h"
 
 @interface OptionsInterfaceController()
 
@@ -17,6 +18,8 @@
 @implementation OptionsInterfaceController
 
 - (IBAction)selectButtonClicked:(id)sender {
+    CountdownsManager *manager = [CountdownsManager sharedManager];
+    manager.newlyAddedCountDown = manager.editedCountdown;
     [[App sharedApp].controllerToPresentOn dismissController];
 }
 

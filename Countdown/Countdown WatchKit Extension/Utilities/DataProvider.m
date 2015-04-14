@@ -15,6 +15,8 @@
 
 @interface DataProvider()
 @property (nonatomic, strong) NSManagedObjectID *lastAddedCountdownID;
+@property (nonatomic, strong) Countdown *cachedCountdown;
+@property (nonatomic) BOOL creatingSession;
 @end
 @implementation DataProvider
 
@@ -31,12 +33,21 @@
     return sharedInstance;
 }
 
+- (void)creatingOfCountdownComplete {
+    self.creatingSession = NO;
+}
+
 - (Countdown *)newCountdown {
+    if(self.creatingSession) {
+        return self.cachedCountdown;
+    }
     Countdown *countDown = [[Countdown alloc] initWithEntity:[NSEntityDescription entityForName:@"Countdown" inManagedObjectContext:self.managedObjectContext] insertIntoManagedObjectContext:self.managedObjectContext];
     
     //Not that its a temporary ID
     [CountdownsManager sharedManager].newlyAddedCountDown = countDown;
     self.lastAddedCountdownID = [countDown objectID];
+    self.cachedCountdown = countDown;
+    self.creatingSession = YES;
     return countDown;
 }
 
@@ -60,7 +71,21 @@
     NSError * error = nil;
     NSArray *fetchedObjects = [self.managedObjectContext executeFetchRequest:fetch error:&error];
     
-    return fetchedObjects;
+    
+    NSSortDescriptor *firstDescriptor = [[NSSortDescriptor alloc] initWithKey:@"date" ascending:YES];
+        NSArray *sortDescriptors = [NSArray arrayWithObjects:firstDescriptor, nil];
+    
+    NSArray *sortedArray = [fetchedObjects sortedArrayUsingDescriptors:sortDescriptors];
+    return sortedArray;
+}
+
+- (Countdown *)latestCountdown {
+    NSArray *countdowns = [self countDowns];
+    
+    if(countdowns.count > 0)
+        return [countdowns firstObject];
+    
+    return nil;
 }
 
 - (void)save {
