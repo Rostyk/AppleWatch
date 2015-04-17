@@ -9,7 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
+@property (nonatomic, weak) IBOutlet UIImageView *bgView;
 @end
 
 @implementation ViewController
@@ -17,6 +17,7 @@
 - (void)viewDidLoad
 {
 	[super viewDidLoad];
+    self.bgView.image = [UIImage imageNamed:@"fe"];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

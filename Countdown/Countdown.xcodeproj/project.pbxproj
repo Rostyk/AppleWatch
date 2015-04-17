@@ -8,6 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		9108C1361A9BD48C00C0C35D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B07B15A41A1F5972001B970E /* Main.storyboard */; };
+		910E160C1AE12CE80016FF3B /* 24x24@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 910E16061AE12CE80016FF3B /* 24x24@2x.png */; };
+		910E160D1AE12CE80016FF3B /* 29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 910E16071AE12CE80016FF3B /* 29x29@2x.png */; };
+		910E160E1AE12CE80016FF3B /* 29x29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 910E16081AE12CE80016FF3B /* 29x29@3x.png */; };
+		910E160F1AE12CE80016FF3B /* 44x44@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 910E16091AE12CE80016FF3B /* 44x44@2x.png */; };
+		910E16101AE12CE80016FF3B /* 86x86@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 910E160A1AE12CE80016FF3B /* 86x86@2x.png */; };
+		910E16111AE12CE80016FF3B /* 98x98@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 910E160B1AE12CE80016FF3B /* 98x98@2x.png */; };
+		910E16191AE12D9D0016FF3B /* 24x24@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 910E16131AE12D9D0016FF3B /* 24x24@2x.png */; };
+		910E161A1AE12D9D0016FF3B /* 29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 910E16141AE12D9D0016FF3B /* 29x29@2x.png */; };
+		910E161B1AE12D9D0016FF3B /* 29x29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 910E16151AE12D9D0016FF3B /* 29x29@3x.png */; };
+		910E161C1AE12D9D0016FF3B /* 44x44@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 910E16161AE12D9D0016FF3B /* 44x44@2x.png */; };
+		910E161D1AE12D9D0016FF3B /* 86x86@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 910E16171AE12D9D0016FF3B /* 86x86@2x.png */; };
+		910E161E1AE12D9D0016FF3B /* 98x98@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 910E16181AE12D9D0016FF3B /* 98x98@2x.png */; };
+		910E16201AE1332A0016FF3B /* 27@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 910E161F1AE1332A0016FF3B /* 27@2x.png */; };
+		910E16221AE133820016FF3B /* 40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 910E16211AE133820016FF3B /* 40x40@2x.png */; };
 		911967321A8BE923005FA7D5 /* OptionsInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911967301A8BE88E005FA7D5 /* OptionsInterfaceController.m */; };
 		91345CE41A65F16C00EB1118 /* tutorial-screen1.png in Resources */ = {isa = PBXBuildFile; fileRef = 91345CE01A65F16C00EB1118 /* tutorial-screen1.png */; };
 		91345CE51A65F16C00EB1118 /* tutorial-screen2.png in Resources */ = {isa = PBXBuildFile; fileRef = 91345CE11A65F16C00EB1118 /* tutorial-screen2.png */; };
@@ -24,6 +38,10 @@
 		916534A41A5EFF77008EAADB /* TutorialsScreen4.m in Sources */ = {isa = PBXBuildFile; fileRef = 916534A31A5EFF77008EAADB /* TutorialsScreen4.m */; };
 		916534A61A5F00F3008EAADB /* main-screen-bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 916534A51A5F00F3008EAADB /* main-screen-bg2.png */; };
 		91924BF31A949A8A00631515 /* AlertNotificationInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91924BF21A949A8A00631515 /* AlertNotificationInterfaceController.m */; };
+		91BF5F161AE1189700A57456 /* 1242x2208.png in Resources */ = {isa = PBXBuildFile; fileRef = 91BF5F121AE1189700A57456 /* 1242x2208.png */; };
+		91BF5F171AE1189700A57456 /* 640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 91BF5F131AE1189700A57456 /* 640x1136.png */; };
+		91BF5F181AE1189700A57456 /* 640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = 91BF5F141AE1189700A57456 /* 640x960.png */; };
+		91BF5F191AE1189700A57456 /* 750x1334.png in Resources */ = {isa = PBXBuildFile; fileRef = 91BF5F151AE1189700A57456 /* 750x1334.png */; };
 		91F34C191A92AB6900C23C9B /* Icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = 91F34C171A92AB6900C23C9B /* Icon120.png */; };
 		91F34C1A1A92AB6900C23C9B /* Icon180.png in Resources */ = {isa = PBXBuildFile; fileRef = 91F34C181A92AB6900C23C9B /* Icon180.png */; };
 		91F34C201A92ABAC00C23C9B /* apple-watch-home-icon-large.png in Resources */ = {isa = PBXBuildFile; fileRef = 91F34C1C1A92ABAC00C23C9B /* apple-watch-home-icon-large.png */; };
@@ -238,6 +256,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		910E16061AE12CE80016FF3B /* 24x24@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "24x24@2x.png"; sourceTree = "<group>"; };
+		910E16071AE12CE80016FF3B /* 29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "29x29@2x.png"; sourceTree = "<group>"; };
+		910E16081AE12CE80016FF3B /* 29x29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "29x29@3x.png"; sourceTree = "<group>"; };
+		910E16091AE12CE80016FF3B /* 44x44@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "44x44@2x.png"; sourceTree = "<group>"; };
+		910E160A1AE12CE80016FF3B /* 86x86@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "86x86@2x.png"; sourceTree = "<group>"; };
+		910E160B1AE12CE80016FF3B /* 98x98@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "98x98@2x.png"; sourceTree = "<group>"; };
+		910E16131AE12D9D0016FF3B /* 24x24@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "24x24@2x.png"; sourceTree = "<group>"; };
+		910E16141AE12D9D0016FF3B /* 29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "29x29@2x.png"; sourceTree = "<group>"; };
+		910E16151AE12D9D0016FF3B /* 29x29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "29x29@3x.png"; sourceTree = "<group>"; };
+		910E16161AE12D9D0016FF3B /* 44x44@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "44x44@2x.png"; sourceTree = "<group>"; };
+		910E16171AE12D9D0016FF3B /* 86x86@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "86x86@2x.png"; sourceTree = "<group>"; };
+		910E16181AE12D9D0016FF3B /* 98x98@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "98x98@2x.png"; sourceTree = "<group>"; };
+		910E161F1AE1332A0016FF3B /* 27@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "27@2x.png"; sourceTree = "<group>"; };
+		910E16211AE133820016FF3B /* 40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "40x40@2x.png"; sourceTree = "<group>"; };
 		9119672F1A8BE88E005FA7D5 /* OptionsInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OptionsInterfaceController.h; path = "Countdown Watchkit Extension/Controller/OptionsInterfaceController.h"; sourceTree = SOURCE_ROOT; };
 		911967301A8BE88E005FA7D5 /* OptionsInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OptionsInterfaceController.m; path = "Countdown Watchkit Extension/Controller/OptionsInterfaceController.m"; sourceTree = SOURCE_ROOT; };
 		91345CE01A65F16C00EB1118 /* tutorial-screen1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tutorial-screen1.png"; sourceTree = "<group>"; };
@@ -263,6 +295,10 @@
 		916534A51A5F00F3008EAADB /* main-screen-bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "main-screen-bg2.png"; sourceTree = "<group>"; };
 		91924BF11A949A8A00631515 /* AlertNotificationInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlertNotificationInterfaceController.h; path = "Countdown Watchkit Extension/Controller/AlertNotificationInterfaceController.h"; sourceTree = SOURCE_ROOT; };
 		91924BF21A949A8A00631515 /* AlertNotificationInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlertNotificationInterfaceController.m; path = "Countdown Watchkit Extension/Controller/AlertNotificationInterfaceController.m"; sourceTree = SOURCE_ROOT; };
+		91BF5F121AE1189700A57456 /* 1242x2208.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1242x2208.png; sourceTree = "<group>"; };
+		91BF5F131AE1189700A57456 /* 640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 640x1136.png; sourceTree = "<group>"; };
+		91BF5F141AE1189700A57456 /* 640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 640x960.png; sourceTree = "<group>"; };
+		91BF5F151AE1189700A57456 /* 750x1334.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 750x1334.png; sourceTree = "<group>"; };
 		91F34C171A92AB6900C23C9B /* Icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon120.png; sourceTree = "<group>"; };
 		91F34C181A92AB6900C23C9B /* Icon180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon180.png; sourceTree = "<group>"; };
 		91F34C1C1A92ABAC00C23C9B /* apple-watch-home-icon-large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-watch-home-icon-large.png"; sourceTree = "<group>"; };
@@ -328,7 +364,6 @@
 		B07B15A21A1F5972001B970E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B07B15A51A1F5972001B970E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B07B15A71A1F5972001B970E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B07B15AA1A1F5972001B970E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B07B15C41A1F5985001B970E /* Countdown WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Countdown WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B07B15C61A1F5985001B970E /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = System/Library/Frameworks/WatchKit.framework; sourceTree = SDKROOT; };
 		B07B15CA1A1F5985001B970E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -459,6 +494,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		910E16051AE12CE80016FF3B /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				910E16211AE133820016FF3B /* 40x40@2x.png */,
+				910E161F1AE1332A0016FF3B /* 27@2x.png */,
+				910E16061AE12CE80016FF3B /* 24x24@2x.png */,
+				910E16071AE12CE80016FF3B /* 29x29@2x.png */,
+				910E16081AE12CE80016FF3B /* 29x29@3x.png */,
+				910E16091AE12CE80016FF3B /* 44x44@2x.png */,
+				910E160A1AE12CE80016FF3B /* 86x86@2x.png */,
+				910E160B1AE12CE80016FF3B /* 98x98@2x.png */,
+			);
+			path = icon;
+			sourceTree = "<group>";
+		};
+		910E16121AE12D9D0016FF3B /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				910E16131AE12D9D0016FF3B /* 24x24@2x.png */,
+				910E16141AE12D9D0016FF3B /* 29x29@2x.png */,
+				910E16151AE12D9D0016FF3B /* 29x29@3x.png */,
+				910E16161AE12D9D0016FF3B /* 44x44@2x.png */,
+				910E16171AE12D9D0016FF3B /* 86x86@2x.png */,
+				910E16181AE12D9D0016FF3B /* 98x98@2x.png */,
+			);
+			path = icon;
+			sourceTree = "<group>";
+		};
 		9119672B1A8BE2AE005FA7D5 /* CountdownOptions */ = {
 			isa = PBXGroup;
 			children = (
@@ -494,9 +557,22 @@
 			name = Tutorials;
 			sourceTree = "<group>";
 		};
+		91BF5F111AE1189700A57456 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				91BF5F121AE1189700A57456 /* 1242x2208.png */,
+				91BF5F131AE1189700A57456 /* 640x1136.png */,
+				91BF5F151AE1189700A57456 /* 750x1334.png */,
+				91BF5F141AE1189700A57456 /* 640x960.png */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
 		91F34C161A92AB6900C23C9B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				910E16121AE12D9D0016FF3B /* icon */,
+				91BF5F111AE1189700A57456 /* Launch */,
 				91F34C171A92AB6900C23C9B /* Icon120.png */,
 				91F34C181A92AB6900C23C9B /* Icon180.png */,
 			);
@@ -517,6 +593,7 @@
 		B028CFF51A24AF0F00FC1991 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				910E16051AE12CE80016FF3B /* icon */,
 				91F34C1B1A92ABAC00C23C9B /* icons */,
 				91345CDF1A65F16C00EB1118 /* tutorials */,
 				B04E1B0C1A2CB217006FB462 /* Gallery */,
@@ -694,7 +771,6 @@
 				B07B15A21A1F5972001B970E /* ViewController.m */,
 				B07B15A41A1F5972001B970E /* Main.storyboard */,
 				B07B15A71A1F5972001B970E /* Images.xcassets */,
-				B07B15A91A1F5972001B970E /* LaunchScreen.xib */,
 				B07B159E1A1F5972001B970E /* Countdown.xcdatamodeld */,
 				91F34C161A92AB6900C23C9B /* Resources */,
 				B07B15971A1F5972001B970E /* Supporting Files */,
@@ -1021,10 +1097,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				910E161D1AE12D9D0016FF3B /* 86x86@2x.png in Resources */,
+				91BF5F171AE1189700A57456 /* 640x1136.png in Resources */,
 				91F34C191A92AB6900C23C9B /* Icon120.png in Resources */,
+				910E161B1AE12D9D0016FF3B /* 29x29@3x.png in Resources */,
 				B07B15A81A1F5972001B970E /* Images.xcassets in Resources */,
 				91F34C1A1A92AB6900C23C9B /* Icon180.png in Resources */,
+				910E161C1AE12D9D0016FF3B /* 44x44@2x.png in Resources */,
+				910E161E1AE12D9D0016FF3B /* 98x98@2x.png in Resources */,
+				91BF5F181AE1189700A57456 /* 640x960.png in Resources */,
+				91BF5F161AE1189700A57456 /* 1242x2208.png in Resources */,
+				910E16191AE12D9D0016FF3B /* 24x24@2x.png in Resources */,
+				91BF5F191AE1189700A57456 /* 750x1334.png in Resources */,
 				9108C1361A9BD48C00C0C35D /* Main.storyboard in Resources */,
+				910E161A1AE12D9D0016FF3B /* 29x29@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1135,17 +1221,20 @@
 				B04AAD451A39DD80003C5C1A /* gallery34_fullscreen.png in Resources */,
 				B0BD54D41A2C67990099AF7D /* main-screen-date-bg.png in Resources */,
 				B07B15DE1A1F5985001B970E /* Interface.storyboard in Resources */,
+				910E16221AE133820016FF3B /* 40x40@2x.png in Resources */,
 				91F34C221A92ABAC00C23C9B /* apple-watch-notification-icon-large.png in Resources */,
 				91345CE61A65F16C00EB1118 /* tutorial-screen3.png in Resources */,
 				B04AAD1B1A39DD80003C5C1A /* gallery15_fullscreen.png in Resources */,
 				B0BD54DA1A2C67990099AF7D /* time-selection-minus.png in Resources */,
 				B04AAD4B1A39DD80003C5C1A /* gallery37_fullscreen.png in Resources */,
 				B04AAD131A39DD80003C5C1A /* gallery11_fullscreen.png in Resources */,
+				910E160D1AE12CE80016FF3B /* 29x29@2x.png in Resources */,
 				B04AAD5B1A39DD80003C5C1A /* gallery9_fullscreen.png in Resources */,
 				B04AAD171A39DD80003C5C1A /* gallery13_fullscreen.png in Resources */,
 				B0BD54D11A2C67990099AF7D /* date-selection-cell.png in Resources */,
 				B028CFF91A24B61900FC1991 /* main-screen-bg.png in Resources */,
 				B04AAD3F1A39DD80003C5C1A /* gallery31_fullscreen.png in Resources */,
+				910E16101AE12CE80016FF3B /* 86x86@2x.png in Resources */,
 				B0B9FD0E1A371D01005E77E1 /* image-type-favourites.png in Resources */,
 				B04AAD391A39DD80003C5C1A /* gallery29_fullscreen.png in Resources */,
 				91F34C201A92ABAC00C23C9B /* apple-watch-home-icon-large.png in Resources */,
@@ -1158,6 +1247,7 @@
 				B04AAD551A39DD80003C5C1A /* gallery6_fullscreen.png in Resources */,
 				B04AAD411A39DD80003C5C1A /* gallery32_fullscreen.png in Resources */,
 				B04AAD2D1A39DD80003C5C1A /* gallery23_fullscreen.png in Resources */,
+				910E16201AE1332A0016FF3B /* 27@2x.png in Resources */,
 				B0BD54D51A2C67990099AF7D /* main-screen-timer-bg.png in Resources */,
 				B0D255331A2DE183000F59CE /* edit-alert-icon.png in Resources */,
 				B04AAD4F1A39DD80003C5C1A /* gallery3_fullscreen.png in Resources */,
@@ -1166,6 +1256,7 @@
 				B04AAD511A39DD80003C5C1A /* gallery4_fullscreen.png in Resources */,
 				B0FABF641A40DD56006090AB /* edit-remove-icon.png in Resources */,
 				B0D255351A2DE183000F59CE /* edit-date-icon.png in Resources */,
+				910E160F1AE12CE80016FF3B /* 44x44@2x.png in Resources */,
 				91F34C211A92ABAC00C23C9B /* apple-watch-home-icon-small.png in Resources */,
 				B0B9FD0D1A371D01005E77E1 /* image-type-default.png in Resources */,
 				B04AAD591A39DD80003C5C1A /* gallery8_fullscreen.png in Resources */,
@@ -1182,6 +1273,7 @@
 				B04AAD1D1A39DD80003C5C1A /* gallery16_fullscreen.png in Resources */,
 				B0BD54DB1A2C67990099AF7D /* time-selection-plus.png in Resources */,
 				B04AAD531A39DD80003C5C1A /* gallery5_fullscreen.png in Resources */,
+				910E160C1AE12CE80016FF3B /* 24x24@2x.png in Resources */,
 				B04AAD571A39DD80003C5C1A /* gallery7_fullscreen.png in Resources */,
 				B04AAD471A39DD80003C5C1A /* gallery35_fullscreen.png in Resources */,
 				B04AAD3B1A39DD80003C5C1A /* gallery2_fullscreen.png in Resources */,
@@ -1193,7 +1285,9 @@
 				B07B15E01A1F5985001B970E /* Images.xcassets in Resources */,
 				B04AAD2F1A39DD80003C5C1A /* gallery24_fullscreen.png in Resources */,
 				B0BD54D91A2C67990099AF7D /* time-selection-button.png in Resources */,
+				910E16111AE12CE80016FF3B /* 98x98@2x.png in Resources */,
 				B04AAD271A39DD80003C5C1A /* gallery20_fullscreen.png in Resources */,
+				910E160E1AE12CE80016FF3B /* 29x29@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1271,14 +1365,6 @@
 				B07B15A51A1F5972001B970E /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B07B15A91A1F5972001B970E /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B07B15AA1A1F5972001B970E /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1364,6 +1450,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Countdown/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1375,6 +1462,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Countdown/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
