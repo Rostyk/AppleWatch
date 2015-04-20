@@ -12,21 +12,21 @@
       "size" : "27.5x27.5",
       "idiom" : "watch",
       "scale" : "2x",
-      "filename" : "27@2x.png",
+      "filename" : "27x27@2x.png",
       "role" : "notificationCenter",
       "subtype" : "42mm"
     },
     {
       "size" : "29x29",
       "idiom" : "watch",
-      "filename" : "29x29@2x.png",
+      "filename" : "29x29@2x-2.png",
       "role" : "companionSettings",
       "scale" : "2x"
     },
     {
       "size" : "29x29",
       "idiom" : "watch",
-      "filename" : "29x29@3x.png",
+      "filename" : "29x29@3x-1.png",
       "role" : "companionSettings",
       "scale" : "3x"
     },
@@ -34,7 +34,7 @@
       "size" : "40x40",
       "idiom" : "watch",
       "scale" : "2x",
-      "filename" : "40x40@2x.png",
+      "filename" : "40x40@2x-1.png",
       "role" : "appLauncher",
       "subtype" : "38mm"
     },
@@ -61,6 +61,34 @@
       "filename" : "98x98@2x.png",
       "role" : "quickLook",
       "subtype" : "42mm"
+    },
+    {
+      "size" : "29x29",
+      "idiom" : "iphone",
+      "filename" : "29x29@2x.png",
+      "unassigned" : true,
+      "scale" : "2x"
+    },
+    {
+      "size" : "29x29",
+      "idiom" : "iphone",
+      "filename" : "29x29@3x.png",
+      "unassigned" : true,
+      "scale" : "3x"
+    },
+    {
+      "size" : "40x40",
+      "idiom" : "iphone",
+      "filename" : "40x40@2x.png",
+      "unassigned" : true,
+      "scale" : "2x"
+    },
+    {
+      "size" : "29x29",
+      "idiom" : "ipad",
+      "filename" : "29x29@2x-1.png",
+      "unassigned" : true,
+      "scale" : "2x"
     }
   ],
   "info" : {
