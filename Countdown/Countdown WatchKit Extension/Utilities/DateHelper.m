@@ -79,7 +79,7 @@
 	NSDateComponents *components = [[NSCalendar currentCalendar] components:flags fromDate:now toDate:targetDate options:0];
 
 
-	NSString *daysString = ([components day] > 0) ? ([NSString stringWithFormat : @"%ldD ", (long)[components day]]) : @"0D";
+	NSString *daysString = ([components day] > 0) ? ([NSString stringWithFormat : @"%ldD ", (long)[components day]]) : @"0D ";
 
 	// in case its more than 999 days it ill display 1, 000d
 	if ([daysString length] > 5)
@@ -88,10 +88,10 @@
 		[mutable insertString:@"," atIndex:[daysString length] - 3];
 		daysString = mutable;
 	}
-	NSString *minutesString = ([components minute] <= 9) ? ([NSString stringWithFormat : @"0%ld", (long)[components minute]]) :[NSString stringWithFormat:@"%ld", (long)[components minute]];
-	NSString *secondsString = ([components second] <= 9) ? ([NSString stringWithFormat : @"0%ld", (long)[components second]]) :[NSString stringWithFormat:@"%ld", (long)[components second]];
+	NSString *minutesString = (abs([components minute]) <= 9) ? ([NSString stringWithFormat : @"0%d", abs([components minute])]) :[NSString stringWithFormat:@"%d", abs([components minute])];
+	NSString *secondsString = (abs([components second]) <= 9) ? ([NSString stringWithFormat : @"0%d", abs([components second])]) :[NSString stringWithFormat:@"%d", abs([components second])];
 
-	NSString *timerString = [NSString stringWithFormat:@"%@%ld:%@:%@", daysString, (long)[components hour], minutesString, secondsString];
+	NSString *timerString = [NSString stringWithFormat:@"%@%d:%@:%@", daysString, abs([components hour]), minutesString, secondsString];
 
 	return timerString;
 }
@@ -161,10 +161,10 @@
 	return attributedString;
 }
 
-+ (NSUInteger)secondsBetweendates:(NSDate *)date1 date:(NSDate *)date2
++ (int)secondsBetweendates:(NSDate *)date1 date:(NSDate *)date2
 {
     NSTimeInterval distanceBetweenDates = [date1 timeIntervalSinceDate:date2];
-    NSInteger secondsBetweenDates = abs(distanceBetweenDates);
+    int secondsBetweenDates = distanceBetweenDates;
     
     return secondsBetweenDates;
 }

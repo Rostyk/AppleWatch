@@ -18,6 +18,7 @@
 #import "FavouritePhoto.h"
 #import "DataProvider.h"
 #import <Photos/Photos.h>
+#import "DataProvider.h"
 
 @interface PickImageInterfaceController ()
 
@@ -348,18 +349,21 @@
 
 	if (self.galleryType == GT_FAVORITE)
 	{
-		FavouritePhoto *photo = [[FavouritePhoto alloc] init];
+        DataProvider *provider = [DataProvider sharedProvider];
+		FavouritePhoto *photo = [[FavouritePhoto alloc] initWithEntity:[NSEntityDescription entityForName:@"FavouritePhoto" inManagedObjectContext:provider.managedObjectContext] insertIntoManagedObjectContext:provider.managedObjectContext];
 
 		NSArray *images = [[LocalPhotosManager sharedManager] images];
 		NSArray *assets = [[LocalPhotosManager sharedManager] assets];
-		photo.image = images[tag];
-		photo.photoID = ((PHAsset *)assets[tag]).localIdentifier;
-
-		[countDown setFavouritePhoto:photo];
-	}
-
-    [[DataProvider sharedProvider] save];
-	[[App sharedApp].controllerToPresentOn dismissController];
+        if(images && images.count > tag) {
+            photo.image = images[tag];
+            photo.photoID = ((PHAsset *)assets[tag]).localIdentifier;
+            
+            [countDown setFavouritePhoto:photo];
+            
+            [[DataProvider sharedProvider] save];
+            [[App sharedApp].controllerToPresentOn dismissController];
+        }
+    }
 }
 
 - (void)reloadData

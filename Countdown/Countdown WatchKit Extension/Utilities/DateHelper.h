@@ -23,5 +23,5 @@
 
 + (NSString *)stringDateForCountdownsListCell:(NSDate *)date;
 + (NSAttributedString *)stringForMainScreenDateLabel:(NSDate *)date;
-+ (NSUInteger)secondsBetweendates:(NSDate *)date1 date:(NSDate *)date2;
++ (int)secondsBetweendates:(NSDate *)date1 date:(NSDate *)date2;
 @end

@@ -107,11 +107,11 @@
 	NSAttributedString *dateString = [DateHelper stringForMainScreenDateLabel:date];
 
     
-    NSUInteger seconds = [DateHelper secondsBetweendates:date date:[[NSDate alloc] init]];
+    int seconds = [DateHelper secondsBetweendates:date date:[[NSDate alloc] init]];
     double secondsInAnHour = 3600;
-    NSUInteger hoursBetweenDates = seconds / secondsInAnHour;
+    float hoursBetweenDates = (seconds*1.0) / (secondsInAnHour*1.0);
     
-    if(fabs(hoursBetweenDates) < HOURS_IMIT_FOR_RED_COUNTDOWN) {
+    if(hoursBetweenDates <= 0) {
         [self.smallerTimer setTextColor:[UIColor redColor]];
         [self.largerTimer setTextColor:[UIColor redColor]];
     }
