@@ -43,6 +43,89 @@
 		91BF5F171AE1189700A57456 /* 640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 91BF5F131AE1189700A57456 /* 640x1136.png */; };
 		91BF5F181AE1189700A57456 /* 640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = 91BF5F141AE1189700A57456 /* 640x960.png */; };
 		91BF5F191AE1189700A57456 /* 750x1334.png in Resources */ = {isa = PBXBuildFile; fileRef = 91BF5F151AE1189700A57456 /* 750x1334.png */; };
+		91C4D62B1AFF70CB00319C47 /* main-screen-bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 916534A51A5F00F3008EAADB /* main-screen-bg2.png */; };
+		91C4D62C1AFF70CB00319C47 /* image-type-default.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B9FD0B1A371D01005E77E1 /* image-type-default.png */; };
+		91C4D62D1AFF70CB00319C47 /* alert-time-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B0FABF651A40E2BD006090AB /* alert-time-bg.png */; };
+		91C4D62E1AFF70CB00319C47 /* image-type-favourites.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B9FD0C1A371D01005E77E1 /* image-type-favourites.png */; };
+		91C4D62F1AFF70CB00319C47 /* countdowns-list-bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D255261A2DE183000F59CE /* countdowns-list-bg1.png */; };
+		91C4D6301AFF70CB00319C47 /* countdowns-list-cell-bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D255271A2DE183000F59CE /* countdowns-list-cell-bg2.png */; };
+		91C4D6311AFF70CB00319C47 /* countdowns-list-cell-bg3.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D255281A2DE183000F59CE /* countdowns-list-cell-bg3.png */; };
+		91C4D6321AFF70CB00319C47 /* countdowns-list-remove-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D255291A2DE183000F59CE /* countdowns-list-remove-icon.png */; };
+		91C4D6331AFF70CB00319C47 /* edit-alert-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D2552A1A2DE183000F59CE /* edit-alert-icon.png */; };
+		91C4D6341AFF70CB00319C47 /* edit-bg-cell.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D2552B1A2DE183000F59CE /* edit-bg-cell.png */; };
+		91C4D6351AFF70CB00319C47 /* edit-date-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D2552C1A2DE183000F59CE /* edit-date-icon.png */; };
+		91C4D6361AFF70CB00319C47 /* edit-image-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D2552D1A2DE183000F59CE /* edit-image-icon.png */; };
+		91C4D6371AFF70CB00319C47 /* edit-remove-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B0FABF631A40DD56006090AB /* edit-remove-icon.png */; };
+		91C4D6381AFF70CB00319C47 /* edit-watch-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D2552E1A2DE183000F59CE /* edit-watch-icon.png */; };
+		91C4D6391AFF70CB00319C47 /* date-celection-mark-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = B0BD54C31A2C67990099AF7D /* date-celection-mark-normal.png */; };
+		91C4D63A1AFF70CB00319C47 /* date-selection-cell.png in Resources */ = {isa = PBXBuildFile; fileRef = B0BD54C41A2C67990099AF7D /* date-selection-cell.png */; };
+		91C4D63B1AFF70CB00319C47 /* date-selection-mark-active.png in Resources */ = {isa = PBXBuildFile; fileRef = B0BD54C51A2C67990099AF7D /* date-selection-mark-active.png */; };
+		91C4D63C1AFF70CB00319C47 /* main-screen-date-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B0BD54C71A2C67990099AF7D /* main-screen-date-bg.png */; };
+		91C4D63D1AFF70CB00319C47 /* main-screen-timer-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B0BD54C81A2C67990099AF7D /* main-screen-timer-bg.png */; };
+		91C4D63E1AFF70CB00319C47 /* menu-add.png in Resources */ = {isa = PBXBuildFile; fileRef = B0BD54C91A2C67990099AF7D /* menu-add.png */; };
+		91C4D63F1AFF70CB00319C47 /* menu-tutorials.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D255241A2DB73D000F59CE /* menu-tutorials.png */; };
+		91C4D6401AFF70CB00319C47 /* menu-watch.png in Resources */ = {isa = PBXBuildFile; fileRef = B0BD54CB1A2C67990099AF7D /* menu-watch.png */; };
+		91C4D6411AFF70CB00319C47 /* time-selection-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B0BD54CC1A2C67990099AF7D /* time-selection-button.png */; };
+		91C4D6421AFF70CB00319C47 /* time-selection-minus.png in Resources */ = {isa = PBXBuildFile; fileRef = B0BD54CD1A2C67990099AF7D /* time-selection-minus.png */; };
+		91C4D6431AFF70CB00319C47 /* time-selection-plus.png in Resources */ = {isa = PBXBuildFile; fileRef = B0BD54CE1A2C67990099AF7D /* time-selection-plus.png */; };
+		91C4D6441AFF70CB00319C47 /* time-selection-time-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B0BD54CF1A2C67990099AF7D /* time-selection-time-bg.png */; };
+		91C4D6451AFF70CB00319C47 /* digital-7 (mono).ttf in Resources */ = {isa = PBXBuildFile; fileRef = B042EB8F1A275E35004A0945 /* digital-7 (mono).ttf */; };
+		91C4D6461AFF70CB00319C47 /* main-screen-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B028CFF81A24B61900FC1991 /* main-screen-bg.png */; };
+		91C4D6471AFF70F900319C47 /* gallery1.png in Resources */ = {isa = PBXBuildFile; fileRef = B08A35C41A38CD2100B96BB7 /* gallery1.png */; };
+		91C4D6481AFF70F900319C47 /* gallery2.png in Resources */ = {isa = PBXBuildFile; fileRef = B08A35C51A38CD2100B96BB7 /* gallery2.png */; };
+		91C4D6491AFF70F900319C47 /* gallery3.png in Resources */ = {isa = PBXBuildFile; fileRef = B08A35C61A38CD2100B96BB7 /* gallery3.png */; };
+		91C4D64A1AFF70F900319C47 /* gallery4.png in Resources */ = {isa = PBXBuildFile; fileRef = B08A35C71A38CD2100B96BB7 /* gallery4.png */; };
+		91C4D64B1AFF70F900319C47 /* gallery5.png in Resources */ = {isa = PBXBuildFile; fileRef = B08A35C81A38CD2100B96BB7 /* gallery5.png */; };
+		91C4D64C1AFF70F900319C47 /* gallery6.png in Resources */ = {isa = PBXBuildFile; fileRef = B08A35C91A38CD2100B96BB7 /* gallery6.png */; };
+		91C4D64D1AFF70F900319C47 /* gallery7.png in Resources */ = {isa = PBXBuildFile; fileRef = B08A35CA1A38CD2100B96BB7 /* gallery7.png */; };
+		91C4D64E1AFF70F900319C47 /* gallery8.png in Resources */ = {isa = PBXBuildFile; fileRef = B08A35CB1A38CD2100B96BB7 /* gallery8.png */; };
+		91C4D64F1AFF70F900319C47 /* gallery9.png in Resources */ = {isa = PBXBuildFile; fileRef = B08A35CC1A38CD2100B96BB7 /* gallery9.png */; };
+		91C4D6501AFF70F900319C47 /* gallery10.png in Resources */ = {isa = PBXBuildFile; fileRef = B08A35CD1A38CD2100B96BB7 /* gallery10.png */; };
+		91C4D6511AFF70F900319C47 /* gallery11.png in Resources */ = {isa = PBXBuildFile; fileRef = B08A35CE1A38CD2100B96BB7 /* gallery11.png */; };
+		91C4D6521AFF70F900319C47 /* gallery12.png in Resources */ = {isa = PBXBuildFile; fileRef = B08A35CF1A38CD2100B96BB7 /* gallery12.png */; };
+		91C4D6531AFF70F900319C47 /* gallery13.png in Resources */ = {isa = PBXBuildFile; fileRef = B08A35D01A38CD2100B96BB7 /* gallery13.png */; };
+		91C4D6541AFF70F900319C47 /* gallery14.png in Resources */ = {isa = PBXBuildFile; fileRef = B08A35D11A38CD2100B96BB7 /* gallery14.png */; };
+		91C4D6551AFF70F900319C47 /* gallery15.png in Resources */ = {isa = PBXBuildFile; fileRef = B08A35D21A38CD2100B96BB7 /* gallery15.png */; };
+		91C4D6561AFF70F900319C47 /* gallery16.png in Resources */ = {isa = PBXBuildFile; fileRef = B08A35D31A38CD2100B96BB7 /* gallery16.png */; };
+		91C4D6571AFF70F900319C47 /* gallery17.png in Resources */ = {isa = PBXBuildFile; fileRef = B08A35D41A38CD2100B96BB7 /* gallery17.png */; };
+		91C4D6581AFF70F900319C47 /* gallery18.png in Resources */ = {isa = PBXBuildFile; fileRef = B08A35D51A38CD2100B96BB7 /* gallery18.png */; };
+		91C4D6591AFF70F900319C47 /* gallery19.png in Resources */ = {isa = PBXBuildFile; fileRef = B08A35D61A38CD2100B96BB7 /* gallery19.png */; };
+		91C4D65A1AFF70F900319C47 /* gallery20.png in Resources */ = {isa = PBXBuildFile; fileRef = B08A35D71A38CD2100B96BB7 /* gallery20.png */; };
+		91C4D65B1AFF70F900319C47 /* gallery21.png in Resources */ = {isa = PBXBuildFile; fileRef = B08A35D81A38CD2100B96BB7 /* gallery21.png */; };
+		91C4D65C1AFF70F900319C47 /* gallery22.png in Resources */ = {isa = PBXBuildFile; fileRef = B08A35D91A38CD2100B96BB7 /* gallery22.png */; };
+		91C4D65D1AFF70F900319C47 /* gallery23.png in Resources */ = {isa = PBXBuildFile; fileRef = B08A35DA1A38CD2100B96BB7 /* gallery23.png */; };
+		91C4D65E1AFF70F900319C47 /* gallery24.png in Resources */ = {isa = PBXBuildFile; fileRef = B08A35DB1A38CD2100B96BB7 /* gallery24.png */; };
+		91C4D65F1AFF70F900319C47 /* gallery25.png in Resources */ = {isa = PBXBuildFile; fileRef = B08A35DC1A38CD2100B96BB7 /* gallery25.png */; };
+		91C4D6601AFF70F900319C47 /* gallery26.png in Resources */ = {isa = PBXBuildFile; fileRef = B08A35DD1A38CD2100B96BB7 /* gallery26.png */; };
+		91C4D6611AFF70F900319C47 /* gallery27.png in Resources */ = {isa = PBXBuildFile; fileRef = B08A35DE1A38CD2100B96BB7 /* gallery27.png */; };
+		91C4D6621AFF70F900319C47 /* gallery28.png in Resources */ = {isa = PBXBuildFile; fileRef = B08A35DF1A38CD2100B96BB7 /* gallery28.png */; };
+		91C4D6631AFF70F900319C47 /* gallery29.png in Resources */ = {isa = PBXBuildFile; fileRef = B08A35E01A38CD2100B96BB7 /* gallery29.png */; };
+		91C4D6641AFF70F900319C47 /* gallery30.png in Resources */ = {isa = PBXBuildFile; fileRef = B08A35E11A38CD2100B96BB7 /* gallery30.png */; };
+		91C4D6651AFF70F900319C47 /* gallery31.png in Resources */ = {isa = PBXBuildFile; fileRef = B08A35E21A38CD2100B96BB7 /* gallery31.png */; };
+		91C4D6661AFF70F900319C47 /* gallery32.png in Resources */ = {isa = PBXBuildFile; fileRef = B08A35E31A38CD2100B96BB7 /* gallery32.png */; };
+		91C4D6671AFF70F900319C47 /* gallery33.png in Resources */ = {isa = PBXBuildFile; fileRef = B08A35E41A38CD2100B96BB7 /* gallery33.png */; };
+		91C4D6681AFF70F900319C47 /* gallery34.png in Resources */ = {isa = PBXBuildFile; fileRef = B08A35E51A38CD2100B96BB7 /* gallery34.png */; };
+		91C4D6691AFF70F900319C47 /* gallery35.png in Resources */ = {isa = PBXBuildFile; fileRef = B08A35E61A38CD2100B96BB7 /* gallery35.png */; };
+		91C4D66A1AFF70F900319C47 /* gallery36.png in Resources */ = {isa = PBXBuildFile; fileRef = B08A35E71A38CD2100B96BB7 /* gallery36.png */; };
+		91C4D66B1AFF70F900319C47 /* gallery37.png in Resources */ = {isa = PBXBuildFile; fileRef = B08A35E81A38CD2100B96BB7 /* gallery37.png */; };
+		91C4D66C1AFF70F900319C47 /* gallery38.png in Resources */ = {isa = PBXBuildFile; fileRef = B08A35E91A38CD2100B96BB7 /* gallery38.png */; };
+		91C4D66D1AFF70FD00319C47 /* tutorial-screen1.png in Resources */ = {isa = PBXBuildFile; fileRef = 91345CE01A65F16C00EB1118 /* tutorial-screen1.png */; };
+		91C4D66E1AFF70FD00319C47 /* tutorial-screen2.png in Resources */ = {isa = PBXBuildFile; fileRef = 91345CE11A65F16C00EB1118 /* tutorial-screen2.png */; };
+		91C4D66F1AFF70FD00319C47 /* tutorial-screen3.png in Resources */ = {isa = PBXBuildFile; fileRef = 91345CE21A65F16C00EB1118 /* tutorial-screen3.png */; };
+		91C4D6701AFF70FD00319C47 /* tutorial-screen4.png in Resources */ = {isa = PBXBuildFile; fileRef = 91345CE31A65F16C00EB1118 /* tutorial-screen4.png */; };
+		91C4D6711AFF710100319C47 /* apple-watch-home-icon-large.png in Resources */ = {isa = PBXBuildFile; fileRef = 91F34C1C1A92ABAC00C23C9B /* apple-watch-home-icon-large.png */; };
+		91C4D6721AFF710100319C47 /* apple-watch-home-icon-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 91F34C1D1A92ABAC00C23C9B /* apple-watch-home-icon-small.png */; };
+		91C4D6731AFF710100319C47 /* apple-watch-notification-icon-large.png in Resources */ = {isa = PBXBuildFile; fileRef = 91F34C1E1A92ABAC00C23C9B /* apple-watch-notification-icon-large.png */; };
+		91C4D6741AFF710100319C47 /* apple-watch-notification-icon-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 91F34C1F1A92ABAC00C23C9B /* apple-watch-notification-icon-small.png */; };
+		91C4D6751AFF710600319C47 /* 29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = 9130E0301AE536D100BB462B /* 29x29.png */; };
+		91C4D6761AFF710600319C47 /* 24x24@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9130E0201AE5360200BB462B /* 24x24@2x.png */; };
+		91C4D6771AFF710600319C47 /* 27x27@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9130E0211AE5360200BB462B /* 27x27@2x.png */; };
+		91C4D6781AFF710600319C47 /* 29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9130E0221AE5360200BB462B /* 29x29@2x.png */; };
+		91C4D6791AFF710600319C47 /* 29x29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9130E0231AE5360200BB462B /* 29x29@3x.png */; };
+		91C4D67A1AFF710600319C47 /* 40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9130E0241AE5360200BB462B /* 40x40@2x.png */; };
+		91C4D67B1AFF710600319C47 /* 44x44@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9130E0251AE5360200BB462B /* 44x44@2x.png */; };
+		91C4D67C1AFF710600319C47 /* 86x86@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9130E0261AE5360200BB462B /* 86x86@2x.png */; };
+		91C4D67D1AFF710600319C47 /* 98x98@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9130E0271AE5360200BB462B /* 98x98@2x.png */; };
 		91F34C191A92AB6900C23C9B /* Icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = 91F34C171A92AB6900C23C9B /* Icon120.png */; };
 		91F34C1A1A92AB6900C23C9B /* Icon180.png in Resources */ = {isa = PBXBuildFile; fileRef = 91F34C181A92AB6900C23C9B /* Icon180.png */; };
 		91F34C201A92ABAC00C23C9B /* apple-watch-home-icon-large.png in Resources */ = {isa = PBXBuildFile; fileRef = 91F34C1C1A92ABAC00C23C9B /* apple-watch-home-icon-large.png */; };
@@ -1126,29 +1209,45 @@
 				B04AACCA1A38DFEC003C5C1A /* gallery9.png in Resources */,
 				B04AACC71A38DFEC003C5C1A /* gallery6.png in Resources */,
 				B04AACCF1A38DFEC003C5C1A /* gallery14.png in Resources */,
+				91C4D6431AFF70CB00319C47 /* time-selection-plus.png in Resources */,
+				91C4D63C1AFF70CB00319C47 /* main-screen-date-bg.png in Resources */,
 				B04AACD71A38DFEC003C5C1A /* gallery22.png in Resources */,
 				B04AAD521A39DD80003C5C1A /* gallery5_fullscreen.png in Resources */,
 				B04AAD501A39DD80003C5C1A /* gallery4_fullscreen.png in Resources */,
 				B04AAD221A39DD80003C5C1A /* gallery19_fullscreen.png in Resources */,
 				B04AAD361A39DD80003C5C1A /* gallery28_fullscreen.png in Resources */,
+				91C4D6711AFF710100319C47 /* apple-watch-home-icon-large.png in Resources */,
+				91C4D62D1AFF70CB00319C47 /* alert-time-bg.png in Resources */,
+				91C4D6731AFF710100319C47 /* apple-watch-notification-icon-large.png in Resources */,
+				91C4D6701AFF70FD00319C47 /* tutorial-screen4.png in Resources */,
 				B04AAD4C1A39DD80003C5C1A /* gallery38_fullscreen.png in Resources */,
 				B04AACC41A38DFEC003C5C1A /* gallery3.png in Resources */,
 				B04AACC81A38DFEC003C5C1A /* gallery7.png in Resources */,
+				91C4D6311AFF70CB00319C47 /* countdowns-list-cell-bg3.png in Resources */,
+				91C4D6331AFF70CB00319C47 /* edit-alert-icon.png in Resources */,
 				B04AACD51A38DFEC003C5C1A /* gallery20.png in Resources */,
 				B04AAD141A39DD80003C5C1A /* gallery12_fullscreen.png in Resources */,
+				91C4D6361AFF70CB00319C47 /* edit-image-icon.png in Resources */,
 				B04AAD3A1A39DD80003C5C1A /* gallery2_fullscreen.png in Resources */,
+				91C4D62B1AFF70CB00319C47 /* main-screen-bg2.png in Resources */,
 				B04AAD561A39DD80003C5C1A /* gallery7_fullscreen.png in Resources */,
+				91C4D67A1AFF710600319C47 /* 40x40@2x.png in Resources */,
 				B04AACD81A38DFEC003C5C1A /* gallery23.png in Resources */,
+				91C4D66D1AFF70FD00319C47 /* tutorial-screen1.png in Resources */,
 				B04AACCE1A38DFEC003C5C1A /* gallery13.png in Resources */,
 				B04AAD4A1A39DD80003C5C1A /* gallery37_fullscreen.png in Resources */,
 				B04AACCC1A38DFEC003C5C1A /* gallery11.png in Resources */,
 				B04AAD181A39DD80003C5C1A /* gallery14_fullscreen.png in Resources */,
 				B04AACDF1A38DFEC003C5C1A /* gallery30.png in Resources */,
+				91C4D67B1AFF710600319C47 /* 44x44@2x.png in Resources */,
 				B04AAD401A39DD80003C5C1A /* gallery32_fullscreen.png in Resources */,
+				91C4D62F1AFF70CB00319C47 /* countdowns-list-bg1.png in Resources */,
 				B04AACCB1A38DFEC003C5C1A /* gallery10.png in Resources */,
 				B04AAD1A1A39DD80003C5C1A /* gallery15_fullscreen.png in Resources */,
+				91C4D6441AFF70CB00319C47 /* time-selection-time-bg.png in Resources */,
 				B04AACE11A38DFEC003C5C1A /* gallery32.png in Resources */,
 				B04AAD121A39DD80003C5C1A /* gallery11_fullscreen.png in Resources */,
+				91C4D6371AFF70CB00319C47 /* edit-remove-icon.png in Resources */,
 				B04AAD1E1A39DD80003C5C1A /* gallery17_fullscreen.png in Resources */,
 				B04AAD381A39DD80003C5C1A /* gallery29_fullscreen.png in Resources */,
 				B04AACD91A38DFEC003C5C1A /* gallery24.png in Resources */,
@@ -1157,49 +1256,78 @@
 				B04AACD11A38DFEC003C5C1A /* gallery16.png in Resources */,
 				B04AACD61A38DFEC003C5C1A /* gallery21.png in Resources */,
 				B04AACE61A38DFEC003C5C1A /* gallery37.png in Resources */,
+				91C4D63A1AFF70CB00319C47 /* date-selection-cell.png in Resources */,
 				B04AAD2C1A39DD80003C5C1A /* gallery23_fullscreen.png in Resources */,
+				91C4D62C1AFF70CB00319C47 /* image-type-default.png in Resources */,
 				B04AAD281A39DD80003C5C1A /* gallery21_fullscreen.png in Resources */,
 				B04AAD2A1A39DD80003C5C1A /* gallery22_fullscreen.png in Resources */,
 				B04AACC21A38DFEC003C5C1A /* gallery1.png in Resources */,
 				B04AACD31A38DFEC003C5C1A /* gallery18.png in Resources */,
+				91C4D6321AFF70CB00319C47 /* countdowns-list-remove-icon.png in Resources */,
+				91C4D6741AFF710100319C47 /* apple-watch-notification-icon-small.png in Resources */,
 				B0832DA11A274CDE00D766F1 /* digital-7 (mono).ttf in Resources */,
+				91C4D6411AFF70CB00319C47 /* time-selection-button.png in Resources */,
 				B04AACCD1A38DFEC003C5C1A /* gallery12.png in Resources */,
+				91C4D6391AFF70CB00319C47 /* date-celection-mark-normal.png in Resources */,
 				B04AAD3E1A39DD80003C5C1A /* gallery31_fullscreen.png in Resources */,
 				B04AAD341A39DD80003C5C1A /* gallery27_fullscreen.png in Resources */,
+				91C4D6401AFF70CB00319C47 /* menu-watch.png in Resources */,
+				91C4D67C1AFF710600319C47 /* 86x86@2x.png in Resources */,
 				B04AACE41A38DFEC003C5C1A /* gallery35.png in Resources */,
 				B04AACE51A38DFEC003C5C1A /* gallery36.png in Resources */,
 				B04AACE31A38DFEC003C5C1A /* gallery34.png in Resources */,
 				B04AACDA1A38DFEC003C5C1A /* gallery25.png in Resources */,
+				91C4D6751AFF710600319C47 /* 29x29.png in Resources */,
 				B04AACDB1A38DFEC003C5C1A /* gallery26.png in Resources */,
+				91C4D62E1AFF70CB00319C47 /* image-type-favourites.png in Resources */,
 				B04AACC31A38DFEC003C5C1A /* gallery2.png in Resources */,
+				91C4D6451AFF70CB00319C47 /* digital-7 (mono).ttf in Resources */,
 				B04AACE01A38DFEC003C5C1A /* gallery31.png in Resources */,
+				91C4D6381AFF70CB00319C47 /* edit-watch-icon.png in Resources */,
+				91C4D6351AFF70CB00319C47 /* edit-date-icon.png in Resources */,
 				B04AACE21A38DFEC003C5C1A /* gallery33.png in Resources */,
+				91C4D63B1AFF70CB00319C47 /* date-selection-mark-active.png in Resources */,
 				B04AAD441A39DD80003C5C1A /* gallery34_fullscreen.png in Resources */,
 				B04AAD4E1A39DD80003C5C1A /* gallery3_fullscreen.png in Resources */,
 				B04AACE71A38DFEC003C5C1A /* gallery38.png in Resources */,
 				B04AAD1C1A39DD80003C5C1A /* gallery16_fullscreen.png in Resources */,
 				B04AAD3C1A39DD80003C5C1A /* gallery30_fullscreen.png in Resources */,
+				91C4D6721AFF710100319C47 /* apple-watch-home-icon-small.png in Resources */,
 				B04AAD581A39DD80003C5C1A /* gallery8_fullscreen.png in Resources */,
+				91C4D6301AFF70CB00319C47 /* countdowns-list-cell-bg2.png in Resources */,
 				B04AACC61A38DFEC003C5C1A /* gallery5.png in Resources */,
+				91C4D6781AFF710600319C47 /* 29x29@2x.png in Resources */,
 				B04AAD541A39DD80003C5C1A /* gallery6_fullscreen.png in Resources */,
 				B04AACDC1A38DFEC003C5C1A /* gallery27.png in Resources */,
 				B04AAD481A39DD80003C5C1A /* gallery36_fullscreen.png in Resources */,
 				B04AAD201A39DD80003C5C1A /* gallery18_fullscreen.png in Resources */,
 				B04AACC91A38DFEC003C5C1A /* gallery8.png in Resources */,
 				B04AAD421A39DD80003C5C1A /* gallery33_fullscreen.png in Resources */,
+				91C4D6461AFF70CB00319C47 /* main-screen-bg.png in Resources */,
+				91C4D6761AFF710600319C47 /* 24x24@2x.png in Resources */,
 				B04AACD01A38DFEC003C5C1A /* gallery15.png in Resources */,
 				B04AAD321A39DD80003C5C1A /* gallery26_fullscreen.png in Resources */,
 				B04AAD161A39DD80003C5C1A /* gallery13_fullscreen.png in Resources */,
 				B04AACDE1A38DFEC003C5C1A /* gallery29.png in Resources */,
+				91C4D6421AFF70CB00319C47 /* time-selection-minus.png in Resources */,
+				91C4D66F1AFF70FD00319C47 /* tutorial-screen3.png in Resources */,
+				91C4D6791AFF710600319C47 /* 29x29@3x.png in Resources */,
 				B04AACD41A38DFEC003C5C1A /* gallery19.png in Resources */,
 				B04AAD2E1A39DD80003C5C1A /* gallery24_fullscreen.png in Resources */,
+				91C4D6771AFF710600319C47 /* 27x27@2x.png in Resources */,
+				91C4D63E1AFF70CB00319C47 /* menu-add.png in Resources */,
 				B04AACC51A38DFEC003C5C1A /* gallery4.png in Resources */,
 				B04AAD461A39DD80003C5C1A /* gallery35_fullscreen.png in Resources */,
 				B08A05A01A26261700E3D480 /* SubwayTicker.ttf in Resources */,
 				B04AAD5A1A39DD80003C5C1A /* gallery9_fullscreen.png in Resources */,
+				91C4D66E1AFF70FD00319C47 /* tutorial-screen2.png in Resources */,
+				91C4D63F1AFF70CB00319C47 /* menu-tutorials.png in Resources */,
 				B04AAD241A39DD80003C5C1A /* gallery1_fullscreen.png in Resources */,
 				B04AAD101A39DD80003C5C1A /* gallery10_fullscreen.png in Resources */,
 				B07B15D71A1F5985001B970E /* Countdown Watch App.app in Resources */,
+				91C4D6341AFF70CB00319C47 /* edit-bg-cell.png in Resources */,
+				91C4D63D1AFF70CB00319C47 /* main-screen-timer-bg.png in Resources */,
+				91C4D67D1AFF710600319C47 /* 98x98@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1209,27 +1337,44 @@
 			files = (
 				B04AAD491A39DD80003C5C1A /* gallery36_fullscreen.png in Resources */,
 				B042EB901A275E35004A0945 /* digital-7 (mono).ttf in Resources */,
+				91C4D6551AFF70F900319C47 /* gallery15.png in Resources */,
 				B0D255301A2DE183000F59CE /* countdowns-list-cell-bg2.png in Resources */,
 				B0D255311A2DE183000F59CE /* countdowns-list-cell-bg3.png in Resources */,
 				9130E0311AE536D100BB462B /* 29x29.png in Resources */,
 				B0BD54DC1A2C67990099AF7D /* time-selection-time-bg.png in Resources */,
 				B0D255371A2DE183000F59CE /* edit-watch-icon.png in Resources */,
+				91C4D66A1AFF70F900319C47 /* gallery36.png in Resources */,
+				91C4D6601AFF70F900319C47 /* gallery26.png in Resources */,
 				B04AAD191A39DD80003C5C1A /* gallery14_fullscreen.png in Resources */,
+				91C4D65B1AFF70F900319C47 /* gallery21.png in Resources */,
+				91C4D66B1AFF70F900319C47 /* gallery37.png in Resources */,
 				9130E02F1AE5360200BB462B /* 98x98@2x.png in Resources */,
+				91C4D6561AFF70F900319C47 /* gallery16.png in Resources */,
 				B0FABF661A40E2BD006090AB /* alert-time-bg.png in Resources */,
+				91C4D6491AFF70F900319C47 /* gallery3.png in Resources */,
+				91C4D6581AFF70F900319C47 /* gallery18.png in Resources */,
 				B04AAD111A39DD80003C5C1A /* gallery10_fullscreen.png in Resources */,
 				B04AAD2B1A39DD80003C5C1A /* gallery22_fullscreen.png in Resources */,
+				91C4D65F1AFF70F900319C47 /* gallery25.png in Resources */,
+				91C4D65D1AFF70F900319C47 /* gallery23.png in Resources */,
 				B0D255321A2DE183000F59CE /* countdowns-list-remove-icon.png in Resources */,
+				91C4D65A1AFF70F900319C47 /* gallery20.png in Resources */,
 				B0D255251A2DB73D000F59CE /* menu-tutorials.png in Resources */,
+				91C4D6631AFF70F900319C47 /* gallery29.png in Resources */,
 				B0BD54D61A2C67990099AF7D /* menu-add.png in Resources */,
 				B0D255341A2DE183000F59CE /* edit-bg-cell.png in Resources */,
 				B04AAD451A39DD80003C5C1A /* gallery34_fullscreen.png in Resources */,
 				B0BD54D41A2C67990099AF7D /* main-screen-date-bg.png in Resources */,
+				91C4D64A1AFF70F900319C47 /* gallery4.png in Resources */,
 				B07B15DE1A1F5985001B970E /* Interface.storyboard in Resources */,
 				91F34C221A92ABAC00C23C9B /* apple-watch-notification-icon-large.png in Resources */,
 				91345CE61A65F16C00EB1118 /* tutorial-screen3.png in Resources */,
+				91C4D6691AFF70F900319C47 /* gallery35.png in Resources */,
+				91C4D6641AFF70F900319C47 /* gallery30.png in Resources */,
 				B04AAD1B1A39DD80003C5C1A /* gallery15_fullscreen.png in Resources */,
+				91C4D64C1AFF70F900319C47 /* gallery6.png in Resources */,
 				B0BD54DA1A2C67990099AF7D /* time-selection-minus.png in Resources */,
+				91C4D65C1AFF70F900319C47 /* gallery22.png in Resources */,
 				B04AAD4B1A39DD80003C5C1A /* gallery37_fullscreen.png in Resources */,
 				B04AAD131A39DD80003C5C1A /* gallery11_fullscreen.png in Resources */,
 				B04AAD5B1A39DD80003C5C1A /* gallery9_fullscreen.png in Resources */,
@@ -1246,23 +1391,33 @@
 				91F34C231A92ABAC00C23C9B /* apple-watch-notification-icon-small.png in Resources */,
 				B04AAD3D1A39DD80003C5C1A /* gallery30_fullscreen.png in Resources */,
 				91345CE51A65F16C00EB1118 /* tutorial-screen2.png in Resources */,
+				91C4D64E1AFF70F900319C47 /* gallery8.png in Resources */,
 				B04AAD371A39DD80003C5C1A /* gallery28_fullscreen.png in Resources */,
+				91C4D6531AFF70F900319C47 /* gallery13.png in Resources */,
 				B04AAD4D1A39DD80003C5C1A /* gallery38_fullscreen.png in Resources */,
 				B04AAD551A39DD80003C5C1A /* gallery6_fullscreen.png in Resources */,
 				B04AAD411A39DD80003C5C1A /* gallery32_fullscreen.png in Resources */,
 				B04AAD2D1A39DD80003C5C1A /* gallery23_fullscreen.png in Resources */,
+				91C4D6651AFF70F900319C47 /* gallery31.png in Resources */,
 				B0BD54D51A2C67990099AF7D /* main-screen-timer-bg.png in Resources */,
 				9130E02D1AE5360200BB462B /* 44x44@2x.png in Resources */,
+				91C4D6621AFF70F900319C47 /* gallery28.png in Resources */,
+				91C4D6511AFF70F900319C47 /* gallery11.png in Resources */,
 				B0D255331A2DE183000F59CE /* edit-alert-icon.png in Resources */,
 				B04AAD4F1A39DD80003C5C1A /* gallery3_fullscreen.png in Resources */,
+				91C4D6571AFF70F900319C47 /* gallery17.png in Resources */,
 				9130E0291AE5360200BB462B /* 27x27@2x.png in Resources */,
 				B04AAD311A39DD80003C5C1A /* gallery25_fullscreen.png in Resources */,
+				91C4D64F1AFF70F900319C47 /* gallery9.png in Resources */,
 				B04AAD211A39DD80003C5C1A /* gallery18_fullscreen.png in Resources */,
 				B04AAD511A39DD80003C5C1A /* gallery4_fullscreen.png in Resources */,
 				B0FABF641A40DD56006090AB /* edit-remove-icon.png in Resources */,
 				B0D255351A2DE183000F59CE /* edit-date-icon.png in Resources */,
 				91F34C211A92ABAC00C23C9B /* apple-watch-home-icon-small.png in Resources */,
+				91C4D6671AFF70F900319C47 /* gallery33.png in Resources */,
 				B0B9FD0D1A371D01005E77E1 /* image-type-default.png in Resources */,
+				91C4D6611AFF70F900319C47 /* gallery27.png in Resources */,
+				91C4D6471AFF70F900319C47 /* gallery1.png in Resources */,
 				B04AAD591A39DD80003C5C1A /* gallery8_fullscreen.png in Resources */,
 				B04AAD431A39DD80003C5C1A /* gallery33_fullscreen.png in Resources */,
 				B0D2552F1A2DE183000F59CE /* countdowns-list-bg1.png in Resources */,
@@ -1273,23 +1428,34 @@
 				91345CE71A65F16C00EB1118 /* tutorial-screen4.png in Resources */,
 				B04AAD151A39DD80003C5C1A /* gallery12_fullscreen.png in Resources */,
 				B04AAD251A39DD80003C5C1A /* gallery1_fullscreen.png in Resources */,
+				91C4D64D1AFF70F900319C47 /* gallery7.png in Resources */,
 				916534A61A5F00F3008EAADB /* main-screen-bg2.png in Resources */,
 				B04AAD1F1A39DD80003C5C1A /* gallery17_fullscreen.png in Resources */,
 				B04AAD1D1A39DD80003C5C1A /* gallery16_fullscreen.png in Resources */,
+				91C4D64B1AFF70F900319C47 /* gallery5.png in Resources */,
+				91C4D6681AFF70F900319C47 /* gallery34.png in Resources */,
 				9130E02E1AE5360200BB462B /* 86x86@2x.png in Resources */,
 				B0BD54DB1A2C67990099AF7D /* time-selection-plus.png in Resources */,
+				91C4D6481AFF70F900319C47 /* gallery2.png in Resources */,
 				B04AAD531A39DD80003C5C1A /* gallery5_fullscreen.png in Resources */,
 				9130E0281AE5360200BB462B /* 24x24@2x.png in Resources */,
 				B04AAD571A39DD80003C5C1A /* gallery7_fullscreen.png in Resources */,
 				B04AAD471A39DD80003C5C1A /* gallery35_fullscreen.png in Resources */,
+				91C4D65E1AFF70F900319C47 /* gallery24.png in Resources */,
 				B04AAD3B1A39DD80003C5C1A /* gallery2_fullscreen.png in Resources */,
 				B04AAD351A39DD80003C5C1A /* gallery27_fullscreen.png in Resources */,
+				91C4D6661AFF70F900319C47 /* gallery32.png in Resources */,
 				91345CE41A65F16C00EB1118 /* tutorial-screen1.png in Resources */,
+				91C4D6521AFF70F900319C47 /* gallery12.png in Resources */,
 				B0D255361A2DE183000F59CE /* edit-image-icon.png in Resources */,
+				91C4D66C1AFF70F900319C47 /* gallery38.png in Resources */,
 				B04AAD291A39DD80003C5C1A /* gallery21_fullscreen.png in Resources */,
+				91C4D6541AFF70F900319C47 /* gallery14.png in Resources */,
 				B04AAD231A39DD80003C5C1A /* gallery19_fullscreen.png in Resources */,
+				91C4D6591AFF70F900319C47 /* gallery19.png in Resources */,
 				B07B15E01A1F5985001B970E /* Images.xcassets in Resources */,
 				B04AAD2F1A39DD80003C5C1A /* gallery24_fullscreen.png in Resources */,
+				91C4D6501AFF70F900319C47 /* gallery10.png in Resources */,
 				B0BD54D91A2C67990099AF7D /* time-selection-button.png in Resources */,
 				B04AAD271A39DD80003C5C1A /* gallery20_fullscreen.png in Resources */,
 			);
