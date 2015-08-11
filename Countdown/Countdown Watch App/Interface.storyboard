@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6751" systemVersion="14A389" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="digital-7 (mono).ttf">
@@ -17,9 +17,9 @@
             <objects>
                 <controller spacing="38" id="AgC-eL-Hgc" customClass="HomeInterfaceController">
                     <items>
-                        <group width="1" height="1" alignment="left" backgroundImage="main-screen-bg2.png" layout="vertical" id="tNW-jD-rfk">
+                        <group width="1" height="1" alignment="left" backgroundImage="main-screen-bg2" layout="vertical" id="tNW-jD-rfk">
                             <items>
-                                <group height="27" alignment="center" backgroundImage="main-screen-timer-bg.png" layout="vertical" id="4Ei-dv-vYM">
+                                <group height="27" alignment="center" backgroundImage="main-screen-timer-bg" layout="vertical" id="4Ei-dv-vYM">
                                     <items>
                                         <timer width="1" height="27" alignment="center" verticalAlignment="center" textAlignment="center" minimumScaleFactor="0.5" previewedSeconds="989" id="TOX-oB-eJB">
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -29,7 +29,7 @@
                                     </items>
                                     <edgeInsets key="margins" left="2" right="2" top="0.0" bottom="8"/>
                                 </group>
-                                <group height="29" alignment="center" backgroundImage="main-screen-timer-bg.png" layout="vertical" id="KdE-TH-2y7">
+                                <group height="29" alignment="center" backgroundImage="main-screen-timer-bg" layout="vertical" id="KdE-TH-2y7">
                                     <items>
                                         <timer width="1" height="29" alignment="center" verticalAlignment="center" textAlignment="center" minimumScaleFactor="0.50000000000000011" previewedSeconds="80199" id="3vd-36-0KH">
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -41,7 +41,7 @@
                                 </group>
                                 <group width="1" alignment="center" verticalAlignment="bottom" id="jGj-jV-wtw">
                                     <items>
-                                        <group height="20" alignment="right" verticalAlignment="center" alpha="0.64999999999999969" backgroundImage="main-screen-date-bg.png" id="bpZ-C1-3vs">
+                                        <group height="20" alignment="right" verticalAlignment="center" alpha="0.64999999999999969" backgroundImage="main-screen-date-bg" id="bpZ-C1-3vs">
                                             <items>
                                                 <label alignment="center" verticalAlignment="center" text=" Tue, Sep. 11, 2014" textAlignment="center" id="2sV-ox-MTW">
                                                     <fontDescription key="font" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="10"/>
@@ -98,7 +98,7 @@
                                 <table alignment="left" id="sDE-CW-Q1V">
                                     <items>
                                         <tableRow identifier="Row" id="UY5-qB-z7J" customClass="RowController">
-                                            <group key="rootItem" width="1" height="37" alignment="left" backgroundImage="date-selection-cell.png" id="BR4-4m-uQd">
+                                            <group key="rootItem" width="1" height="37" alignment="left" backgroundImage="date-selection-cell" id="BR4-4m-uQd">
                                                 <items>
                                                     <group width="1" alignment="left" verticalAlignment="center" id="pBM-7h-3KO">
                                                         <items>
@@ -458,12 +458,12 @@
                     <items>
                         <group width="0.92000000000000004" height="0.55000000000000004" alignment="center" verticalAlignment="center" layout="vertical" id="Eg1-Jn-JoK">
                             <items>
-                                <button width="1" alignment="left" verticalAlignment="bottom" backgroundImage="image-type-favourites.png" id="9lr-m1-UJX">
+                                <button width="1" alignment="left" verticalAlignment="bottom" backgroundImage="image-type-favourites" id="9lr-m1-UJX">
                                     <connections>
                                         <action selector="favoriteImagesButtonClicked" destination="9Zj-do-zAR" id="uMf-ML-mIz"/>
                                     </connections>
                                 </button>
-                                <button width="1" alignment="left" backgroundImage="image-type-default.png" id="8u1-KH-x4G">
+                                <button width="1" alignment="left" backgroundImage="image-type-default" id="8u1-KH-x4G">
                                     <connections>
                                         <action selector="defaultImagesButtonClicked" destination="9Zj-do-zAR" id="5kr-QX-Amf"/>
                                     </connections>
@@ -487,11 +487,11 @@
                                         <label width="1" alignment="left" text="Remind before" textAlignment="center" id="06Z-Jk-6N2">
                                             <fontDescription key="font" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="10"/>
                                         </label>
-                                        <group width="1" height="37" alignment="center" verticalAlignment="center" backgroundImage="time-selection-time-bg.png" id="C1F-Q6-9Lf">
+                                        <group width="121" height="37" alignment="center" verticalAlignment="center" backgroundImage="time-selection-time-bg" id="C1F-Q6-9Lf">
                                             <items>
                                                 <group alignment="left" verticalAlignment="center" id="APn-BC-PuL">
                                                     <items>
-                                                        <button width="33" height="33" alignment="left" verticalAlignment="center" backgroundImage="time-selection-minus.png" id="ag9-YX-JrE">
+                                                        <button width="33" height="33" alignment="left" verticalAlignment="center" backgroundImage="time-selection-minus" id="ag9-YX-JrE">
                                                             <connections>
                                                                 <action selector="minusButtonClicked:" destination="nQp-qI-Tjt" id="uwc-cp-YO8"/>
                                                             </connections>
@@ -501,7 +501,7 @@
                                                 </group>
                                                 <group alignment="right" verticalAlignment="center" id="qiV-5T-gdF">
                                                     <items>
-                                                        <button width="33" height="33" alignment="right" verticalAlignment="center" backgroundImage="time-selection-plus.png" id="vxJ-JB-L5j">
+                                                        <button width="33" height="33" alignment="right" verticalAlignment="center" backgroundImage="time-selection-plus" id="vxJ-JB-L5j">
                                                             <connections>
                                                                 <action selector="plusButtonClicked:" destination="nQp-qI-Tjt" id="lBq-Vt-4Vs"/>
                                                             </connections>
@@ -536,7 +536,7 @@
                                 </group>
                                 <group width="1" alignment="left" verticalAlignment="bottom" id="X8r-rv-miI">
                                     <items>
-                                        <button width="1" height="34" alignment="left" verticalAlignment="center" title="Set hours" backgroundImage="time-selection-button.png" id="v3F-fu-E1q">
+                                        <button width="1" height="34" alignment="left" verticalAlignment="center" title="Set hours" backgroundImage="time-selection-button" id="v3F-fu-E1q">
                                             <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                             <connections>
                                                 <action selector="setTimeClicked:" destination="nQp-qI-Tjt" id="QpB-7e-9k4"/>
@@ -565,7 +565,7 @@
                     <items>
                         <group width="1" alignment="left" verticalAlignment="center" layout="vertical" id="Aan-Ag-i7K">
                             <items>
-                                <button width="0.90000000000000002" alignment="center" title="Set Reminder" backgroundImage="alert-time-bg.png" id="aiV-Z4-GIG">
+                                <button width="0.90000000000000002" alignment="center" title="Set Reminder" backgroundImage="alert-time-bg" id="aiV-Z4-GIG">
                                     <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                     <connections>
                                         <action selector="alertButtonClicked" destination="nXU-Sh-YpH" id="J02-aZ-Pz7"/>
@@ -592,7 +592,7 @@
                                 <table alignment="left" id="CbR-eC-BXc">
                                     <items>
                                         <tableRow identifier="CountdownRow" id="aHF-01-WMw" customClass="CountdownsRowController">
-                                            <group key="rootItem" width="1" alignment="left" backgroundImage="date-selection-cell.png" id="wMg-JO-4Nf">
+                                            <group key="rootItem" width="1" alignment="left" backgroundImage="date-selection-cell" id="wMg-JO-4Nf">
                                                 <items>
                                                     <group width="38" height="34" alignment="left" radius="4" id="nf5-3t-FBT">
                                                         <items>
@@ -638,7 +638,7 @@
                     <items>
                         <group width="1" height="0.40000000000000002" alignment="left" id="J1k-AQ-Nyl">
                             <items>
-                                <button width="0.90000000000000002" alignment="center" verticalAlignment="center" title="Select" backgroundImage="alert-time-bg.png" id="Pf2-3p-Zbw">
+                                <button width="0.90000000000000002" alignment="center" verticalAlignment="center" title="Select" backgroundImage="alert-time-bg" id="Pf2-3p-Zbw">
                                     <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
                                     <connections>
                                         <action selector="selectButtonClicked:" destination="8F2-7l-ldr" id="KKn-gb-FZd"/>
@@ -648,7 +648,7 @@
                         </group>
                         <group width="1" height="0.30000000000000004" alignment="left" id="7D1-fx-Ig7">
                             <items>
-                                <button width="0.90000000000000002" alignment="center" verticalAlignment="center" title="Edit" backgroundImage="alert-time-bg.png" id="27p-cp-gz4">
+                                <button width="0.90000000000000002" alignment="center" verticalAlignment="center" title="Edit" backgroundImage="alert-time-bg" id="27p-cp-gz4">
                                     <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
                                     <connections>
                                         <action selector="editButtonClicked:" destination="8F2-7l-ldr" id="eUX-8H-iW2"/>
@@ -672,7 +672,7 @@
                                 <table alignment="left" id="uIK-JV-Z4P">
                                     <items>
                                         <tableRow identifier="EditCountdownRow" id="1Bg-9V-Pzv" customClass="EditCountdownRowController">
-                                            <group key="rootItem" width="1" height="38" alignment="left" backgroundImage="edit-bg-cell.png" id="AXY-yJ-U9v">
+                                            <group key="rootItem" width="1" height="38" alignment="left" backgroundImage="edit-bg-cell" id="AXY-yJ-U9v">
                                                 <items>
                                                     <group alignment="left" verticalAlignment="center" id="c8o-P9-6pK">
                                                         <items>
@@ -714,7 +714,7 @@
             <objects>
                 <controller identifier="TutorialsScreen1" id="LX5-SE-AcL" customClass="TutorialsScreen1">
                     <items>
-                        <group width="1" height="1" alignment="left" backgroundImage="tutorial-screen1.png" id="Kev-FW-Xvd"/>
+                        <group width="1" height="1" alignment="left" backgroundImage="tutorial-screen1" id="Kev-FW-Xvd"/>
                     </items>
                 </controller>
             </objects>
@@ -725,7 +725,7 @@
             <objects>
                 <controller identifier="TutorialsScreen2" id="7bq-fu-ahv" customClass="TutorialsScreen2">
                     <items>
-                        <group width="1" height="1" alignment="left" backgroundImage="tutorial-screen2.png" id="GWG-g2-5SZ"/>
+                        <group width="1" height="1" alignment="left" backgroundImage="tutorial-screen2" id="GWG-g2-5SZ"/>
                     </items>
                 </controller>
             </objects>
@@ -736,7 +736,7 @@
             <objects>
                 <controller identifier="TutorialsScreen3" id="e98-o8-5CV" customClass="TutorialsScreen3">
                     <items>
-                        <group width="1" height="1" alignment="left" backgroundImage="tutorial-screen3.png" id="Pay-je-RB6"/>
+                        <group width="1" height="1" alignment="left" backgroundImage="tutorial-screen3" id="Pay-je-RB6"/>
                     </items>
                 </controller>
             </objects>
@@ -747,7 +747,7 @@
             <objects>
                 <controller identifier="TutorialsScreen4" id="VPV-zk-dMg" customClass="TutorialsScreen4">
                     <items>
-                        <group width="1" height="1" alignment="left" backgroundImage="tutorial-screen4.png" id="sYT-1O-VCD"/>
+                        <group width="1" height="1" alignment="left" backgroundImage="tutorial-screen4" id="sYT-1O-VCD"/>
                     </items>
                 </controller>
             </objects>
