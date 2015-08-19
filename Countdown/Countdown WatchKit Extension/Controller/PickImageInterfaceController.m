@@ -359,11 +359,10 @@
             photo.photoID = ((PHAsset *)assets[tag]).localIdentifier;
             
             [countDown setFavouritePhoto:photo];
-            
-            [[DataProvider sharedProvider] save];
-            [[App sharedApp].controllerToPresentOn dismissController];
         }
     }
+    [[DataProvider sharedProvider] save];
+    [[App sharedApp].controllerToPresentOn dismissController];
 }
 
 - (void)reloadData
